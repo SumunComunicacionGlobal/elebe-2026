@@ -1,3 +1,12 @@
+.main-nav-buttons {
+    gap: $spacer * .75;
+    margin-left: $spacer*.5;
+
+    // @include media-breakpoint-up(lg) {
+        // order: 1;
+    // }
+}
+
 #main-nav {
     transition: $transition-base;
 }

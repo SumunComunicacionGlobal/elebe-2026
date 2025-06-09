@@ -1,3 +1,23 @@
+:root {
+    --woocommerce: #{$primary};
+    --wc-green: #{$green};
+    --wc-red: #{$red};
+    --wc-orange: #{$orange};
+    --wc-blue: #{$blue};
+    --wc-primary: #{$primary};
+    --wc-primary-text: #{$primary};
+    --wc-secondary: #{$secondary};
+    --wc-secondary-text: #{$secondary};
+    --wc-highlight: #{$primary};
+    --wc-highligh-text: #{$white};
+    --wc-content-bg: #{$white};
+    --wc-subtext: #{$secondary};
+    --wc-form-border-color: #{$input-border-color};
+    --wc-form-border-radius: #{$input-border-radius};
+    --wc-form-border-width: #{$input-border-width};
+    --wc-form-color-background: #{$body-bg};
+}
+
 .woocommerce {
     
     form .form-row {
@@ -9,6 +29,33 @@
         margin-top: $spacer;
     }
 
+}
+
+.woocommerce table.shop_table {
+    border-collapse: collapse;
+}
+
+
+.woocommerce form .form-row {
+    margin-bottom: $paragraph-margin-bottom;
+
+    .input-text,
+    select {
+        padding: $input-padding-y $input-padding-x;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+}
+
+.woocommerce form .show-password-input, 
+.woocommerce-page form .show-password-input {
+    top: 50%;
+}
+
+.woocommerce-column {
+    margin-bottom: $grid-gutter-width;
 }
 
 .coupon {
@@ -209,29 +256,44 @@ div.product div.summary + * {
 .woocommerce-cart,
 .woocommerce-checkout {
 
-    h1 {
+    h1,
+    h2 {
         font-size: $lead-font-size;
     }
 }
 
-address {
-    border: $border-width solid $border-color;
-    padding: 1rem;
+address,
+.woocommerce .woocommerce-customer-details address {
+    border: $card-border-width solid $card-border-color;
+    padding: $modal-inner-padding;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
 }
 
-.woocommerce table.my_account_orders .button {
-    margin-right: $spacer*.25;
-    margin-bottom: $spacer*.25;
+
+.woocommerce {
+    
+    table.my_account_orders {
+        
+        .button {
+            margin-right: $spacer*.25;
+            margin-top: $spacer*.125;
+            margin-bottom: $spacer*.125;
+            @extend .btn-sm;
+        }
+
+        td {
+            vertical-align: top;
+            line-height: 1.1;
+        }
+    }
+
 }
 
 .woocommerce-MyAccount-navigation {
     margin-bottom: $spacer*2;
 }
 
-.woocommerce table.my_account_orders td {
-    vertical-align: top;
-    line-height: 1.1;
-}
 /* end WooCommerce account */
 
 

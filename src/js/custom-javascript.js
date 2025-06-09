@@ -1,3 +1,8 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 jQuery(document).ready(function($) {
 
     $(function () {
@@ -153,4 +158,45 @@ jQuery('.wp-block-group.is-layout-flex.is-style-slick-carousel-logos, .wp-block-
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+
+
+// Animate each element with the class 'wp-block-cover'
+jQuery('.wp-block-cover, .summary').each(function(index) {
+  gsap.from(this, {
+    opacity: 0,
+    scrollTrigger: this,
+    y: 100,
+  });
+});
+
+jQuery('.wp-block-cover__inner-container').each(function(index) {
+  gsap.from(this, {
+    opacity: 0,
+    scrollTrigger: this,
+    y: 50,
+    rotation: 2,
+    duration: 1,
+  });
+});
+
+// Animate each element with the class 'wp-block-media-text__media'
+jQuery('.wp-block-media-text__media').each(function() {
+  gsap.from(this, {
+    opacity: 0,
+    scrollTrigger: this,
+    x: -100,
+  });
+});
+
+ScrollTrigger.batch(".is-layout-grid > *, .product-category, li.product, .subcategory > .card-body", {
+  onEnter: elements => {
+    gsap.from(elements, {
+      opacity: 0,
+      y: 60,
+      autoAlpha: 0,
+      stagger: 0.1,
+    });
+  },
+  once: true
 });

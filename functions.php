@@ -45,6 +45,10 @@ if ( function_exists( 'gdpr_cookie_is_accepted' ) ) {
     $understrap_includes[] = '/smn-moove-gdpr-cookies.php';
 }
 
+if ( class_exists('COMPLIANZ') ) {
+	$understrap_includes[] = '/smn-complianz.php';
+}
+
 // Include files.
 foreach ( $understrap_includes as $file ) {
     require_once get_theme_file_path( $understrap_inc_dir . $file );

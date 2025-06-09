@@ -40,6 +40,20 @@ body.scrolled {
 
 }
 
+body {
+
+  &.privacy-policy,
+  &.cmplz-document {
+
+    #content {
+      max-width: 50rem;
+      margin-bottom: $grid-gutter-width*2;
+    }
+
+  }
+
+}
+
 .stretch-linked-block {
     position: relative !important;
     transition: $transition-fade;

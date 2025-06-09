@@ -3,6 +3,11 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+// Homogeneiza el breakpoint de WC con el de WP
+add_filter( 'woocommerce_style_smallscreen_breakpoint', function() {
+    return '782px'; 
+});
+ 
 // replace woocommerce breadcrumbs with smn_breadcrumb
 function woocommerce_breadcrumb() {
     smn_breadcrumb();

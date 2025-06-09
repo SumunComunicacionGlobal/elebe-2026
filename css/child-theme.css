@@ -164,8 +164,10 @@ p {
 }
 
 abbr[title] {
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -642,7 +644,7 @@ progress {
     max-width: 540px;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
@@ -1057,7 +1059,7 @@ progress {
     --bs-gutter-y: 6rem;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .col-md {
     flex: 1 0 0%;
   }
@@ -1932,7 +1934,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1997,6 +1999,8 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2022,6 +2026,10 @@ progress {
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
 }
+.form-control::-moz-placeholder {
+  color: #909090;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #909090;
   opacity: 1;
@@ -2033,6 +2041,7 @@ progress {
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
   color: #202020;
   background-color: #e9ecef;
@@ -2081,6 +2090,7 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
+  -webkit-margin-end: 0.5rem;
   margin-inline-end: 0.5rem;
 }
 
@@ -2093,6 +2103,7 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
+  -webkit-margin-end: 1rem;
   margin-inline-end: 1rem;
 }
 
@@ -2145,6 +2156,8 @@ textarea.form-control-lg {
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2217,7 +2230,10 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
@@ -2301,7 +2317,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .woocommerce-info .btn-check[disabled] + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check[disabled] + a.button, .btn-check:disabled + .btn, .woocommerce-info .btn-check:disabled + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:disabled + a.button {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-check[disabled] + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check[disabled] + a.button, .btn-check:disabled + .btn, .btn-check:disabled + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-check:disabled + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:disabled + a.button {
   pointer-events: none;
   filter: none;
   opacity: 0.25;
@@ -2312,6 +2328,8 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0;
   background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 .form-range:focus {
@@ -2333,11 +2351,14 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
@@ -2359,11 +2380,14 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -2423,9 +2447,16 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
+.form-floating > .form-control::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+  color: transparent;
+}
 .form-floating > .form-control::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
@@ -2441,6 +2472,10 @@ textarea.form-control-lg {
 .form-floating > .form-select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
@@ -2477,11 +2512,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .woocommerce-info a.button, .woocommerce-info .input-group a.button, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button {
+.input-group .btn, .input-group .wc-block-components-button:not(.is-link), .input-group .woocommerce-info a.button, .woocommerce-info .input-group a.button, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .woocommerce-info a.button:focus, .woocommerce-info .input-group a.button:focus, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button:focus {
+.input-group .btn:focus, .input-group .wc-block-components-button:focus:not(.is-link), .input-group .woocommerce-info a.button:focus, .woocommerce-info .input-group a.button:focus, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button:focus {
   z-index: 5;
 }
 
@@ -2504,6 +2539,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
+.input-group-lg > .wc-block-components-button:not(.is-link),
 .woocommerce-info .input-group-lg > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-lg > a.button {
   padding: 0.5rem 1rem;
@@ -2515,6 +2551,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
+.input-group-sm > .wc-block-components-button:not(.is-link),
 .woocommerce-info .input-group-sm > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-sm > a.button {
   padding: 0.25rem 0.5rem;
@@ -2732,7 +2769,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
+.btn, .wc-block-components-button:not(.is-link), .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -2758,6 +2795,8 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
@@ -2765,41 +2804,41 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
+  .btn, .wc-block-components-button:not(.is-link), .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
     transition: none;
   }
 }
-.btn:hover, .woocommerce-info a.button:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover {
+.btn:hover, .wc-block-components-button:hover:not(.is-link), .woocommerce-info a.button:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .woocommerce-info .btn-check + a.button:hover, .woocommerce-notices-wrapper .woocommerce-message .btn-check + a.button:hover {
+.btn-check + .btn:hover, .btn-check + .wc-block-components-button:hover:not(.is-link), .woocommerce-info .btn-check + a.button:hover, .woocommerce-notices-wrapper .woocommerce-message .btn-check + a.button:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .woocommerce-info a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:focus-visible {
+.btn:focus-visible, .wc-block-components-button:focus-visible:not(.is-link), .woocommerce-info a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .woocommerce-info .btn-check:focus-visible + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus-visible + a.button {
+.btn-check:focus-visible + .btn, .btn-check:focus-visible + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-check:focus-visible + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus-visible + a.button {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .woocommerce-info .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, :not(.btn-check) + .btn:active, .woocommerce-info :not(.btn-check) + a.button:active, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active, .btn:first-child:active, .woocommerce-info a.button:first-child:active, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active, .btn.active, .woocommerce-info a.active.button, .woocommerce-notices-wrapper .woocommerce-message a.active.button, .btn.show, .woocommerce-info a.show.button, .woocommerce-notices-wrapper .woocommerce-message a.show.button {
+.btn-check:checked + .btn, .btn-check:checked + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, :not(.btn-check) + .btn:active, :not(.btn-check) + .wc-block-components-button:active:not(.is-link), .woocommerce-info :not(.btn-check) + a.button:active, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active, .btn:first-child:active, .wc-block-components-button:first-child:active:not(.is-link), .woocommerce-info a.button:first-child:active, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active, .btn.active, .active.wc-block-components-button:not(.is-link), .woocommerce-info a.active.button, .woocommerce-notices-wrapper .woocommerce-message a.active.button, .btn.show, .show.wc-block-components-button:not(.is-link), .woocommerce-info a.show.button, .woocommerce-notices-wrapper .woocommerce-message a.show.button {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .woocommerce-info .btn-check:checked + a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .woocommerce-info :not(.btn-check) + a.button:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active:focus-visible, .btn:first-child:active:focus-visible, .woocommerce-info a.button:first-child:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active:focus-visible, .btn.active:focus-visible, .woocommerce-info a.active.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus-visible, .btn.show:focus-visible, .woocommerce-info a.show.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus-visible {
+.btn-check:checked + .btn:focus-visible, .btn-check:checked + .wc-block-components-button:focus-visible:not(.is-link), .woocommerce-info .btn-check:checked + a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .wc-block-components-button:active:focus-visible:not(.is-link), .woocommerce-info :not(.btn-check) + a.button:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active:focus-visible, .btn:first-child:active:focus-visible, .wc-block-components-button:first-child:active:focus-visible:not(.is-link), .woocommerce-info a.button:first-child:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active:focus-visible, .btn.active:focus-visible, .active.wc-block-components-button:focus-visible:not(.is-link), .woocommerce-info a.active.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus-visible, .btn.show:focus-visible, .show.wc-block-components-button:focus-visible:not(.is-link), .woocommerce-info a.show.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .woocommerce-info a.button:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .btn.disabled, .woocommerce-info a.disabled.button, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, fieldset:disabled .btn, fieldset:disabled .woocommerce-info a.button, .woocommerce-info fieldset:disabled a.button, fieldset:disabled .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message fieldset:disabled a.button {
+.btn:disabled, .wc-block-components-button:disabled:not(.is-link), .woocommerce-info a.button:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .btn.disabled, .disabled.wc-block-components-button:not(.is-link), .woocommerce-info a.disabled.button, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, fieldset:disabled .btn, fieldset:disabled .wc-block-components-button:not(.is-link), fieldset:disabled .woocommerce-info a.button, .woocommerce-info fieldset:disabled a.button, fieldset:disabled .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message fieldset:disabled a.button {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -2807,7 +2846,7 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-.btn-primary {
+.btn-primary, .wc-block-components-button:not(.is-link) {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0d6efd;
   --bs-btn-border-color: #0d6efd;
@@ -3101,14 +3140,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: 0.75rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3258,7 +3297,7 @@ textarea.form-control-lg {
     left: auto;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .dropdown-menu-md-start {
     --bs-position: start;
   }
@@ -3473,45 +3512,57 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .woocommerce-info .btn-group > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button,
+.btn-group > .btn, .btn-group > .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button,
 .btn-group-vertical > .btn,
+.btn-group-vertical > .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .woocommerce-info .btn-group > .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:checked + a.button,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group > .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:checked + a.button,
 .btn-group > .btn-check:focus + .btn,
+.btn-group > .btn-check:focus + .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group > .btn-check:focus + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:focus + a.button,
 .btn-group > .btn:hover,
+.btn-group > .wc-block-components-button:hover:not(.is-link),
 .woocommerce-info .btn-group > a.button:hover,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:hover,
 .btn-group > .btn:focus,
+.btn-group > .wc-block-components-button:focus:not(.is-link),
 .woocommerce-info .btn-group > a.button:focus,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:focus,
 .btn-group > .btn:active,
+.btn-group > .wc-block-components-button:active:not(.is-link),
 .woocommerce-info .btn-group > a.button:active,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:active,
 .btn-group > .btn.active,
+.btn-group > .active.wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group > a.active.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.active.button,
 .btn-group-vertical > .btn-check:checked + .btn,
+.btn-group-vertical > .btn-check:checked + .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > .btn-check:checked + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-check:checked + a.button,
 .btn-group-vertical > .btn-check:focus + .btn,
+.btn-group-vertical > .btn-check:focus + .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > .btn-check:focus + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-check:focus + a.button,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .wc-block-components-button:hover:not(.is-link),
 .woocommerce-info .btn-group-vertical > a.button:hover,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .wc-block-components-button:focus:not(.is-link),
 .woocommerce-info .btn-group-vertical > a.button:focus,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:focus,
 .btn-group-vertical > .btn:active,
+.btn-group-vertical > .wc-block-components-button:active:not(.is-link),
 .woocommerce-info .btn-group-vertical > a.button:active,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:active,
 .btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > a.active.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.active.button {
   z-index: 1;
@@ -3529,25 +3580,29 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: 0.375rem;
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .woocommerce-info .btn-group > :not(.btn-check:first-child) + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check:first-child) + a.button,
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group > :not(.btn-check:first-child) + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check:first-child) + a.button,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .woocommerce-info .btn-group > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
+.btn-group > .dropdown-toggle-split.wc-block-components-button:first-child:not(.is-link),
 .woocommerce-info .btn-group > a.dropdown-toggle-split.button:first-child,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.dropdown-toggle-split.button:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group > .btn-group:not(:last-child) > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-group:not(:last-child) > a.button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .woocommerce-info .btn-group > a.button:nth-child(n+3), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .wc-block-components-button:nth-child(n+3):not(.is-link), .woocommerce-info .btn-group > a.button:nth-child(n+3), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
+.btn-group > :not(.btn-check) + .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group > :not(.btn-check) + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check) + a.button,
 .btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group > .btn-group:not(:first-child) > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-group:not(:first-child) > a.button {
   border-top-left-radius: 0;
@@ -3565,12 +3620,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .woocommerce-info .btn-group-sm > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .woocommerce-info .btn-group-sm > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3580,23 +3635,25 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .woocommerce-info .btn-group-vertical > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button,
+.btn-group-vertical > .btn, .btn-group-vertical > .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-vertical > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .woocommerce-info .btn-group-vertical > a.button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .wc-block-components-button:not(:first-child):not(.is-link), .woocommerce-info .btn-group-vertical > a.button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .woocommerce-info .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > .btn-group:not(:last-child) > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-group:not(:last-child) > a.button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .woocommerce-info .btn-group-vertical > a.button ~ .btn, .woocommerce-info .btn-group-vertical > .btn ~ a.button, .woocommerce-info .btn-group-vertical > a.button ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ a.button,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .btn, .btn-group-vertical > .btn ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-vertical > a.button ~ .btn, .woocommerce-info .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-vertical > .btn ~ a.button, .woocommerce-info .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-info .btn-group-vertical > a.button ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ a.button,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .wc-block-components-button:not(.is-link),
 .woocommerce-info .btn-group-vertical > .btn-group:not(:first-child) > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-group:not(:first-child) > a.button {
   border-top-left-radius: 0;
@@ -3900,7 +3957,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4610,7 +4667,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge, .woocommerce-info a.button .badge, .woocommerce-notices-wrapper .woocommerce-message a.button .badge {
+.btn .badge, .wc-block-components-button:not(.is-link) .badge, .woocommerce-info a.button .badge, .woocommerce-notices-wrapper .woocommerce-message a.button .badge {
   position: relative;
   top: -1px;
 }
@@ -4909,7 +4966,7 @@ textarea.form-control-lg {
     border-left-width: var(--bs-list-group-border-width);
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .list-group-horizontal-md {
     flex-direction: row;
   }
@@ -5150,6 +5207,8 @@ textarea.form-control-lg {
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   opacity: 0.25;
 }
@@ -5196,6 +5255,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 990;
   position: absolute;
   z-index: var(--bs-toast-zindex);
+  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -5437,7 +5497,7 @@ textarea.form-control-lg {
     overflow-y: auto;
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .modal-fullscreen-md-down {
     width: 100vw;
     max-width: none;
@@ -5801,6 +5861,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
@@ -6143,7 +6204,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md {
     position: fixed;
     bottom: 0;
@@ -6159,12 +6220,12 @@ textarea.form-control-lg {
     transition: transform 0.3s ease-in-out;
   }
 }
-@media (max-width: 780.98px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 782.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-md {
     transition: none;
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.offcanvas-start {
     top: 0;
     left: 0;
@@ -6173,7 +6234,7 @@ textarea.form-control-lg {
     transform: translateX(-100%);
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.offcanvas-end {
     top: 0;
     right: 0;
@@ -6182,7 +6243,7 @@ textarea.form-control-lg {
     transform: translateX(100%);
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.offcanvas-top {
     top: 0;
     right: 0;
@@ -6193,7 +6254,7 @@ textarea.form-control-lg {
     transform: translateY(-100%);
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.offcanvas-bottom {
     right: 0;
     left: 0;
@@ -6203,17 +6264,17 @@ textarea.form-control-lg {
     transform: translateY(100%);
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
     transform: none;
   }
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   .offcanvas-md.showing, .offcanvas-md.hiding, .offcanvas-md.show {
     visibility: visible;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .offcanvas-md {
     --bs-offcanvas-height: auto;
     --bs-offcanvas-border-width: 0;
@@ -6600,7 +6661,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .woocommerce-info a.placeholder.button::before, .woocommerce-notices-wrapper .woocommerce-message a.placeholder.button::before {
+.placeholder.btn::before, .placeholder.wc-block-components-button:not(.is-link)::before, .woocommerce-info a.placeholder.button::before, .woocommerce-notices-wrapper .woocommerce-message a.placeholder.button::before {
   display: inline-block;
   content: "";
 }
@@ -6627,13 +6688,16 @@ textarea.form-control-lg {
   }
 }
 .placeholder-wave {
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
   100% {
+    -webkit-mask-position: -200% 0%;
     mask-position: -200% 0%;
   }
 }
@@ -6812,7 +6876,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .sticky-md-top {
     position: sticky;
     top: 0;
@@ -8198,14 +8262,20 @@ textarea.form-control-lg {
 }
 
 .user-select-all {
+  -webkit-user-select: all !important;
+  -moz-user-select: all !important;
   user-select: all !important;
 }
 
 .user-select-auto {
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
   user-select: auto !important;
 }
 
 .user-select-none {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
   user-select: none !important;
 }
 
@@ -8777,7 +8847,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .float-md-start {
     float: left !important;
   }
@@ -10881,6 +10951,8 @@ body {
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11192,67 +11264,42 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -14180,7 +14227,7 @@ html {
 .admin-bar .sticky-top {
   top: 46px;
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .admin-bar .fixed-top,
   .admin-bar .sticky-top {
     top: 32px;
@@ -14658,7 +14705,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
     max-width: 540px;
   }
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
@@ -14773,6 +14820,7 @@ blockquote,
 }
 
 .object-fit-cover {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -14800,7 +14848,7 @@ body.understrap-no-sidebar .alignwide {
     max-width: 100vw;
   }
 }
-.wp-block-group .wp-block-group__inner-container {
+.wp-block-group.alignfull > .wp-block-group__inner-container {
   --bs-gutter-x: 3rem;
   --bs-gutter-y: 0;
   width: 100%;
@@ -14810,27 +14858,27 @@ body.understrap-no-sidebar .alignwide {
   margin-left: auto;
 }
 @media (min-width: 599px) {
-  .wp-block-group .wp-block-group__inner-container {
+  .wp-block-group.alignfull > .wp-block-group__inner-container {
     max-width: 540px;
   }
 }
-@media (min-width: 781px) {
-  .wp-block-group .wp-block-group__inner-container {
+@media (min-width: 783px) {
+  .wp-block-group.alignfull > .wp-block-group__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .wp-block-group .wp-block-group__inner-container {
+  .wp-block-group.alignfull > .wp-block-group__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .wp-block-group .wp-block-group__inner-container {
+  .wp-block-group.alignfull > .wp-block-group__inner-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .wp-block-group .wp-block-group__inner-container {
+  .wp-block-group.alignfull > .wp-block-group__inner-container {
     max-width: 1320px;
   }
 }
@@ -14884,8 +14932,11 @@ body.understrap-no-sidebar .alignwide {
   display: block;
   width: 3rem;
   height: 3rem;
+  -webkit-mask-image: url("../img/flecha-derecha.svg");
   mask-image: url("../img/flecha-derecha.svg");
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
   background-color: #0d6efd;
   position: absolute;
@@ -14902,7 +14953,7 @@ body.understrap-no-sidebar .alignwide {
   gap: 3rem;
   margin-bottom: 3rem;
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .wp-block-columns.is-style-gapless {
     gap: 0;
   }
@@ -14930,7 +14981,7 @@ body.understrap-no-sidebar .alignwide {
   border-radius: 7rem;
 }
 
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .form-steps .wp-block-column:not(:last-child) .is-style-cifra-circulo:after {
     content: "";
     display: block;
@@ -14995,6 +15046,7 @@ table th {
   vertical-align: middle;
   border: 1px solid #202020;
   margin-right: 0.5rem;
+  -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
@@ -15056,13 +15108,13 @@ table th {
   display: flex;
   margin-left: -1px;
 }
-.input-group-append .btn, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button, .input-group-append .woocommerce-info a.button, .woocommerce-info .input-group-append a.button {
+.input-group-append .btn, .input-group-append .wc-block-components-button:not(.is-link), .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button, .input-group-append .woocommerce-info a.button, .woocommerce-info .input-group-append a.button {
   position: relative;
   z-index: 2;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-group-append .btn:focus, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button:focus, .input-group-append .woocommerce-info a.button:focus, .woocommerce-info .input-group-append a.button:focus {
+.input-group-append .btn:focus, .input-group-append .wc-block-components-button:focus:not(.is-link), .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button:focus, .input-group-append .woocommerce-info a.button:focus, .woocommerce-info .input-group-append a.button:focus {
   z-index: 3;
 }
 
@@ -15091,6 +15143,10 @@ table th {
 
 .woocommerce form .form-row {
   display: block;
+}
+.woocommerce .woocommerce-result-count {
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 
 .coupon {
@@ -15146,6 +15202,169 @@ div.product div.summary + * {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>');
 }
 
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0 1rem 1rem 0;
+  width: calc( 100% / 4 - 0.75rem );
+}
+.woocommerce ul.products li.product.last,
+.woocommerce-page ul.products li.product.last {
+  margin-right: 0 !important;
+}
+.woocommerce ul.products.columns-3 li.product,
+.woocommerce-page ul.products.columns-3 li.product {
+  margin: 0 1rem 1rem 0;
+  width: calc( 100% / 3 - 0.6666666667rem );
+}
+@media (max-width: 768px) {
+  .woocommerce ul.products[class*=columns-] li.product,
+  .woocommerce-page ul.products[class*=columns-] li.product {
+    width: calc( 100% / 2 - 0.5rem );
+    margin-right: 0;
+  }
+}
+@media (max-width: 598.98px) {
+  .woocommerce ul.products[class*=columns-] li.product,
+  .woocommerce-page ul.products[class*=columns-] li.product {
+    width: 100%;
+  }
+}
+
+.comment-notes,
+.woocommerce-noreviews {
+  color: #909090;
+}
+
+#commentform {
+  margin-top: 1rem;
+}
+@media (min-width: 783px) {
+  #commentform {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #commentform > * {
+    flex: 0 0 100%;
+  }
+  #commentform > *.comment-form-author, #commentform > *.comment-form-email {
+    flex: 0 0 calc( 50% - 1.5rem );
+  }
+  #commentform > *.comment-form-author {
+    margin-right: 1.5rem !important;
+  }
+}
+
+.woocommerce table.shop_attributes tr {
+  border-left: 0;
+  border-right: 0;
+}
+.woocommerce table.shop_attributes tr:nth-child(even) td,
+.woocommerce table.shop_attributes tr:nth-child(even) th {
+  background: transparent;
+}
+.woocommerce table.shop_attributes th {
+  background-color: transparent;
+}
+.woocommerce table.shop_attributes td {
+  font-style: normal;
+}
+
+/* WooCommerce Cart and checkout */
+.wc-block-components-button:not(.is-link):active {
+  background-color: transparent !important;
+}
+
+.wc-block-components-button.wc-block-checkout__shipping-method-option.wc-block-checkout__shipping-method-option--selected {
+  background-color: hsla(0deg, 0%, 7%, 0.1) !important;
+}
+
+.wc-block-components-radio-control .wc-block-components-radio-control__input:checked:before {
+  background: #0d6efd !important;
+}
+
+.wc-block-components-form .wc-block-components-text-input label,
+.wc-block-components-text-input label {
+  font-size: 0.875rem !important;
+  color: #909090 !important;
+}
+
+.is-large .wc-block-checkout__sidebar.is-sticky {
+  top: 84px;
+}
+
+/* end WooCommerce Cart and checkout */
+/* WooCommerce account */
+.woocommerce-account h1, .woocommerce-account .h1,
+.woocommerce-cart h1,
+.woocommerce-cart .h1,
+.woocommerce-checkout h1,
+.woocommerce-checkout .h1 {
+  font-size: 1.25rem;
+}
+
+address {
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+.woocommerce table.my_account_orders .button {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 2rem;
+}
+
+.woocommerce table.my_account_orders td {
+  vertical-align: top;
+  line-height: 1.1;
+}
+
+/* end WooCommerce account */
+/* Side cart plugin */
+.xoo-wsc-container,
+.xoo-wsc-slider,
+.xoo-wsc-body {
+  background-color: #fff;
+}
+
+.xoo-wsc-sc-subt {
+  font-size: 0.875rem;
+}
+
+.xoo-wsc-body,
+.xoo-wsc-body span.amount,
+.xoo-wsc-body a {
+  color: #202020;
+}
+
+.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn,
+.xoo-wsc-container .xoo-wsc-btn {
+  background-color: #0d6efd;
+  border-width: 1px;
+  border: 1px solid #0d6efd;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn:hover,
+.xoo-wsc-container .xoo-wsc-btn:hover {
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+}
+
+a.xoo-wsc-ft-btn-checkout .amount {
+  font-style: normal;
+}
+
+.xoo-wsc-qty-price,
+.xoo-wsc-qty-price span {
+  font-size: 0.875rem !important;
+}
+
+/* end Side cart plugin */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -15234,7 +15453,7 @@ div.product div.summary + * {
   margin: -1.5rem;
   padding-right: 100px;
 }
-@media (min-width: 781px) {
+@media (min-width: 783px) {
   .slick-carousel .slick-list {
     padding-right: 70px;
   }
@@ -15270,7 +15489,7 @@ div.product div.summary + * {
 #wrapper-footer a {
   color: #fff;
 }
-@media (max-width: 780.98px) {
+@media (max-width: 782.98px) {
   #wrapper-footer {
     text-align: center;
   }

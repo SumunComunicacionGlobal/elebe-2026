@@ -2,6 +2,17 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+function fwp_wrapper_open() {
+  if ( ! is_singular() ) : echo '<div class="facetwp-template"><div class="facetwp-template__inner">'; endif;
+}
+function fwp_wrapper_close() {
+  if ( ! is_singular() ) : echo '</div></div><!-- end facetwp-template -->'; endif;
+}
+add_action( 'woocommerce_before_shop_loop', 'fwp_wrapper_open', 5 );
+add_action( 'woocommerce_after_shop_loop', 'fwp_wrapper_close', 15 );
+add_action( 'woocommerce_no_products_found', 'fwp_wrapper_open', 5 );
+add_action( 'woocommerce_no_products_found', 'fwp_wrapper_close', 15 );
+
 function fwp_add_facet_labels() {
     if ( !function_exists( 'facetwp_display' ) ) return false;
   ?>
@@ -85,6 +96,30 @@ add_action( 'wp_head', function() {
               }
             });
           });
+        })(jQuery);
+      </script>
+    <?php
+  }, 100 );
+
+  add_action( 'facetwp_scripts', function() {
+    ?>
+      <script>
+        (function($) {
+     
+          // On start of the facet refresh, but not on first page load
+          $(document).on('facetwp-refresh', function() {
+            if ( FWP.loaded ) {
+              $('.facetwp-template').prepend('<div class="spinner d-flex justify-content-center"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div>');
+              $('.facetwp-template').addClass('facetwp-loading');
+            }
+          });
+     
+          // On finishing the facet refresh
+          $(document).on('facetwp-loaded', function() {
+            $('.facetwp-template .spinner').remove();
+            $('.facetwp-template').removeClass('facetwp-loading');
+          });
+          
         })(jQuery);
       </script>
     <?php

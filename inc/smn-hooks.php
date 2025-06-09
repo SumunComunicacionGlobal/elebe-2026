@@ -36,7 +36,7 @@ function smn_wpcf7_form_control_class( $scanned_tag, $replace ) {
 add_action( 'loop_start', 'archive_loop_start', 10 );
 function archive_loop_start( $query ) {
 
-    if ( is_woocommerce() || isset( $query->query['ignore_row'] ) && $query->query['ignore_row'] ) return false;
+    if ( ( class_exists('woocommerce') && is_woocommerce() ) || isset( $query->query['ignore_row'] ) && $query->query['ignore_row'] ) return false;
     
     if ( ( isset( $query->query['add_row'] ) && $query->query['add_row'] ) || ( is_archive() || is_home() || is_search() ) ) {
         echo '<div class="row">';
@@ -46,7 +46,7 @@ function archive_loop_start( $query ) {
 add_action( 'loop_end', 'archive_loop_end', 10 );
 function archive_loop_end( $query ) {
 
-    if ( is_woocommerce() || isset( $query->query['ignore_row'] ) && $query->query['ignore_row'] ) return false;
+    if ( ( class_exists('woocommerce') && is_woocommerce() ) || isset( $query->query['ignore_row'] ) && $query->query['ignore_row'] ) return false;
 
     if ( ( isset( $query->query['add_row'] ) && $query->query['add_row'] ) || ( is_archive() || is_home() || is_search() ) ) {
         echo '</div>';
@@ -56,11 +56,23 @@ function archive_loop_end( $query ) {
 add_filter( 'body_class', 'smn_body_classes' );
 function smn_body_classes( $classes ) {
 
-    if ( is_singular() ) {
+    if ( is_page() ) {
+
         $navbar_bg = get_post_meta( get_the_ID(), 'navbar_bg', true );
         if ( 'transparent' == $navbar_bg ) {
             $classes[] = 'navbar-transparent';
         }
+
+        $cmplz_pages = array(
+            get_option('cmplz_privacy-statement_custom_page'),
+            get_option('cmplz_impressum_custom_page'),
+            get_option('cmplz_disclaimer_custom_page')
+        );
+
+        if (in_array(get_the_ID(), $cmplz_pages)) {
+            $classes[] = 'cmplz-document';
+        }
+        
     } else {
 
     }
@@ -72,7 +84,7 @@ function smn_body_classes( $classes ) {
 add_filter( 'post_class', 'bootstrap_post_class', 10, 3 );
 function bootstrap_post_class( $classes, $class, $post_id ) {
 
-    if ( is_woocommerce() ) return $classes;
+    if ( class_exists('woocommerce') && is_woocommerce() ) return $classes;
 
     if ( is_archive() || is_home() || is_search() || in_array( 'hfeed-post', $class ) ) {
         $classes[] = COL_CLASSES . ' stretch-linked-block'; 
