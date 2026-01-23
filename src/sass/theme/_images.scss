@@ -23,3 +23,51 @@ a {
 		}
 	}
 }
+
+.flecha {
+	fill: $primary;
+	transition: all .3s ease;
+}
+a:hover .flecha {
+	fill: darken($primary, 8%);
+}
+
+.flecha-sobre-imagen {
+	position: absolute;
+	bottom: 33%;
+	right: 10%;
+	width: 80px !important;
+	height: auto !important;
+	max-height: 150px;
+	object-fit: contain;
+	filter: brightness(100);
+	transition: all .3s ease;
+	border-radius: 0 !important;
+}
+
+.wp-block-image,
+.wp-block-media-text__media {
+
+	&.lined-2,
+	&.lined-4 {
+
+		&:after {
+			transform: rotate(3deg);
+		}
+
+	}
+
+}
+
+.link-circulo {
+
+	&.lined-2:after {
+		transform: translate(-4%,3%);
+	}
+	&.lined-3:after {
+		transform: translate(-3%,-4%);
+	}
+	&.lined-4:after {
+		transform: translate(4%,-4%);
+	}
+}

@@ -8,7 +8,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-define( 'COL_CLASSES', 'col-sm-6 col-lg-4 col-xl-3 mb-4' );
+define( 'COL_CLASSES', 'col-sm-6 col-lg-4 col-xl-3 mb-3' );
+define('CONTACTO_ID', 24);
+define('TARJETA_REGALO_ID', 545);
+
 
 // UnderStrap's includes directory.
 $understrap_inc_dir = 'inc';
@@ -26,6 +29,8 @@ $understrap_includes = array(
     '/smn-template-tags.php',
     '/smn-shortcodes.php',
     '/smn-blocks.php',
+	'/edwiser-bridge-elebe.php',
+	'/cursos.php',
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
@@ -89,6 +94,8 @@ function theme_enqueue_styles() {
 
 	wp_enqueue_style( 'smn-styles', get_stylesheet_directory_uri() . $theme_styles, array(), $css_version );
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'sticky-sidebar', get_stylesheet_directory_uri() . '/js/jquery.sticky-sidebar.min.js', array(), false, true );
+
 
 	wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/js/slick/slick.min.js', null, null, true );
 
@@ -107,11 +114,19 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
  * Load the child theme's text domain
  */
 function add_child_theme_textdomain() {
+    load_child_theme_textdomain( 'elebe', get_stylesheet_directory() . '/languages' );
+    load_child_theme_textdomain( 'sumun', get_stylesheet_directory() . '/languages' );
+    load_child_theme_textdomain( 'sumun-admin', get_stylesheet_directory() . '/languages' );
 	load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 	load_child_theme_textdomain( 'smn', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
+function elebe_query_vars( $qvars ) {
+    $qvars[] = 'columnas';
+    return $qvars;
+}
+add_filter( 'query_vars', 'elebe_query_vars' );
 
 
 /**
@@ -142,3 +157,22 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+/**
+ * Output analytics code in wp_head.
+ */
+function elebe_add_analytics_code() {
+	?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21767156-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-21767156-1');
+	</script>
+	<!-- End Google Analytics -->
+	<?php
+}
+add_action( 'wp_head', 'elebe_add_analytics_code' );

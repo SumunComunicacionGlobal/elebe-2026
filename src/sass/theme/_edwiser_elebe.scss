@@ -1,0 +1,61 @@
+article.single-course {
+	padding: 0;
+
+	.eb-course-desc-wrapper {
+		border-top: 0;
+	}
+	.eb-course-img-wrapper img {
+		width: auto;
+	}
+}
+
+/* Edwiser cursos */
+.eb-my-course {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: - $grid-gutter-width / 2;
+	margin-right: - $grid-gutter-width / 2;
+}
+.eb-my-courses-wrapper h2 {
+	border-bottom: 0;
+	padding: 0;
+}
+.eb-course-action-cont {
+	background-color: transparent;
+	height: 140px;
+}
+.eb-course-action-progress-cont {
+    line-height: 14px;
+    height: 14px;
+    background-color: $light;
+    margin-bottom: 10px;
+}
+.eb-course-action-progress {
+    line-height: 14px;
+    height: 14px;
+    background-color: $secondary;
+	border-radius: $border-radius-pill;
+}
+.eb-user-profile {
+	padding: 0;
+	font-family: $font-family-sans-serif !important;
+}
+.eb-course-card-title.eb-course-title, .eb-course-card-title {
+	color: $primary;
+}
+.wdm-course-grid {
+	@extend .card;
+
+	.wdm-caption {
+		@extend .card-body;
+	}
+}
+.eb-course-action-btn-start {
+	@extend .btn;
+	@extend .btn-sm;
+	@extend .btn-primary;
+	margin-top: .5rem;
+
+}
+/***/
+

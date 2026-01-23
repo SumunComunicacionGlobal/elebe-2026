@@ -1,0 +1,309 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"settings": {
+		"appearanceTools": true,
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": true
+				}
+			},
+			"core/group": {
+				"color": {
+					"background": true
+				}
+			}
+		},
+		"border": {
+			"color": true,
+			"style": true,
+			"width": true
+		},
+		"color": {
+			"custom": true,
+			"customDuotone": false,
+			"customGradient": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"gradients": [],
+			"link": false
+		},
+		"custom": {
+			"border-radius": {
+				"lg": "16px",
+				"md": "8px",
+				"rounded": "999px",
+				"sm": "4px",
+				"xl": "32px",
+				"zero": "0"
+			},
+			"border-width": {
+				"large": "4px",
+				"medium": "3px",
+				"small": "2px",
+				"tiny": "1px"
+			},
+			"box-shadow": {
+				"1": "0px 2px 8px rgba(33, 33, 33, 0.12)",
+				"2": "3px 3px 10px 10px rgba(0, 0, 0, 0.10)"
+			},
+			"color": {
+				"link": "var(--wp--preset--color--primary)",
+				"link-hover": "var(--wp--preset--color--primary-10)"
+			},
+			"layout": {
+				"block-gap": "2rem",
+				"block-gap-large": "40px",
+				"content": "1200px",
+				"padding": "2rem",
+				"page": "var(--wp--custom--layout--content)",
+				"sidebar": "336px",
+				"wide": "90%"
+			},
+			"letter-spacing": {
+				"loose": ".05em",
+				"looser": ".1em",
+				"none": "normal",
+				"tight": "-.01em"
+			},
+			"line-height": {
+				"heading": 1.2,
+				"normal": 1.5,
+				"tiny": 1
+			}
+		},
+		"layout": {
+			"contentSize": "var(--wp--custom--layout--content)",
+			"wideSize": "var(--wp--custom--layout--wide)"
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "Space 0.25 (0.25rem - 4px)",
+					"size": "0.25rem",
+					"slug": "2.5"
+				},
+				{
+					"name": "Space 0.5 (0.5rem - 8px)",
+					"size": "0.5rem",
+					"slug": "5"
+				},
+				{
+					"name": "Space 1 (1rem - 16px)",
+					"size": "1rem",
+					"slug": "10"
+				},
+				{
+					"name": "Space 2 (1.5rem - 24px)",
+					"size": "1.5rem",
+					"slug": "20"
+				},
+				{
+					"name": "Space 3 (2rem - 32px)",
+					"size": "2rem",
+					"slug": "30"
+				},
+				{
+					"name": "Space 4 (2.5rem - 40px)",
+					"size": "2.5rem",
+					"slug": "40"
+				},
+				{
+					"name": "Space 6 (4rem - 64px)",
+					"size": "4rem",
+					"slug": "60"
+				},
+				{
+					"name": "Space 7 (4.5rem - 72px)",
+					"size": "4.5rem",
+					"slug": "70"
+				},
+				{
+					"name": "Space 8 (5rem - 80px)",
+					"size": "5rem",
+					"slug": "80"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"defaultFontSizes": true,
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Poppins",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./fonts/Poppins-ExtraBold.woff"
+							]
+						}
+					],
+					"fontFamily": "\"Poppins\", serif",
+					"name": "Heading Font",
+					"slug": "font-heading"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./fonts/Ubuntu-Regular.woff"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./fonts/Ubuntu-Bold.woff"
+							]
+						}
+					],
+					"fontFamily": "\"Ubuntu\", sans-serif",
+					"name": "Main Font",
+					"slug": "font-main"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Sniglet",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./fonts/Sniglet-Regular.woff"
+							]
+						}
+					],
+					"fontFamily": "\"Sniglet\", serif",
+					"name": "Quote Font",
+					"slug": "font-quote"
+				}
+			],
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": true
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/quote": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--font-quote)",
+					"fontSize": "var(--wp--preset--font-size--heading-4)",
+					"fontStyle": "normal"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--foreground)"
+		},
+		"elements": {
+			"button": {
+				"border": {
+					"radius": "var(--wp--custom--border-radius--rounded)",
+					"width": "0px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--background)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--font-main)",
+					"fontSize": "var(--wp--preset--font-size--body)",
+					"lineHeight": "var(--wp--custom--line-height--normal)"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--font-main)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-1)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-2)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-3)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-4)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-5)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--heading-6)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--font-heading)",
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--custom--color--link)"
+				}
+			},			
+			"cite": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--font-main)", 
+					"fontSize": "var(--wp--preset--font-size--body)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "var(--wp--custom--layout--block-gap)",
+			"padding": {
+				"bottom": "0px",
+				"left": "4rem",
+				"right": "4rem",
+				"top": "0px"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--font-main)",
+			"fontSize": "var(--wp--preset--font-size--body)",
+			"lineHeight": "var(--wp--custom--line-height--normal)"
+		}
+	},
+	"version": 3
+}

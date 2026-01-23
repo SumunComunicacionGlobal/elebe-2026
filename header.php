@@ -26,11 +26,11 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar" class="sticky-top">
+	<!-- Top Bar -->
+	<?php get_template_part( 'sidebar-templates/sidebar', 'top-bar' ); ?>
 
-		<!-- Top Bar -->
-		<?php get_template_part( 'sidebar-templates/sidebar', 'top-bar' ); ?>
+	<!-- ******************* The Navbar Area ******************* -->
+	<header id="wrapper-navbar">
 
 		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
@@ -41,9 +41,11 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	</header><!-- #wrapper-navbar -->
 
 	<?php 
-	if ( is_front_page() ) {
-		get_template_part( 'global-templates/hero' );
-	} elseif ( !is_page() && !is_search() && !is_404() ) {
-		get_template_part( 'global-templates/image-header' ); 
+	if ( !is_front_page() ) {
+
+		if ( !is_page() && !is_search() && !is_404() ) {
+			get_template_part( 'global-templates/image-header' ); 
+		}
+
 	}
 	?>

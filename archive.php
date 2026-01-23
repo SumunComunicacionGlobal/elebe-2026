@@ -52,7 +52,12 @@ $post_type = get_post_type();
 					<header class="page-header">
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						the_archive_description( '<div class="taxonomy-description card card-body mb-3"><div class="collapse" id="tax-desc-collapse">', '</div><a role="button" class="collapsed mas-info" data-bs-toggle="collapse" href="#tax-desc-collapse" aria-expanded="false" aria-controls="tax-desc-collapse">[+] '.__( 'Ver más', 'elebe' ).'</a></div>' );
+
+						if (is_post_type_archive( 'curso' )) {
+							echo do_shortcode( '[taxonomia taxonomy="modalidad"]' );
+						}
+
 						?>
 					</header><!-- .page-header -->
 					<?php

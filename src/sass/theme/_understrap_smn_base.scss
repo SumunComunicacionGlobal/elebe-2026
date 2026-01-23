@@ -69,6 +69,7 @@ html {
 	height: 60px;
 	background-color: $primary;
 	border: 1px solid transparent;
+	border-radius: $border-radius-pill;
 	color: $white;
 	opacity: 0;
 	transition: $transition-base;

@@ -16,56 +16,64 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'prefooter' ); ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+<div id="wrapper-footer-group" class="bg-primary">
 
-<div class="wrapper" id="wrapper-footer">
+	<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="wrapper" id="wrapper-footer">
 
-		<div class="row align-items-center">
+		<div class="container-fluid">
 
-			<div class="col-md-6 col-lg-4 col-xl-3">
+			<div class="bg-white rounded-4 px-3">
 
-				<footer class="site-footer" id="colophon">
+				<div class="row align-items-center">
 
-					<div class="site-info">
+					<div class="col-md-6 col-lg-4 col-xl-3">
 
-						<?php understrap_site_info(); ?>
+						<footer class="site-footer" id="colophon">
 
-					</div><!-- .site-info -->
+							<div class="site-info">
 
-				</footer><!-- #colophon -->
+								<?php understrap_site_info(); ?>
 
-			</div><!--col end -->
+							</div><!-- .site-info -->
 
-			<div class="col-md-6 col-lg-8 col-xl-9">
+						</footer><!-- #colophon -->
 
-				<nav id="legal-nav" class="navbar navbar-expand navbar-light" aria-labelledby="legal-nav-label">
+					</div><!--col end -->
 
-					<p id="legal-nav-label" class="screen-reader-text">
-						<?php esc_html_e( 'Legal Navigation', 'understrap' ); ?>
-					</p>
+					<div class="col-md-6 col-lg-8 col-xl-9">
 
-					<?php wp_nav_menu( array(
-						'theme_location'		  => 'legal',
-						'container_class' => 'collapse navbar-collapse navbar-dark',
-						'container_id'    => 'navbarLegal',
-						'menu_class'      => 'navbar-nav mx-auto me-md-0 flex-wrap',
-						'fallback_cb'     => '',
-						'menu_id'         => 'legal-menu',
-						'depth'           => 1,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					) ); ?>
+						<nav id="legal-nav" class="navbar navbar-expand navbar-light" aria-labelledby="legal-nav-label">
 
-				</nav>
+							<p id="legal-nav-label" class="screen-reader-text">
+								<?php esc_html_e( 'Legal Navigation', 'understrap' ); ?>
+							</p>
 
-			</div><!--col end -->
+							<?php wp_nav_menu( array(
+								'theme_location'		  => 'legal',
+								'container_class' => 'collapse navbar-collapse',
+								'container_id'    => 'navbarLegal',
+								'menu_class'      => 'navbar-nav mx-auto me-md-0 flex-wrap',
+								'fallback_cb'     => '',
+								'menu_id'         => 'legal-menu',
+								'depth'           => 1,
+								'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+							) ); ?>
 
-			</div><!-- row end -->
+						</nav>
 
-	</div><!-- .container(-fluid) -->
+					</div><!--col end -->
 
-</div><!-- #wrapper-footer -->
+				</div><!-- row end -->
+
+			</div><!-- bg-white rounded end -->
+
+		</div><!-- .container(-fluid) -->
+
+	</div><!-- #wrapper-footer -->
+
+</div><!-- #wrapper-footer-group -->
 
 <?php // Closing div#page from header.php. ?>
 </div><!-- #page -->

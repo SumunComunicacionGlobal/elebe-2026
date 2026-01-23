@@ -2,10 +2,12 @@
     margin-bottom: $spacer !important;
 }
 
-p.facet-label {
+.facet-label {
     margin-bottom: $spacer/2;
     font-size: $font-size-sm;
-    color: $gray-500;
+    color: $primary;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
 }
 
 select.facetwp-dropdown {
@@ -21,7 +23,7 @@ select.facetwp-dropdown {
 }
 .facetwp-type-dropdown select,
 .facetwp-type-fselect .fs-label-wrap {
-    background-color: $secondary-10;
+    background-color: $light;
     color: $white;
 }
 

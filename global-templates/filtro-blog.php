@@ -11,13 +11,12 @@ if ( is_category() ) {
 $page_for_posts_id = get_option( 'page_for_posts' );
 $ver_todo_active_class = ( is_home() ) ? 'active' : '';
 $queried_obj = get_queried_object();
-$queried_obj_id = $queried_obj->term_id;
 
 if ( $terms ) { ?>
 
 	<nav class="filter-navbar navbar navbar-expand-lg justify-content-center navbar-light mb-2">
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filter-navbar-collapse" aria-controls="filter-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filter-navbar-collapse" aria-controls="filter-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-label me-1"><?php echo __( 'Por temas', 'smn' ); ?></span> <span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -32,7 +31,7 @@ if ( $terms ) { ?>
 				<?php } ?>
 
 				<?php foreach ( $terms as $term ) { 
-					$active_class = ( $queried_obj_id == $term->term_id ) ? 'active' : '';
+					$active_class = ( $queried_obj && $queried_obj->term_id == $term->term_id ) ? 'active' : '';
 					?>
 
 					<a class="nav-item nav-link <?php echo $active_class; ?>" href="<?php echo esc_url( get_term_link($term) ); ?>"><?php echo $term->name; ?></a>

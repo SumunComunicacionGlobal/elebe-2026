@@ -18,7 +18,7 @@ if ( $q->have_posts() ) { ?>
 
 	<div class="wrapper blog-block" id="wrapper-blog">
 
-		<div class="slick-carousel">
+		<div class="slick-carousel slick-padded">
 
 			<?php while ( $q->have_posts() ) { $q->the_post();
 

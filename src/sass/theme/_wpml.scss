@@ -1,0 +1,27 @@
+.wpml-ls {
+	position: fixed;
+	z-index: 1000;
+	right: 0;
+	top: 50vh;
+	transform: translateY(-50%);
+
+	ul {
+		padding-left: 0;
+		background-color: $white;
+		padding: 6px;
+		list-style: none;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+
+		li {
+			margin: .5rem 0;
+			color: $gray-500;
+			text-transform: uppercase;
+			font-size: $font-size-sm;
+
+			a {
+
+			}
+		}
+	}
+}

@@ -1,3 +1,4 @@
+
 'use strict';
 
 const process = require( 'process' );
@@ -6,11 +7,23 @@ const colors = [
 	'primary',
 	'secondary',
 	'light',
-	'dark',
 	'black',
 	'white',
 	'gray',
 	'gray-dark',
+	'gray-light',
+	'dark-blue',
+	'purple',
+	'cyan',
+	'pink',
+	'pale-pink',
+	'dark-coral',
+	'red',
+	'camel',
+	'green',
+	'sea-green',
+	'amber',
+	'brown'
 ];
 
 module.exports = ( ctx ) => {

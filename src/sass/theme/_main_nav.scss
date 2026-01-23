@@ -9,4 +9,13 @@
 
 #main-nav {
     transition: $transition-base;
+
+    .offcanvas {
+        background-color: rgba( $white, 0.97) !important;
+        box-shadow: var(--#{$prefix}offcanvas-box-shadow);
+        border: 1px solid $light !important;
+        border-radius: var(--#{$prefix}border-radius-pill);
+        padding: $spacer*.5 $spacer*.75;
+    }
 }
+

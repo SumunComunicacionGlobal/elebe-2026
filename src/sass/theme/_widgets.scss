@@ -2,11 +2,20 @@
 
 	.widget {
         margin-bottom: $spacer * 2;
+
+		p:empty {
+			margin: 0;
+		}
 	}
 }
 
 .footer-widget {
     margin-bottom: $spacer;
+
+	.has-global-padding {
+		--wp--style--root--padding-right: 0;
+		--wp--style--root--padding-left: 0;
+	}
 }
 
 #wrapper-footer {
@@ -14,5 +23,24 @@
 	.footer-widget,
 	.footer-widget p {
 		margin-bottom: 0;
+	}
+}
+
+#wrapper-top-bar {
+	
+	.wpml-language-switcher-block {
+		
+		ul.horizontal-list {
+			gap: $spacer * .5 !important;
+		}
+
+		li {
+			aspect-ratio: 1 / 1;
+			border-radius: var(--#{$prefix}border-radius-pill);
+		}
+	}
+
+	.wp-block-social-links .wp-block-social-link a {
+		padding: 0.15em;
 	}
 }

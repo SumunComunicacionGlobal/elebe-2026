@@ -15,3 +15,28 @@
 	}
 
 }
+
+.archive {
+	background-image: url('../img/textura-elebe-color-diagonal.svg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	// background-size: 700px auto;
+	// background-attachment: fixed
+}
+
+/* Resultados de búsqueda */
+.search-loop {
+	padding: .5rem 0 0;
+	border-bottom: 1px solid $light;
+
+	.entry-title {
+		display: inline-block;
+	}
+}
+.post-type-name {
+	font-size: $font-size-sm;
+	color: $pink;
+	display: inline-block;
+	margin-left: 1rem;
+}
+/***/

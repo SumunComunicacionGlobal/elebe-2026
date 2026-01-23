@@ -119,8 +119,12 @@ function es_blog() {
 
 add_filter( 'theme_mod_understrap_sidebar_position', 'cargar_sidebar');
 function cargar_sidebar( $valor ) {
-    if ( is_singular( 'post' ) ) {
+    if ( es_blog() ) {
         $valor = 'right';
+    } elseif (is_post_type_archive( 'curso' ) || ( is_tax() && 'curso' === get_post_type() ) ) {
+        $valor = 'left';
+    } elseif( is_archive() && is_woocommerce() ) {
+        $valor = 'left';
     }
     return $valor;
 }
@@ -198,5 +202,203 @@ function smn_do_not_include_children_in_product_cat_archive( $query ) {
         && $query->is_tax( 'product_cat' )
     ) {
         $query->tax_query->queries[0]['include_children'] = 0;
+    }
+}
+
+add_filter( 'the_tags', 'cat_list_como_botones', 10, 1 );
+add_filter( 'the_category', 'cat_list_como_botones', 10, 1 );
+function cat_list_como_botones($thelist) {
+    $r = str_replace('<a ', '<a class="btn btn-secondary btn-sm" ', $thelist );
+    return $r;
+}
+
+add_filter( 'next_post_link', 'post_navigation_como_botones', 10, 1 );
+add_filter( 'previous_post_link', 'post_navigation_como_botones', 10, 1 );
+function post_navigation_como_botones($output) {
+    $r = str_replace('<a ', '<a class="btn btn-outline-primary mb-3" ', $output );
+    return $r;
+}
+
+function getRefererPage( $form_tag ) {
+    if ( isset($_SERVER['HTTP_REFERER']) && $form_tag['name'] == 'referer-page' ) {
+        $form_tag['values'][] = htmlspecialchars($_SERVER['HTTP_REFERER']);
+    }
+    return $form_tag;
+}
+if ( !is_admin() ) {
+    add_filter( 'wpcf7_form_tag', 'getRefererPage' );
+}
+
+function get_campos_acf( $fields = array(), $columnas = false ) {
+    if (!$fields) {
+        $fields = get_field_objects();
+    }
+    if( $fields ) {
+        unset($fields['url_del_curso_en_moodle']);
+        unset($fields['destacado']);
+
+        $r = ($columnas) ? '<div class="fields row my-1">' : '<div class="fields inline">';
+
+            foreach($fields as $field){
+
+                // echo '<pre>'; print_r($field); echo '</pre>';
+
+                if ($field['value'] ) {
+
+                    $item = '';
+                    $value = '';
+
+                    if ($columnas) $item .= '<div class="col-sm-6 col-md-4 mb-2">';
+
+                            $item .= '<div class="item">';
+                                $item .= '<div class="label">';
+                                    $item .= $field['label'];
+                                $item .= '</div>';
+
+                                $item .= '<div class="value">';
+
+                                    if(isset($field['prepend'])) $item .= $field['prepend'].' ';
+                                    if(isset($field['choices'])){
+                                        if(is_array($field['value'])){
+                                            $newarray = array();
+                                            foreach($field['value'] as $value){
+                                                $newarray[] = $field['choices'][$value];
+                                            }
+                                            $value .= implode(',',$newarray);
+                                        } else {
+                                            $value .= $field['choices'][$field['value']];
+                                        }
+                                    } else { 
+                                        if(isset($field['sub_fields']) ){
+                                            foreach ($field['sub_fields'] as $sub_field) {
+                                                if ('' != $field['value'][$sub_field['name']])
+                                                    $value .= '<div>' . $sub_field['label'] . ': ' . $field['value'][$sub_field['name']] . '</div>';
+                                            }
+                                        } else {
+                                            $value .= $field['value']; 
+                                        }
+                                    }
+
+                                    // echo $value;
+
+                                    if ('' != $value) {
+                                        $item .= $value;
+                                        if(isset($field['append'])) $item .= ' '.$field['append'];
+                                                    $item .= '</div>'; // .value
+
+                                                $item .= '</div>'; // .item
+
+                                        if ($columnas) $item .= '</div>'; // .col
+                                        $r .= $item;
+                                    }
+
+
+
+                }
+
+            }
+
+        $r .= '</div>'; // .row
+
+        return $r;
+
+    }
+
+    return false;
+}
+
+
+add_filter('the_content', 'mostrar_todos_los_campos_acf');
+function mostrar_todos_los_campos_acf($content) {
+    if (is_admin()) return $content;
+    if (!is_singular('course') && !is_singular( 'product' )) return $content;
+
+    $campos = get_campos_acf( false, true );
+
+    if($campos) return $content . $campos;
+
+    return $content;
+}
+
+// add_filter('the_excerpt', 'get_campos_resumen_curso');
+function get_campos_resumen_curso( $content ) {
+    if (is_admin()) return $content;
+    if (!is_singular('course') && !is_singular( 'product' )) return $content;
+
+    $fields = get_field_objects();
+    // echo '<pre>'; print_r($fields); echo '</pre>';
+    $selected_fields = array(
+        $fields['precio'],
+        $fields['fecha_inicio'],
+    );
+
+    $campos = get_campos_acf( $selected_fields );
+
+    return $content . $campos;
+}
+
+
+add_filter('the_content', 'mostrar_botones_curso');
+function mostrar_botones_curso($content) {
+    if (is_admin()) return $content;
+    if ( is_singular( 'curso' ) ) {
+
+        $r = '';
+
+        $r .= '<div id="collapse-group">';
+
+            // $r .= get_elebe_inscripcion_button();
+
+            $url_moodle = get_post_meta( get_the_ID(), 'url_del_curso_en_moodle', true );
+            if ($url_moodle) {
+                $r .= get_elebe_course_button( $url_moodle );
+            }
+
+            $r .= get_elebe_mas_info_button();
+
+            $r .= get_elebe_inscripcion_form();
+
+            $r .= get_elebe_mas_info_form();
+
+        $r .= '</div>';
+
+        return $r . $content;
+    }
+
+    return $content;
+}
+
+add_filter('the_content', 'mostrar_botones_curso_product');
+function mostrar_botones_curso_product($content) {
+    if (is_admin()) return $content;
+    if ( is_singular( 'product' ) ) {
+
+        $r = '';
+
+        $r .= '<div id="collapse-group">';
+
+            $r .= get_elebe_mas_info_button();
+
+            $r .= get_elebe_mas_info_form();
+
+        $r .= '</div>';
+
+        return $r . $content;
+    }
+
+    return $content;
+}
+
+add_action( 'loop_start', 'elebe_loop_start' );
+function elebe_loop_start( $query ){
+    if( is_archive() && get_post_type() == 'curso' ) {
+        echo '<div class="row">';
+    }
+}
+
+add_action( 'loop_end', 'elebe_loop_end' );
+function elebe_loop_end( $query ){
+    if( is_archive() && get_post_type() == 'curso' ) {
+        echo '</div>';
     }
 }

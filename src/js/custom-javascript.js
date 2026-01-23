@@ -13,32 +13,15 @@ jQuery(document).ready(function($) {
   
     var body = $('body');
     var scrolled = false;
-    var navbarClasses = $('#main-nav').attr('class');
-    var navbarClassesBeforeOffcanvas = navbarClasses;
-
-    // // switch to dark navbar on offcanvas show
-    $('#main-nav .offcanvas').on('show.bs.offcanvas', function () {
-        navbarClassesBeforeOffcanvas = $('#main-nav').attr('class');
-        $('#main-nav').removeClass('navbar-light').addClass('navbar-dark');
-    });
-
-    // // switch to light navbar on offcanvas hide
-    $('#main-nav .offcanvas').on('hide.bs.offcanvas', function () {
-        $('#main-nav').removeClass('navbar-dark').addClass(navbarClassesBeforeOffcanvas);
-    });
-
-
 
     jQuery(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 25) {
             body.addClass("scrolled");
             scrolled = true;
-            $('#main-nav').removeClass('navbar-dark').addClass('navbar-light bg-white');
         } else {
             body.removeClass("scrolled");
             scrolled = false;
-            $('#main-nav').removeClass('navbar-light bg-white').addClass(navbarClasses);
         }
 
         if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
@@ -46,24 +29,50 @@ jQuery(document).ready(function($) {
         } else {
             body.removeClass("near-bottom");
         }
-    });
+    });    
 
-    $('#navbarNavDropdown').on('show.bs.collapse', function () {
-        body.addClass('menu-open');
+    let linedClassIndex = 1;
+    $('.wp-block-media-text__media, .is-style-lined, .link-circulo').each(function() {
+      $(this).addClass('lined-' + linedClassIndex);
+      linedClassIndex++;
+      if (linedClassIndex > 4) linedClassIndex = 1;
     });
-    $('#navbarNavOffcanvas').on('show.bs.offcanvas', function () {
-        body.addClass('menu-open');
-    });
-
-    $('#navbarNavDropdown').on('hide.bs.collapse', function () {
-        body.removeClass('menu-open');
-    });
-    $('#navbarNavOffcanvas').on('hide.bs.offcanvas', function () {
-        body.removeClass('menu-open');
-    });
-    
 
 });
+
+
+jQuery(document).ready(function($) {
+  $('.custom-select-div select, #pwgc-purchase-container select').addClass('custom-select');
+  $('#pwgc-purchase-container input[type="text"], #pwgc-purchase-container textarea, input.alg_open_price, #commentform textarea, #commentform input[type="text"], #commentform input[type="email"], #pwgc-redeem-gift-card-number').addClass('form-control');
+  $('#pwgc-redeem-button').addClass('btn btn-secondary');
+  $('.wp-block-button__link, #place_order').addClass('btn btn-primary');
+});
+
+jQuery('.sticky-sidebar').stickySidebar({
+    topSpacing: 140,
+    bottomSpacing: 100,
+    minWidth: 783
+});
+
+function normalizeSlideHeights() {
+    jQuery('#carousel-testimonios').each(function(){
+      var items = jQuery('.carousel-item', this);
+      // reset the height
+      items.css('min-height', 0);
+      // set the height
+      var maxHeight = Math.max.apply(null, 
+          items.map(function(){
+              return jQuery(this).outerHeight()}).get() );
+      // items.css('min-height', maxHeight + 'px');
+      jQuery(this).children('.carousel-inner').css('min-height', maxHeight + 'px');
+    })
+}
+
+
+jQuery(window).on(
+    'load resize orientationchange', 
+    normalizeSlideHeights);
+
 
 
 /* Carruseles */

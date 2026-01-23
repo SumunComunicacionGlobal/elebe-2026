@@ -74,27 +74,42 @@ $slick-font-size: 40px;
 		right: 0;
 	}	
 
-	.slick-list {
-		margin: 0 -$grid-gutter-width/2;
-		padding-right: 100px;
-
-		@include media-breakpoint-up(md) {
-			padding-right: 70px;
-		}
-
-		// @include media-breakpoint-up(md) {
-		// 	padding-right: 10%;
-		// }
-	}
-
 	.slick-slide {
-		margin: 0 $grid-gutter-width/2;
 		transition: $transition-fade;
 
 		&:not(.slick-active) {
 			opacity: .5;
 		}
 	}
+}
+
+.slick-padded,
+.is-style-slick-carousel {
+
+	.slick-list {
+		margin: 0 -$grid-gutter-width/2;
+	}
+
+	.slick-slide {
+		margin: 0 $grid-gutter-width/2;
+	}
+
+}
+
+.slick-right-padded {
+
+		.slick-list {
+		padding-right: 100px;
+
+		@include media-breakpoint-up(md) {
+			padding-right: 70px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-right: 10%;
+		}
+	}
+
 }
 
 .slick-slider {
@@ -106,3 +121,89 @@ $slick-font-size: 40px;
 	}
 	
 }
+
+
+/* Slider home */
+#slider-home {
+	padding-top: 9rem;
+	margin-bottom: $spacer;
+	background-color: var(--#{ $prefix }light );
+	border-radius: var(--#{$prefix}border-radius-xl);
+	background-image: url('../img/textura-elebe-color-diagonal.svg');
+	background-size: 65% auto;
+	background-position: right top;
+	background-repeat: no-repeat;
+	// background-attachment: fixed;
+	// background-color: $light;
+
+	.slide-wrapper, .slide-content-wrapper, .imagen-slide {
+		height: 550px;
+		object-fit: contain;
+	}
+	.imagen-slide {
+		width: auto;
+		margin: 0 auto;
+		display: block;
+	}
+	.has-large-font-size {
+		font-size: 3rem;
+		color: $primary;
+	}
+	.imagen-slide {
+		max-height: 100%;
+	}
+}
+@media all and (max-height: 700px) {
+	#slider-home {
+		.slide-wrapper, .slide-content-wrapper, .imagen-slide {
+			height: 430px;
+		}
+		.slide-content {
+			padding-bottom: 60px;
+		}
+	}
+}
+.carousel-indicators {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $grid-gutter-width / 2;
+	justify-content: flex-start;
+	bottom: 24px;
+
+	li {
+		width: auto;
+		height: auto;
+		text-indent: initial;
+		display: none;
+		background-color: transparent;
+		font-size: 1.1rem;
+		font-weight: $font-weight-bold;
+		color: $primary;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.active {
+			background-color: transparent;
+			display: inline-block;
+		}
+	}
+}
+.carousel-flechas {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 24px;
+	margin-left: auto;
+	margin-right: auto;
+
+	a {
+		transition: opacity .3s ease;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
+/***/

@@ -25,19 +25,28 @@ if ( function_exists( 'register_block_style' ) ) {
     );
 
     register_block_style(
-        'core/columns',
+        'core/list',
         array(
-            'name'         => 'gapless',
-            'label'        => __( 'Sin espacio', 'smn-admin' ),
+            'name'         => 'list-unstyled',
+            'label'        => __( 'Sin viñetas', 'smn-admin' ),
             'is_default'   => false,
         )
     );
 
     register_block_style(
-        'core/list',
+        'core/image',
         array(
-            'name'         => 'list-unstyled',
-            'label'        => __( 'Sin viñetas', 'smn-admin' ),
+            'name'         => 'lined',
+            'label'        => __( 'Con línea', 'smn-admin' ),
+            'is_default'   => true,
+        )
+    );
+
+    register_block_style(
+        'core/cover',
+        array(
+            'name'         => 'bg-contain',
+            'label'        => __( 'Fondo ajustado', 'smn-admin' ),
             'is_default'   => false,
         )
     );
@@ -78,7 +87,7 @@ if ( function_exists( 'register_block_style' ) ) {
     }
 
     register_block_style(
-        'core/praragrap',
+        'core/praragraph',
         array(
             'name'         => 'cifra-circulo',
             'label'        => __( 'Cifra círculo', 'smn-admin' ),
@@ -168,6 +177,30 @@ function list_block_wrapper( $block_content, $block ) {
         $block_content = str_replace( 
             array( '<ul>', '<ol>'), 
             array( '<ul class="wp-block-list">', '<ol class="wp-block-list">'), $block_content );
+    }
+    return $block_content;
+}
+
+add_filter( 'render_block', 'insert_random_arrow_image_in_media_text', 10, 2 );
+function insert_random_arrow_image_in_media_text( $block_content, $block ) {
+    if ( isset( $block['blockName'] ) && $block['blockName'] === 'core/media-text' ) {
+        $theme_dir = get_stylesheet_directory() . '/img/flechas';
+        $theme_uri = get_stylesheet_directory_uri() . '/img/flechas';
+
+        if ( is_dir( $theme_dir ) ) {
+            $images = glob( $theme_dir . '/*.{jpg,jpeg,png,gif,svg,webp}', GLOB_BRACE );
+            if ( $images && count( $images ) > 0 ) {
+                $random_image = $images[ array_rand( $images ) ];
+                $image_url = $theme_uri . '/' . basename( $random_image );
+                $img_tag = '<img class="flecha-sobre-imagen" src="' . esc_url( $image_url ) . '" alt="" class="random-arrow-image" />';
+                $block_content = preg_replace(
+                    '/(<figure[^>]*class="[^"]*wp-block-media-text__media[^"]*"[^>]*>)/',
+                    '$1' . $img_tag,
+                    $block_content,
+                    1
+                );
+            }
+        }
     }
     return $block_content;
 }

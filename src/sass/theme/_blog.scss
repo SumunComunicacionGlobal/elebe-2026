@@ -1,0 +1,157 @@
+#seccion-noticias {
+
+	.ultima-noticia, .noticia-anterior, .accede-actualidad {
+		display: flex;
+		align-items: center;
+	}
+	.ultima-noticia {
+		position: relative;
+		.flecha {
+			fill: $white;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: transparentize($pink, .3);
+		}
+
+		.noticia-inner {
+			position: relative;
+			max-width: 400px;
+			margin: 0 auto;
+			z-index: 1;
+		}
+		h3 {
+			font-size: 3rem;
+		}
+	}
+
+	.noticia-anterior {
+		position: relative;
+		background-color: $palepink;
+
+		&:nth-child(3n + 1) {
+			background-color: $light;
+		}
+		&:nth-child(3n + 2) {
+			background-color: $cyan;
+		}
+		&:nth-child(3n + 3) {
+			background-color: $amber;
+		}
+	}
+	.accede-actualidad {
+		background-color: transparent;
+	}
+}
+
+.entry-meta {
+
+	// > * {
+	// 	padding: .5rem 1rem;
+	// 	background-color: $secondary;
+	// 	margin-bottom: 1rem;
+	// 	margin-right: 1rem;
+	// 	display: inline-block;
+	// }
+
+	color: $gray-600;
+	padding-bottom: .3rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px solid $secondary;
+}
+
+.single-post .entry-content {
+	&:before {
+		content: "";
+		width: 200px;
+		height: 40px;
+		margin-bottom: .5rem;
+		position: relative;
+		display: block;
+		margin-bottom: 1.5rem;
+		background-image: url('../img/bullet-elebe.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.single-post .entry-content {
+		padding-left: 60px;
+
+		&:before {
+			margin-left: -60px;
+		}
+	}
+}
+
+/* Barra lateral */
+.widget {
+	@extend .card;
+	@extend .card-body;
+	font-size: $font-size-sm;
+
+	// &:before {
+	// 	content: "";
+	// 	height: 12px;
+	// 	width: 100%;
+	// 	background-color: $primary;
+	// 	display: block;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 100%;
+	// }
+
+	// &.widget_recent_entries:before {
+	// 	background-color: $camel;
+	// }
+	// &.widget_recent_comments:before {
+	// 	background-color: $cyan;
+	// }
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			a {
+				display: block;
+				// background-color: $white;
+				padding: .2rem 0;
+				margin-bottom: 2px;
+			}
+		}
+	}
+
+	.widget-title {
+		text-transform: uppercase;
+		font-size: $font-size-base;
+
+	// 	&:before {
+	// 		content: "";
+	// 		height: 8px;
+	// 		width: 120px;
+	// 		background-color: $primary;
+	// 		display: block;
+	// 		margin-bottom: .4rem;
+	// 	}
+	}
+}
+/***/
+
+/* Sticky sidebar */
+.sidebar{
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}

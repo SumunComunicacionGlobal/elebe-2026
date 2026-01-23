@@ -14,7 +14,7 @@ $terms = get_terms( array(
 
 if ( $terms ) { ?>
 
-	<div class="slick-carousel">
+	<div class="slick-carousel slick-padded">
 
 		<?php foreach ( $terms as $key => $term ) { ?>
 
