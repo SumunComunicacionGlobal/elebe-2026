@@ -36,11 +36,11 @@ $container = 'container-fluid';
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="offcanvas offcanvas-bottom" tabindex="-1" id="navbarNavOffcanvas">
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNavOffcanvas">
 
 			<div class="offcanvas-header justify-content-end">
 				<button
-					class="btn-close btn-close-white text-reset"
+					class="btn-close text-reset"
 					type="button"
 					data-bs-dismiss="offcanvas"
 					aria-label="<?php esc_attr_e( 'Close menu', 'understrap' ); ?>"
@@ -62,6 +62,11 @@ $container = 'container-fluid';
 				)
 			);
 			?>
+
+			<div class="offcanvas-header">
+				<?php dynamic_sidebar( 'offcanvas' ); ?>
+			</div><!-- .offcancas-header -->
+
 		</div><!-- .offcanvas -->
 
 	</div><!-- .container(-fluid) -->

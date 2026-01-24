@@ -9,6 +9,10 @@
 
     .wpcf7-list-item > label {
       display: flex;
+      
+      input {
+        flex-shrink: 0;
+      }
     }
     
     .wpcf7-response-output {

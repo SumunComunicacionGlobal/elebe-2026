@@ -35,24 +35,13 @@ $post_type = get_post_type();
 				} ?>
 
 				<?php
-				if ( is_category() || is_tag() ) {
-
-					get_template_part( 'global-templates/filtro', 'blog' );
-
-				}
-
-				get_template_part( 'global-templates/subcategories' );
-				
-				?>
-
-
-				<?php
 				if ( have_posts() ) {
 					?>
 					<header class="page-header">
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description card card-body mb-3"><div class="collapse" id="tax-desc-collapse">', '</div><a role="button" class="collapsed mas-info" data-bs-toggle="collapse" href="#tax-desc-collapse" aria-expanded="false" aria-controls="tax-desc-collapse">[+] '.__( 'Ver más', 'elebe' ).'</a></div>' );
+						// the_archive_description( '<div class="taxonomy-description"><div class="collapse" id="tax-desc-collapse">', '</div><a role="button" class="collapsed mas-info" data-bs-toggle="collapse" href="#tax-desc-collapse" aria-expanded="false" aria-controls="tax-desc-collapse">[+] '.__( 'Ver más', 'elebe' ).'</a></div>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 
 						if (is_post_type_archive( 'curso' )) {
 							echo do_shortcode( '[taxonomia taxonomy="modalidad"]' );

@@ -71,3 +71,10 @@ a:hover .flecha {
 		transform: translate(4%,-4%);
 	}
 }
+
+.wp-block-cover {
+
+	img[src*="flecha-"] {
+		filter: brightness(100);
+	}
+}

@@ -198,7 +198,7 @@ jQuery('.wp-block-media-text__media').each(function() {
   });
 });
 
-ScrollTrigger.batch(".is-layout-grid > *, .product-category, li.product, .subcategory > .card-body", {
+ScrollTrigger.batch(".is-layout-grid > *", {
   onEnter: elements => {
     gsap.from(elements, {
       opacity: 0,

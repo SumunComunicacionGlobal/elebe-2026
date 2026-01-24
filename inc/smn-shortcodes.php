@@ -341,7 +341,7 @@ function cursos_shortcode( $atts ) {
 			'post_type' 	=> $post_type,
 			'plan'			=> false,
 			'destacados'	=> false,
-			'columnas'		=> 2,
+			'columnas'		=> 3,
 		), $atts )
 	);
 
@@ -363,9 +363,6 @@ function cursos_shortcode( $atts ) {
 			'terms'				=> $plan,
 		);
  	}
-
-
- 	set_query_var( 'columnas', $columnas );
 
 	$meta_query = array();
 
@@ -609,6 +606,15 @@ function sumun_shortcode_blog() {
 	return $r;
 }
 add_shortcode( 'blog', 'sumun_shortcode_blog' );
+
+function sumun_shortcode_noticias() {
+	ob_start();
+	get_template_part( 'global-templates/noticias' );
+	$r = ob_get_clean();
+
+	return $r;
+}
+add_shortcode( 'noticias', 'sumun_shortcode_noticias' );
 
 function sumun_shortcode_casos_de_exito() {
 	ob_start();

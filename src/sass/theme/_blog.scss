@@ -10,24 +10,11 @@
 			fill: $white;
 		}
 
-		&:after {
-			content: "";
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			background-color: transparentize($pink, .3);
-		}
-
 		.noticia-inner {
 			position: relative;
 			max-width: 400px;
 			margin: 0 auto;
 			z-index: 1;
-		}
-		h3 {
-			font-size: 3rem;
 		}
 	}
 
@@ -35,18 +22,26 @@
 		position: relative;
 		background-color: $palepink;
 
+		a {
+			color: $body-color;
+		}
+
 		&:nth-child(3n + 1) {
-			background-color: $light;
+			background-color: $palepink;
 		}
 		&:nth-child(3n + 2) {
-			background-color: $cyan;
+			background-color: $purple;
+			
+			a {
+				color: $white;
+			}
 		}
 		&:nth-child(3n + 3) {
 			background-color: $amber;
 		}
 	}
 	.accede-actualidad {
-		background-color: transparent;
+		background-color: $white;
 	}
 }
 
@@ -66,26 +61,40 @@
 	border-bottom: 1px solid $secondary;
 }
 
-.single-post .entry-content {
-	&:before {
-		content: "";
-		width: 200px;
-		height: 40px;
-		margin-bottom: .5rem;
-		position: relative;
-		display: block;
-		margin-bottom: 1.5rem;
-		background-image: url('../img/bullet-elebe.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
+.single-post {
+	background-color: $light;
+
+	#primary .entry-content {
+		background-color: $white;
+		border-radius: $border-radius-xl;
+		margin-bottom: $grid-gutter-width;
+		padding-top: $spacer;
+		padding: $spacer $spacer $spacer * 2;
+	}
+	
+	.entry-content {
+	
+		&:before {
+			content: "";
+			width: 200px;
+			height: 40px;
+			margin-bottom: .5rem;
+			position: relative;
+			display: block;
+			margin-bottom: 1.5rem;
+			background-image: url('../img/bullet-elebe.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
 	}
 }
 @include media-breakpoint-up(sm) {
-	.single-post .entry-content {
+	.single-post #primary .entry-content {
 		padding-left: 60px;
 
 		&:before {
-			margin-left: -60px;
+			margin-left: -50px;
 		}
 	}
 }

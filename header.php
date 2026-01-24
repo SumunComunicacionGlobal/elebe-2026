@@ -39,13 +39,3 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
 	</header><!-- #wrapper-navbar -->
-
-	<?php 
-	if ( !is_front_page() ) {
-
-		if ( !is_page() && !is_search() && !is_404() ) {
-			get_template_part( 'global-templates/image-header' ); 
-		}
-
-	}
-	?>

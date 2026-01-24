@@ -15088,7 +15088,7 @@
 	    x: -100
 	  });
 	});
-	ScrollTrigger.batch(".is-layout-grid > *, .product-category, li.product, .subcategory > .card-body", {
+	ScrollTrigger.batch(".is-layout-grid > *", {
 	  onEnter: elements => {
 	    gsapWithCSS.from(elements, {
 	      opacity: 0,

@@ -17,6 +17,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php else : ?>
 	<div class="col-md-3 widget-area" id="left-sidebar" role="complementary">
 <?php endif; ?>
+
+<?php echo do_shortcode( '[facetwp_flyout_open][facetwp selections="true"][facetwp facet="zurucksetzen"]' ); ?>
 <?php dynamic_sidebar( 'left-sidebar' ); ?>
 
 </div><!-- #left-sidebar -->

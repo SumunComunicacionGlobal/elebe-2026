@@ -98,69 +98,39 @@ div.product div.summary + * {
     padding: $input-padding-y $input-padding-x;
 }
 
-// add spinner animation on add to cart button
-.woocommerce .add_to_cart_button {
-    position: relative;
-    padding-right: calc( #{$btn-padding-x} + 20px + #{$spacer*.5} );
-
-    &:after {
-        position: absolute;
-        right: $btn-padding-x;
-        top: 50%;
-        margin-top: -10px;
-        width: 20px;
-        content: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z'/%3E%3C/svg%3E");    }
-
-    &.loading {
-        overflow: hidden;
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: $btn-padding-x;
-            width: 20px;
-            height: 20px;
-            margin-top: -10px;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            border-top-color: $primary;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-    }
-
-    // add check icon on add to cart button when product is added. Use svg icon
-    &.added {
-
-        &:after {
-            content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>');
-        }
-        
-    }
-    
-}
-
 .woocommerce ul.products,
-.woocommerce-page ul.products {
+.woocommerce-page ul.products,
+.wp-block-woocommerce-product-template {
+
+    li.product:not(.product-category) {
+        @extend .card;
+        overflow: hidden;
+    }
 
     li.product {
-        @extend .card;
         padding-bottom: $card-spacer-y;
-        overflow: hidden;
-        background-color: $light;
-        margin: 0 $spacer $spacer*2 0;
-        width: calc( 100% / 4 - #{$spacer*3/4} );
+        margin: 0 $grid-gutter-width $spacer*2 0;
+        width: calc( 100% / 4 - #{$grid-gutter-width*3/4} );
         text-align: center;
+        box-shadow: 0.75rem 0.75rem 0 rgba($palepink, 1);
+        transition: $transition-base;
 
         &.last {
             margin-right: 0 !important;
+        }
+
+        &:hover {
+            transform: rotate(-2deg);
         }
 
         .woocommerce-loop-product__title,
         .price,
         .add-to-cart-container  .add-to-cart-container {
             padding: 0 $spacer;
+        }
+
+        .add-to-cart-container {
+            margin-top: $spacer;
         }
 
         .woocommerce-loop-product__title {
@@ -171,13 +141,13 @@ div.product div.summary + * {
     }
     
     &.columns-3 li.product {
-        width: calc( 100% / 3 - #{$spacer*2/3} );
+        width: calc( 100% / 3 - #{$grid-gutter-width*2/3} );
     }
 
     &[class*=columns-] li.product {
 
         @media (max-width: 768px) {
-            width: calc( 100% / 2 - #{$spacer/2} );
+            width: calc( 100% / 2 - #{$grid-gutter-width/2} );
             margin-right: 0;
         }
 
@@ -188,6 +158,14 @@ div.product div.summary + * {
  
     }
 
+}
+
+.wp-block-woocommerce-product-template {
+    grid-gap: $grid-gutter-width !important;
+
+    li.product {
+        width: 100%;
+    }
 }
 
 .comment-notes,
@@ -443,12 +421,17 @@ a.xoo-wsc-ft-btn-checkout .amount {
 	clear: both;
 }
 .woocommerce ul.products li.product .price,
-.woocommerce div.product p.price, .woocommerce div.product span.price {
+.woocommerce div.product p.price, .woocommerce div.product span.price,
+.wc-block-components-product-price {
     font-weight: $font-weight-bold;
     font-size: 1.25em;
     color: $body-color;
 }
 
+.woocommerce ul.products li.product .price {
+    font-size: $font-size-base;
+    padding: .25rem $spacer;
+}
 .form-check-wrapper {
 
 	&.form-check-wrapper-radio {
@@ -578,12 +561,14 @@ input.alg_open_price {
 }
 div.product .entry-header .price,
 .woocommerce ul.products li.product .price,
-.woocommerce-variation-price .price {
+.woocommerce-variation-price .price,
+.wc-block-components-product-price {
     border-radius: $border-radius-pill;
-    display: inline-block;
+    display: inline-block !important;
     padding: .5rem 1rem;
     background-color: $secondary;
     margin-bottom: 1rem;
+    box-shadow: .3rem .3rem 0 0 rgba($palepink, 1);
 }
 
 /* WC tabs */
@@ -607,6 +592,11 @@ div.product .entry-header .price,
 		background: $primary;
 		color: $white;
 	}
+}
+
+.woocommerce-product-gallery {
+    padding-left: $grid-gutter-width * .5;
+    padding-right: $grid-gutter-width * .5;
 }
 /**/
 // @media all and (min-width: 769px) {

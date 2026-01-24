@@ -29,12 +29,25 @@
 	left: 0;
 	right: 0;
 	top: $spacer * 5;
-	padding: $spacer * 2 0;
 	top: 0;
+}
 
-	+ * {
-		margin-top: -138px;
+body.page:not(.woocommerce-page) {
+
+	#wrapper-navbar {
+		padding: $spacer * 2 0;
+
+		+ .wrapper {
+			padding: 0;
+			margin-top: -150px;
+		}
+
 	}
+
+	#main > article > .entry-content > *:first-child {
+		padding-top: 8rem;
+	}
+
 }
 
 // .admin-bar {
@@ -49,22 +62,17 @@
 
 // }
 
-#wrapper-breadcrumbs {
-	margin-top: 1rem;
-
-	+ .wrapper {
-		padding-top: 0;
-	}
-}
-
 #wrapper-navbar {
 
 	+ .wrapper {
-		border: $border-width solid $light;
-		border-radius: $border-radius-2xl;
 		margin-top: $spacer;
 		margin-bottom: $spacer;
 	}
+}
+
+#woocommerce-wrapper {
+	background-color: $light;
+	border-radius: $border-radius-2xl;
 }
 
 body {

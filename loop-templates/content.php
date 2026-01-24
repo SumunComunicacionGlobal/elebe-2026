@@ -11,40 +11,48 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class( 'hfeed-post' ); ?> id="post-<?php the_ID(); ?>">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<div class="card bg-light border-0">	
 
-	<header class="entry-header">
+		<?php echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'card-img-top' ) ); ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
+		<div class="card-body">
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+			<header class="entry-header">
 
-		<?php endif; ?>
+				<?php if ( 'post' === get_post_type() ) : ?>
 
-		<?php
-		the_title(
-			sprintf( '<h2 class="h5 entry-title"><a class="stretched-link" href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
+					<div class="entry-meta">
+						<?php understrap_posted_on(); ?>
+					</div><!-- .entry-meta -->
 
-	</header><!-- .entry-header -->
+				<?php endif; ?>
 
-	<div class="entry-content">
+				<?php
+				the_title(
+					sprintf( '<h2 class="h5 entry-title"><a class="stretched-link" href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+					'</a></h2>'
+				);
+				?>
 
-		<?php
-		the_excerpt();
-		understrap_link_pages();
-		?>
+			</header><!-- .entry-header -->
 
-	</div><!-- .entry-content -->
+			<div class="entry-content">
 
-	<footer class="entry-footer">
+				<?php
+				the_excerpt();
+				understrap_link_pages();
+				?>
 
-		<?php understrap_entry_footer(); ?>
+			</div><!-- .entry-content -->
 
-	</footer><!-- .entry-footer -->
+			<footer class="entry-footer">
+
+				<?php understrap_entry_footer(); ?>
+
+			</footer><!-- .entry-footer -->
+
+		</div><!-- .card-body -->
+
+	</div><!-- .card -->
 
 </article><!-- #post-## -->

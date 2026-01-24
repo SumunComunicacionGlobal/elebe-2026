@@ -19,8 +19,8 @@ function understrap_widgets_init() {
             'description'   => __( 'Widget area for the top bar above the header', 'understrap' ),
             'before_widget' => '<div id="%1$s" class="topbar-widget %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 
@@ -31,8 +31,8 @@ function understrap_widgets_init() {
             'description'   => __( 'Right sidebar widget area', 'understrap' ),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget'  => '</aside>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 
@@ -43,8 +43,8 @@ function understrap_widgets_init() {
             'description'   => __( 'Left sidebar widget area', 'understrap' ),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget'  => '</aside>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 
@@ -79,8 +79,8 @@ function understrap_widgets_init() {
     //         'description'   => __( 'Full top widget with dynamic grid', 'understrap' ),
     //         'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
     //         'after_widget'  => '</div><!-- .static-hero-widget -->',
-    //         'before_title'  => '<h3 class="widget-title">',
-    //         'after_title'   => '</h3>',
+    //         'before_title'  => '<p class="widget-title">',
+    //         'after_title'   => '</p>',
     //     )
     // );
 
@@ -91,8 +91,20 @@ function understrap_widgets_init() {
             'description'   => __( 'Full sized footer widget 4 columns', 'understrap' ),
             'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-md-4">',
             'after_widget'  => '</div><!-- .footer-widget -->',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => __( 'Offcanvas', 'understrap' ),
+            'id'            => 'offcanvas',
+            'description'   => __( 'Widget area for the offcanvas menu or sidebar', 'understrap' ),
+            'before_widget' => '<div id="%1$s" class="offcanvas-widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 
@@ -108,8 +120,8 @@ function sumun_widgets_init() {
             'description'   => __( 'Aparece antes del Pie de Página Completo', 'understrap' ),
             'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-12">',
             'after_widget'  => '</div><!-- .footer-widget -->',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 
@@ -120,8 +132,8 @@ function sumun_widgets_init() {
             'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
             'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
             'after_widget'  => '</div><!-- .footer-widget -->',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_title'  => '<p class="widget-title">',
+            'after_title'   => '</p>',
         )
     );
 

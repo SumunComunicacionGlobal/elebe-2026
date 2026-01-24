@@ -64,6 +64,7 @@ body.understrap-no-sidebar {
 .wp-block-cover,
 .wp-block-group.has-background {
     border-radius: var(--#{$prefix}border-radius-xl);
+    overflow: hidden;
 }
 
 
@@ -188,6 +189,11 @@ body.understrap-no-sidebar {
     @extend .btn;
     @extend .btn-sm;
     @extend .btn-primary;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: $spacer * .5;
+        margin-bottom: $spacer * .5;
+    }
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
@@ -320,10 +326,6 @@ body.understrap-no-sidebar {
 		margin-bottom: $spacer;
 		color: $gray-600;
 	}
-	img.card-img-top {
-		height: 180px;
-		object-fit: cover;
-	}
 }
 
 .borde-color {
@@ -369,3 +371,9 @@ body.understrap-no-sidebar {
     }
 }
 
+.taxonomy-description {
+    background-color: $light;
+    margin-bottom: $grid-gutter-width;
+    border-radius: $border-radius-lg;
+    padding: $spacer;
+}

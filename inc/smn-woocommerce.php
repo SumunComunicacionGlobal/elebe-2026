@@ -125,9 +125,6 @@ function elebe_remove_description_tab( $tabs ) {
  
 }
 
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-
-
 function sumun_woocommerce_taxonomy_args_product_tag( $array ) {
     $array['hierarchical'] = true;
     return $array;
@@ -349,8 +346,8 @@ if (!function_exists('loop_columns')) {
 
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
   function jk_related_products_args( $args ) {
-  $args['posts_per_page'] = 3; // 4 related products
-  $args['columns'] = 3; // arranged in 2 columns
+  $args['posts_per_page'] = 4;
+  $args['columns'] = 4;
   return $args;
 }
 
@@ -645,4 +642,6 @@ add_action( 'init', 'remove_output_structured_data' );
 
 /* Move archive description under products loop */
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
 add_action( 'woocommerce_after_shop_loop', 'woocommerce_taxonomy_archive_description', 5 );
+add_action( 'woocommerce_after_shop_loop', 'woocommerce_product_archive_description', 5 );

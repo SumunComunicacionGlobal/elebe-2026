@@ -2,7 +2,8 @@
     margin-bottom: $spacer !important;
 }
 
-.facet-label {
+.facet-label,
+.facetwp-flyout label {
     margin-bottom: $spacer/2;
     font-size: $font-size-sm;
     color: $primary;
@@ -98,6 +99,21 @@ select.facetwp-dropdown {
 		margin-left: 2px;
 	}
 
+}
+
+@include media-breakpoint-up(md) {
+
+	.facetwp-flyout-open {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(md) {
+
+	#left-sidebar .widget {
+		display: none;
+	}
+	
 }
 
 .flyout-row.name-limpiar_filtro {

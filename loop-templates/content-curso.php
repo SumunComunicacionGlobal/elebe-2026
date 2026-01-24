@@ -29,7 +29,7 @@ if ($primary_term_product_id) {
 	$color = get_field('color', $primary_term);
 }
 
-$columnas = get_query_var( 'columnas', 2 );
+$columnas = 3;
 if (is_woocommerce()) {
 	global $woocommerce_loop;
 	$columnas = $woocommerce_loop['columns'];

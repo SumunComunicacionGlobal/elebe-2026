@@ -500,9 +500,9 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 700px,
-  md: 820px,
-  lg: 960px,
+  sm: 1280px,
+  md: 1280px,
+  lg: 1280px,
   xl: 1280px,
   xxl: 1500px
 ) !default;
@@ -1307,7 +1307,8 @@ $card-border-width:                 $border-width !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                $border-radius-lg;
 $card-box-shadow:                   null !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       rgba($black, .03) !default;
@@ -1540,7 +1541,7 @@ $list-group-border-color:           rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
-$list-group-item-padding-y:         $spacer * .5 !default;
+$list-group-item-padding-y:         $spacer * .75;
 $list-group-item-padding-x:         $spacer !default;
 $list-group-item-bg-scale:          -80% !default;
 $list-group-item-color-scale:       40% !default;
@@ -1675,8 +1676,7 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-y:               $modal-inner-padding * 2;
 $offcanvas-padding-x:               $modal-inner-padding !default;
-// $offcanvas-horizontal-width:        400px !default;
-$offcanvas-horizontal-width:        100%;
+$offcanvas-horizontal-width:        400px !default;
 $offcanvas-vertical-height:         100vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;
