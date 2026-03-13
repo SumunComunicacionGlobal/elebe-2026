@@ -8763,7 +8763,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check[disabled] + .button, .btn-check[disabled] + .wc-block-components-button:not(.is-link), .btn-check[disabled] + .facetwp-reset, .menu-btn > .btn-check[disabled] + .nav-link, .woocommerce-info .btn-check[disabled] + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check[disabled] + a.button, .btn-check:disabled + .btn, .btn-check:disabled + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:disabled + .button, .btn-check:disabled + .wc-block-components-button:not(.is-link), .btn-check:disabled + .facetwp-reset, .menu-btn > .btn-check:disabled + .nav-link, .woocommerce-info .btn-check:disabled + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:disabled + a.button {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .et_pb_button, .btn-check[disabled] + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check[disabled] + .button, .btn-check[disabled] + .wc-block-components-button:not(.is-link), .btn-check[disabled] + .facetwp-reset, .menu-btn > .btn-check[disabled] + .nav-link, .woocommerce-info .btn-check[disabled] + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check[disabled] + a.button, .btn-check:disabled + .btn, .btn-check:disabled + .et_pb_button, .btn-check:disabled + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:disabled + .button, .btn-check:disabled + .wc-block-components-button:not(.is-link), .btn-check:disabled + .facetwp-reset, .menu-btn > .btn-check:disabled + .nav-link, .woocommerce-info .btn-check:disabled + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:disabled + a.button {
   pointer-events: none;
   filter: none;
   opacity: 0.25;
@@ -8982,11 +8982,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .eb-course-action-btn-start, .input-group .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders .input-group .button, .input-group .wc-block-components-button:not(.is-link), .input-group .facetwp-reset, .input-group .menu-btn > .nav-link, .input-group .woocommerce-info a.button, .woocommerce-info .input-group a.button, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button {
+.input-group .btn, .input-group .et_pb_button, .input-group .eb-course-action-btn-start, .input-group .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders .input-group .button, .input-group .wc-block-components-button:not(.is-link), .input-group .facetwp-reset, .input-group .menu-btn > .nav-link, .input-group .woocommerce-info a.button, .woocommerce-info .input-group a.button, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .eb-course-action-btn-start:focus, .input-group .woocommerce table.my_account_orders .button:focus, .woocommerce table.my_account_orders .input-group .button:focus, .input-group .wc-block-components-button:focus:not(.is-link), .input-group .facetwp-reset:focus, .input-group .menu-btn > .nav-link:focus, .input-group .woocommerce-info a.button:focus, .woocommerce-info .input-group a.button:focus, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button:focus {
+.input-group .btn:focus, .input-group .et_pb_button:focus, .input-group .eb-course-action-btn-start:focus, .input-group .woocommerce table.my_account_orders .button:focus, .woocommerce table.my_account_orders .input-group .button:focus, .input-group .wc-block-components-button:focus:not(.is-link), .input-group .facetwp-reset:focus, .input-group .menu-btn > .nav-link:focus, .input-group .woocommerce-info a.button:focus, .woocommerce-info .input-group a.button:focus, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button:focus {
   z-index: 5;
 }
 
@@ -9011,6 +9011,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
+.input-group-lg > .et_pb_button,
 .input-group-lg > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .input-group-lg > .button,
 .input-group-lg > .wc-block-components-button:not(.is-link),
@@ -9029,6 +9030,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
+.input-group-sm > .et_pb_button,
 .input-group-sm > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .input-group-sm > .button,
 .input-group-sm > .wc-block-components-button:not(.is-link),
@@ -9301,7 +9303,7 @@ textarea.is-invalid.facetwp-search {
   z-index: 4;
 }
 
-.btn, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .wc-block-components-button:not(.is-link), .facetwp-reset, .menu-btn > .nav-link, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
+.btn, .et_pb_button, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .wc-block-components-button:not(.is-link), .facetwp-reset, .menu-btn > .nav-link, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-font-family: ;
@@ -9336,41 +9338,41 @@ textarea.is-invalid.facetwp-search {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .wc-block-components-button:not(.is-link), .facetwp-reset, .menu-btn > .nav-link, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
+  .btn, .et_pb_button, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .wc-block-components-button:not(.is-link), .facetwp-reset, .menu-btn > .nav-link, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
     transition: none;
   }
 }
-.btn:hover, .eb-course-action-btn-start:hover, .woocommerce table.my_account_orders .button:hover, .wc-block-components-button:hover:not(.is-link), .facetwp-reset:hover, .menu-btn > .nav-link:hover, .woocommerce-info a.button:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover {
+.btn:hover, .et_pb_button:hover, .eb-course-action-btn-start:hover, .woocommerce table.my_account_orders .button:hover, .wc-block-components-button:hover:not(.is-link), .facetwp-reset:hover, .menu-btn > .nav-link:hover, .woocommerce-info a.button:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .btn-check + .eb-course-action-btn-start:hover, .woocommerce table.my_account_orders .btn-check + .button:hover, .btn-check + .wc-block-components-button:hover:not(.is-link), .btn-check + .facetwp-reset:hover, .menu-btn > .btn-check + .nav-link:hover, .woocommerce-info .btn-check + a.button:hover, .woocommerce-notices-wrapper .woocommerce-message .btn-check + a.button:hover {
+.btn-check + .btn:hover, .btn-check + .et_pb_button:hover, .btn-check + .eb-course-action-btn-start:hover, .woocommerce table.my_account_orders .btn-check + .button:hover, .btn-check + .wc-block-components-button:hover:not(.is-link), .btn-check + .facetwp-reset:hover, .menu-btn > .btn-check + .nav-link:hover, .woocommerce-info .btn-check + a.button:hover, .woocommerce-notices-wrapper .woocommerce-message .btn-check + a.button:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .button:focus-visible, .wc-block-components-button:focus-visible:not(.is-link), .facetwp-reset:focus-visible, .menu-btn > .nav-link:focus-visible, .woocommerce-info a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:focus-visible {
+.btn:focus-visible, .et_pb_button:focus-visible, .eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .button:focus-visible, .wc-block-components-button:focus-visible:not(.is-link), .facetwp-reset:focus-visible, .menu-btn > .nav-link:focus-visible, .woocommerce-info a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .btn-check:focus-visible + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:focus-visible + .button, .btn-check:focus-visible + .wc-block-components-button:not(.is-link), .btn-check:focus-visible + .facetwp-reset, .menu-btn > .btn-check:focus-visible + .nav-link, .woocommerce-info .btn-check:focus-visible + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus-visible + a.button {
+.btn-check:focus-visible + .btn, .btn-check:focus-visible + .et_pb_button, .btn-check:focus-visible + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:focus-visible + .button, .btn-check:focus-visible + .wc-block-components-button:not(.is-link), .btn-check:focus-visible + .facetwp-reset, .menu-btn > .btn-check:focus-visible + .nav-link, .woocommerce-info .btn-check:focus-visible + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus-visible + a.button {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .btn-check:checked + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:checked + .button, .btn-check:checked + .wc-block-components-button:not(.is-link), .btn-check:checked + .facetwp-reset, .menu-btn > .btn-check:checked + .nav-link, .woocommerce-info .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, :not(.btn-check) + .btn:active, :not(.btn-check) + .eb-course-action-btn-start:active, .woocommerce table.my_account_orders :not(.btn-check) + .button:active, :not(.btn-check) + .wc-block-components-button:active:not(.is-link), :not(.btn-check) + .facetwp-reset:active, .menu-btn > :not(.btn-check) + .nav-link:active, .woocommerce-info :not(.btn-check) + a.button:active, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active, .btn:first-child:active, .eb-course-action-btn-start:first-child:active, .woocommerce table.my_account_orders .button:first-child:active, .wc-block-components-button:first-child:active:not(.is-link), .facetwp-reset:first-child:active, .menu-btn > .nav-link:first-child:active, .woocommerce-info a.button:first-child:active, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active, .btn.active, .active.eb-course-action-btn-start, .woocommerce table.my_account_orders .active.button, .active.wc-block-components-button:not(.is-link), .active.facetwp-reset, .menu-btn > .active.nav-link, .woocommerce-info a.active.button, .woocommerce-notices-wrapper .woocommerce-message a.active.button, .btn.show, .show.eb-course-action-btn-start, .woocommerce table.my_account_orders .show.button, .show.wc-block-components-button:not(.is-link), .show.facetwp-reset, .menu-btn > .show.nav-link, .woocommerce-info a.show.button, .woocommerce-notices-wrapper .woocommerce-message a.show.button {
+.btn-check:checked + .btn, .btn-check:checked + .et_pb_button, .btn-check:checked + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-check:checked + .button, .btn-check:checked + .wc-block-components-button:not(.is-link), .btn-check:checked + .facetwp-reset, .menu-btn > .btn-check:checked + .nav-link, .woocommerce-info .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, :not(.btn-check) + .btn:active, :not(.btn-check) + .et_pb_button:active, :not(.btn-check) + .eb-course-action-btn-start:active, .woocommerce table.my_account_orders :not(.btn-check) + .button:active, :not(.btn-check) + .wc-block-components-button:active:not(.is-link), :not(.btn-check) + .facetwp-reset:active, .menu-btn > :not(.btn-check) + .nav-link:active, .woocommerce-info :not(.btn-check) + a.button:active, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active, .btn:first-child:active, .et_pb_button:first-child:active, .eb-course-action-btn-start:first-child:active, .woocommerce table.my_account_orders .button:first-child:active, .wc-block-components-button:first-child:active:not(.is-link), .facetwp-reset:first-child:active, .menu-btn > .nav-link:first-child:active, .woocommerce-info a.button:first-child:active, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active, .btn.active, .active.et_pb_button, .eb-user-account-navigation .btn.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav.et_pb_button, .active.eb-course-action-btn-start, .eb-user-account-navigation .eb-course-action-btn-start.eb-user-account-navigation-link.eb-active-profile-nav, .woocommerce table.my_account_orders .active.button, .woocommerce table.my_account_orders .eb-user-account-navigation .button.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .woocommerce table.my_account_orders .button.eb-user-account-navigation-link.eb-active-profile-nav, .active.wc-block-components-button:not(.is-link), .eb-user-account-navigation .wc-block-components-button.eb-user-account-navigation-link.eb-active-profile-nav:not(.is-link), .active.facetwp-reset, .eb-user-account-navigation .facetwp-reset.eb-user-account-navigation-link.eb-active-profile-nav, .menu-btn > .active.nav-link, .eb-user-account-navigation .menu-btn > .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .woocommerce-info a.active.button, .woocommerce-info .eb-user-account-navigation a.button.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .woocommerce-info a.button.eb-user-account-navigation-link.eb-active-profile-nav, .woocommerce-notices-wrapper .woocommerce-message a.active.button, .woocommerce-notices-wrapper .woocommerce-message .eb-user-account-navigation a.button.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .woocommerce-notices-wrapper .woocommerce-message a.button.eb-user-account-navigation-link.eb-active-profile-nav, .btn.show, .show.et_pb_button, .show.eb-course-action-btn-start, .woocommerce table.my_account_orders .show.button, .show.wc-block-components-button:not(.is-link), .show.facetwp-reset, .menu-btn > .show.nav-link, .woocommerce-info a.show.button, .woocommerce-notices-wrapper .woocommerce-message a.show.button {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .btn-check:checked + .eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .btn-check:checked + .button:focus-visible, .btn-check:checked + .wc-block-components-button:focus-visible:not(.is-link), .btn-check:checked + .facetwp-reset:focus-visible, .menu-btn > .btn-check:checked + .nav-link:focus-visible, .woocommerce-info .btn-check:checked + a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .eb-course-action-btn-start:active:focus-visible, .woocommerce table.my_account_orders :not(.btn-check) + .button:active:focus-visible, :not(.btn-check) + .wc-block-components-button:active:focus-visible:not(.is-link), :not(.btn-check) + .facetwp-reset:active:focus-visible, .menu-btn > :not(.btn-check) + .nav-link:active:focus-visible, .woocommerce-info :not(.btn-check) + a.button:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active:focus-visible, .btn:first-child:active:focus-visible, .eb-course-action-btn-start:first-child:active:focus-visible, .woocommerce table.my_account_orders .button:first-child:active:focus-visible, .wc-block-components-button:first-child:active:focus-visible:not(.is-link), .facetwp-reset:first-child:active:focus-visible, .menu-btn > .nav-link:first-child:active:focus-visible, .woocommerce-info a.button:first-child:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active:focus-visible, .btn.active:focus-visible, .active.eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .active.button:focus-visible, .active.wc-block-components-button:focus-visible:not(.is-link), .active.facetwp-reset:focus-visible, .menu-btn > .active.nav-link:focus-visible, .woocommerce-info a.active.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus-visible, .btn.show:focus-visible, .show.eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .show.button:focus-visible, .show.wc-block-components-button:focus-visible:not(.is-link), .show.facetwp-reset:focus-visible, .menu-btn > .show.nav-link:focus-visible, .woocommerce-info a.show.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus-visible {
+.btn-check:checked + .btn:focus-visible, .btn-check:checked + .et_pb_button:focus-visible, .btn-check:checked + .eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .btn-check:checked + .button:focus-visible, .btn-check:checked + .wc-block-components-button:focus-visible:not(.is-link), .btn-check:checked + .facetwp-reset:focus-visible, .menu-btn > .btn-check:checked + .nav-link:focus-visible, .woocommerce-info .btn-check:checked + a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .et_pb_button:active:focus-visible, :not(.btn-check) + .eb-course-action-btn-start:active:focus-visible, .woocommerce table.my_account_orders :not(.btn-check) + .button:active:focus-visible, :not(.btn-check) + .wc-block-components-button:active:focus-visible:not(.is-link), :not(.btn-check) + .facetwp-reset:active:focus-visible, .menu-btn > :not(.btn-check) + .nav-link:active:focus-visible, .woocommerce-info :not(.btn-check) + a.button:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active:focus-visible, .btn:first-child:active:focus-visible, .et_pb_button:first-child:active:focus-visible, .eb-course-action-btn-start:first-child:active:focus-visible, .woocommerce table.my_account_orders .button:first-child:active:focus-visible, .wc-block-components-button:first-child:active:focus-visible:not(.is-link), .facetwp-reset:first-child:active:focus-visible, .menu-btn > .nav-link:first-child:active:focus-visible, .woocommerce-info a.button:first-child:active:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active:focus-visible, .btn.active:focus-visible, .active.et_pb_button:focus-visible, .eb-user-account-navigation .btn.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav.et_pb_button:focus-visible, .active.eb-course-action-btn-start:focus-visible, .eb-user-account-navigation .eb-course-action-btn-start.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .woocommerce table.my_account_orders .active.button:focus-visible, .woocommerce table.my_account_orders .eb-user-account-navigation .button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .eb-user-account-navigation .woocommerce table.my_account_orders .button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .active.wc-block-components-button:focus-visible:not(.is-link), .eb-user-account-navigation .wc-block-components-button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible:not(.is-link), .active.facetwp-reset:focus-visible, .eb-user-account-navigation .facetwp-reset.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .menu-btn > .active.nav-link:focus-visible, .eb-user-account-navigation .menu-btn > .nav-link.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .woocommerce-info a.active.button:focus-visible, .woocommerce-info .eb-user-account-navigation a.button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .eb-user-account-navigation .woocommerce-info a.button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message .eb-user-account-navigation a.button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .eb-user-account-navigation .woocommerce-notices-wrapper .woocommerce-message a.button.eb-user-account-navigation-link.eb-active-profile-nav:focus-visible, .btn.show:focus-visible, .show.et_pb_button:focus-visible, .show.eb-course-action-btn-start:focus-visible, .woocommerce table.my_account_orders .show.button:focus-visible, .show.wc-block-components-button:focus-visible:not(.is-link), .show.facetwp-reset:focus-visible, .menu-btn > .show.nav-link:focus-visible, .woocommerce-info a.show.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .eb-course-action-btn-start:disabled, .woocommerce table.my_account_orders .button:disabled, .wc-block-components-button:disabled:not(.is-link), .facetwp-reset:disabled, .menu-btn > .nav-link:disabled, .woocommerce-info a.button:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .btn.disabled, .disabled.eb-course-action-btn-start, .woocommerce table.my_account_orders .disabled.button, .disabled.wc-block-components-button:not(.is-link), .disabled.facetwp-reset, .menu-btn > .disabled.nav-link, .woocommerce-info a.disabled.button, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, fieldset:disabled .btn, fieldset:disabled .eb-course-action-btn-start, fieldset:disabled .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders fieldset:disabled .button, fieldset:disabled .wc-block-components-button:not(.is-link), fieldset:disabled .facetwp-reset, fieldset:disabled .menu-btn > .nav-link, fieldset:disabled .woocommerce-info a.button, .woocommerce-info fieldset:disabled a.button, fieldset:disabled .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message fieldset:disabled a.button {
+.btn:disabled, .et_pb_button:disabled, .eb-course-action-btn-start:disabled, .woocommerce table.my_account_orders .button:disabled, .wc-block-components-button:disabled:not(.is-link), .facetwp-reset:disabled, .menu-btn > .nav-link:disabled, .woocommerce-info a.button:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .btn.disabled, .disabled.et_pb_button, .disabled.eb-course-action-btn-start, .woocommerce table.my_account_orders .disabled.button, .disabled.wc-block-components-button:not(.is-link), .disabled.facetwp-reset, .menu-btn > .disabled.nav-link, .woocommerce-info a.disabled.button, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, fieldset:disabled .btn, fieldset:disabled .et_pb_button, fieldset:disabled .eb-course-action-btn-start, fieldset:disabled .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders fieldset:disabled .button, fieldset:disabled .wc-block-components-button:not(.is-link), fieldset:disabled .facetwp-reset, fieldset:disabled .menu-btn > .nav-link, fieldset:disabled .woocommerce-info a.button, .woocommerce-info fieldset:disabled a.button, fieldset:disabled .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message fieldset:disabled a.button {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -9378,7 +9380,7 @@ textarea.is-invalid.facetwp-search {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-.btn-primary, .eb-course-action-btn-start, .wc-block-components-button:not(.is-link), .menu-btn > .nav-link {
+.btn-primary, .button-primary, .eb-course-action-btn-start, .wc-block-components-button:not(.is-link), .menu-btn > .nav-link {
   --bs-btn-color: #fff;
   --bs-btn-bg: #9F163B;
   --bs-btn-border-color: #9F163B;
@@ -10488,14 +10490,14 @@ textarea.is-invalid.facetwp-search {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-lg > .button, .btn-group-lg > .wc-block-components-button:not(.is-link), .btn-group-lg > .facetwp-reset, .menu-btn.btn-group-lg > .nav-link, .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .et_pb_button, .btn-group-lg > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-lg > .button, .btn-group-lg > .wc-block-components-button:not(.is-link), .btn-group-lg > .facetwp-reset, .menu-btn.btn-group-lg > .nav-link, .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-padding-x: 2rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: 50rem;
 }
 
-.btn-sm, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .facetwp-reset, .menu-btn > .nav-link, .btn-group-sm > .btn, .btn-group-sm > .eb-course-action-btn-start, .btn-group-sm > .wc-block-components-button:not(.is-link), .btn-group-sm > .facetwp-reset, .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
+.btn-sm, .eb-course-action-btn-start, .woocommerce table.my_account_orders .button, .facetwp-reset, .menu-btn > .nav-link, .btn-group-sm > .btn, .btn-group-sm > .et_pb_button, .btn-group-sm > .eb-course-action-btn-start, .btn-group-sm > .wc-block-components-button:not(.is-link), .btn-group-sm > .facetwp-reset, .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -10809,7 +10811,7 @@ textarea.is-invalid.facetwp-search {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .eb-user-account-navigation .dropdown-item.eb-user-account-navigation-link.eb-active-profile-nav, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
   background-color: var(--bs-dropdown-link-active-bg);
@@ -10860,8 +10862,9 @@ textarea.is-invalid.facetwp-search {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > .button, .btn-group > .wc-block-components-button:not(.is-link), .btn-group > .facetwp-reset, .menu-btn.btn-group > .nav-link, .woocommerce-info .btn-group > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button,
+.btn-group > .btn, .btn-group > .et_pb_button, .btn-group > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > .button, .btn-group > .wc-block-components-button:not(.is-link), .btn-group > .facetwp-reset, .menu-btn.btn-group > .nav-link, .woocommerce-info .btn-group > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button,
 .btn-group-vertical > .btn,
+.btn-group-vertical > .et_pb_button,
 .btn-group-vertical > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-vertical > .button,
 .btn-group-vertical > .wc-block-components-button:not(.is-link),
@@ -10872,8 +10875,9 @@ textarea.is-invalid.facetwp-search {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > .btn-check:checked + .button, .btn-group > .btn-check:checked + .wc-block-components-button:not(.is-link), .btn-group > .btn-check:checked + .facetwp-reset, .menu-btn.btn-group > .btn-check:checked + .nav-link, .woocommerce-info .btn-group > .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:checked + a.button,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .et_pb_button, .btn-group > .btn-check:checked + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > .btn-check:checked + .button, .btn-group > .btn-check:checked + .wc-block-components-button:not(.is-link), .btn-group > .btn-check:checked + .facetwp-reset, .menu-btn.btn-group > .btn-check:checked + .nav-link, .woocommerce-info .btn-group > .btn-check:checked + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:checked + a.button,
 .btn-group > .btn-check:focus + .btn,
+.btn-group > .btn-check:focus + .et_pb_button,
 .btn-group > .btn-check:focus + .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group > .btn-check:focus + .button,
 .btn-group > .btn-check:focus + .wc-block-components-button:not(.is-link),
@@ -10882,6 +10886,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > .btn-check:focus + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > .btn-check:focus + a.button,
 .btn-group > .btn:hover,
+.btn-group > .et_pb_button:hover,
 .btn-group > .eb-course-action-btn-start:hover,
 .woocommerce table.my_account_orders .btn-group > .button:hover,
 .btn-group > .wc-block-components-button:hover:not(.is-link),
@@ -10890,6 +10895,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > a.button:hover,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:hover,
 .btn-group > .btn:focus,
+.btn-group > .et_pb_button:focus,
 .btn-group > .eb-course-action-btn-start:focus,
 .woocommerce table.my_account_orders .btn-group > .button:focus,
 .btn-group > .wc-block-components-button:focus:not(.is-link),
@@ -10898,6 +10904,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > a.button:focus,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:focus,
 .btn-group > .btn:active,
+.btn-group > .et_pb_button:active,
 .btn-group > .eb-course-action-btn-start:active,
 .woocommerce table.my_account_orders .btn-group > .button:active,
 .btn-group > .wc-block-components-button:active:not(.is-link),
@@ -10906,14 +10913,28 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > a.button:active,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:active,
 .btn-group > .btn.active,
+.btn-group > .active.et_pb_button,
+.eb-user-account-navigation .btn-group > .btn.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .btn-group > .eb-user-account-navigation-link.eb-active-profile-nav.et_pb_button,
 .btn-group > .active.eb-course-action-btn-start,
+.eb-user-account-navigation .btn-group > .eb-course-action-btn-start.eb-user-account-navigation-link.eb-active-profile-nav,
 .woocommerce table.my_account_orders .btn-group > .active.button,
+.woocommerce table.my_account_orders .eb-user-account-navigation .btn-group > .button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce table.my_account_orders .btn-group > .button.eb-user-account-navigation-link.eb-active-profile-nav,
 .btn-group > .active.wc-block-components-button:not(.is-link),
+.eb-user-account-navigation .btn-group > .wc-block-components-button.eb-user-account-navigation-link.eb-active-profile-nav:not(.is-link),
 .btn-group > .active.facetwp-reset,
+.eb-user-account-navigation .btn-group > .facetwp-reset.eb-user-account-navigation-link.eb-active-profile-nav,
 .menu-btn.btn-group > .active.nav-link,
+.eb-user-account-navigation .menu-btn.btn-group > .nav-link.eb-user-account-navigation-link.eb-active-profile-nav,
 .woocommerce-info .btn-group > a.active.button,
+.woocommerce-info .eb-user-account-navigation .btn-group > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce-info .btn-group > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.active.button,
+.woocommerce-notices-wrapper .woocommerce-message .eb-user-account-navigation .btn-group > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
 .btn-group-vertical > .btn-check:checked + .btn,
+.btn-group-vertical > .btn-check:checked + .et_pb_button,
 .btn-group-vertical > .btn-check:checked + .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-vertical > .btn-check:checked + .button,
 .btn-group-vertical > .btn-check:checked + .wc-block-components-button:not(.is-link),
@@ -10922,6 +10943,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group-vertical > .btn-check:checked + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-check:checked + a.button,
 .btn-group-vertical > .btn-check:focus + .btn,
+.btn-group-vertical > .btn-check:focus + .et_pb_button,
 .btn-group-vertical > .btn-check:focus + .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-vertical > .btn-check:focus + .button,
 .btn-group-vertical > .btn-check:focus + .wc-block-components-button:not(.is-link),
@@ -10930,6 +10952,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group-vertical > .btn-check:focus + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn-check:focus + a.button,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .et_pb_button:hover,
 .btn-group-vertical > .eb-course-action-btn-start:hover,
 .woocommerce table.my_account_orders .btn-group-vertical > .button:hover,
 .btn-group-vertical > .wc-block-components-button:hover:not(.is-link),
@@ -10938,6 +10961,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group-vertical > a.button:hover,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .et_pb_button:focus,
 .btn-group-vertical > .eb-course-action-btn-start:focus,
 .woocommerce table.my_account_orders .btn-group-vertical > .button:focus,
 .btn-group-vertical > .wc-block-components-button:focus:not(.is-link),
@@ -10946,6 +10970,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group-vertical > a.button:focus,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:focus,
 .btn-group-vertical > .btn:active,
+.btn-group-vertical > .et_pb_button:active,
 .btn-group-vertical > .eb-course-action-btn-start:active,
 .woocommerce table.my_account_orders .btn-group-vertical > .button:active,
 .btn-group-vertical > .wc-block-components-button:active:not(.is-link),
@@ -10954,13 +10979,26 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group-vertical > a.button:active,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:active,
 .btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.et_pb_button,
+.eb-user-account-navigation .btn-group-vertical > .btn.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .btn-group-vertical > .eb-user-account-navigation-link.eb-active-profile-nav.et_pb_button,
 .btn-group-vertical > .active.eb-course-action-btn-start,
+.eb-user-account-navigation .btn-group-vertical > .eb-course-action-btn-start.eb-user-account-navigation-link.eb-active-profile-nav,
 .woocommerce table.my_account_orders .btn-group-vertical > .active.button,
+.woocommerce table.my_account_orders .eb-user-account-navigation .btn-group-vertical > .button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce table.my_account_orders .btn-group-vertical > .button.eb-user-account-navigation-link.eb-active-profile-nav,
 .btn-group-vertical > .active.wc-block-components-button:not(.is-link),
+.eb-user-account-navigation .btn-group-vertical > .wc-block-components-button.eb-user-account-navigation-link.eb-active-profile-nav:not(.is-link),
 .btn-group-vertical > .active.facetwp-reset,
+.eb-user-account-navigation .btn-group-vertical > .facetwp-reset.eb-user-account-navigation-link.eb-active-profile-nav,
 .menu-btn.btn-group-vertical > .active.nav-link,
+.eb-user-account-navigation .menu-btn.btn-group-vertical > .nav-link.eb-user-account-navigation-link.eb-active-profile-nav,
 .woocommerce-info .btn-group-vertical > a.active.button,
-.woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.active.button {
+.woocommerce-info .eb-user-account-navigation .btn-group-vertical > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce-info .btn-group-vertical > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
+.woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.active.button,
+.woocommerce-notices-wrapper .woocommerce-message .eb-user-account-navigation .btn-group-vertical > a.button.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button.eb-user-account-navigation-link.eb-active-profile-nav {
   z-index: 1;
 }
 
@@ -10976,12 +11014,13 @@ textarea.is-invalid.facetwp-search {
 .btn-group {
   border-radius: 50rem;
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > :not(.btn-check:first-child) + .button, .btn-group > :not(.btn-check:first-child) + .wc-block-components-button:not(.is-link), .btn-group > :not(.btn-check:first-child) + .facetwp-reset, .menu-btn.btn-group > :not(.btn-check:first-child) + .nav-link, .woocommerce-info .btn-group > :not(.btn-check:first-child) + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check:first-child) + a.button,
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .et_pb_button, .btn-group > :not(.btn-check:first-child) + .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group > :not(.btn-check:first-child) + .button, .btn-group > :not(.btn-check:first-child) + .wc-block-components-button:not(.is-link), .btn-group > :not(.btn-check:first-child) + .facetwp-reset, .menu-btn.btn-group > :not(.btn-check:first-child) + .nav-link, .woocommerce-info .btn-group > :not(.btn-check:first-child) + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check:first-child) + a.button,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .eb-course-action-btn-start:not(:last-child):not(.dropdown-toggle), .woocommerce table.my_account_orders .btn-group > .button:not(:last-child):not(.dropdown-toggle), .btn-group > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .btn-group > .facetwp-reset:not(:last-child):not(.dropdown-toggle), .menu-btn.btn-group > .nav-link:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .et_pb_button:not(:last-child):not(.dropdown-toggle), .btn-group > .eb-course-action-btn-start:not(:last-child):not(.dropdown-toggle), .woocommerce table.my_account_orders .btn-group > .button:not(:last-child):not(.dropdown-toggle), .btn-group > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .btn-group > .facetwp-reset:not(:last-child):not(.dropdown-toggle), .menu-btn.btn-group > .nav-link:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
+.btn-group > .dropdown-toggle-split.et_pb_button:first-child,
 .btn-group > .dropdown-toggle-split.eb-course-action-btn-start:first-child,
 .woocommerce table.my_account_orders .btn-group > .dropdown-toggle-split.button:first-child,
 .btn-group > .dropdown-toggle-split.wc-block-components-button:first-child:not(.is-link),
@@ -10990,6 +11029,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > a.dropdown-toggle-split.button:first-child,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.dropdown-toggle-split.button:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .et_pb_button,
 .btn-group > .btn-group:not(:last-child) > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group > .btn-group:not(:last-child) > .button,
 .btn-group > .btn-group:not(:last-child) > .wc-block-components-button:not(.is-link),
@@ -11000,8 +11040,9 @@ textarea.is-invalid.facetwp-search {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .eb-course-action-btn-start:nth-child(n+3), .woocommerce table.my_account_orders .btn-group > .button:nth-child(n+3), .btn-group > .wc-block-components-button:nth-child(n+3):not(.is-link), .btn-group > .facetwp-reset:nth-child(n+3), .menu-btn.btn-group > .nav-link:nth-child(n+3), .woocommerce-info .btn-group > a.button:nth-child(n+3), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .et_pb_button:nth-child(n+3), .btn-group > .eb-course-action-btn-start:nth-child(n+3), .woocommerce table.my_account_orders .btn-group > .button:nth-child(n+3), .btn-group > .wc-block-components-button:nth-child(n+3):not(.is-link), .btn-group > .facetwp-reset:nth-child(n+3), .menu-btn.btn-group > .nav-link:nth-child(n+3), .woocommerce-info .btn-group > a.button:nth-child(n+3), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
+.btn-group > :not(.btn-check) + .et_pb_button,
 .btn-group > :not(.btn-check) + .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group > :not(.btn-check) + .button,
 .btn-group > :not(.btn-check) + .wc-block-components-button:not(.is-link),
@@ -11010,6 +11051,7 @@ textarea.is-invalid.facetwp-search {
 .woocommerce-info .btn-group > :not(.btn-check) + a.button,
 .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check) + a.button,
 .btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .et_pb_button,
 .btn-group > .btn-group:not(:first-child) > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group > .btn-group:not(:first-child) > .button,
 .btn-group > .btn-group:not(:first-child) > .wc-block-components-button:not(.is-link),
@@ -11032,12 +11074,12 @@ textarea.is-invalid.facetwp-search {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .eb-course-action-btn-start + .dropdown-toggle-split, .woocommerce table.my_account_orders .button + .dropdown-toggle-split, .facetwp-reset + .dropdown-toggle-split, .menu-btn > .nav-link + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .woocommerce-info .btn-group-sm > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .eb-course-action-btn-start + .dropdown-toggle-split, .woocommerce table.my_account_orders .button + .dropdown-toggle-split, .facetwp-reset + .dropdown-toggle-split, .menu-btn > .nav-link + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .et_pb_button + .dropdown-toggle-split, .btn-group-sm > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .woocommerce-info .btn-group-sm > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .eb-course-action-btn-start + .dropdown-toggle-split, .woocommerce table.my_account_orders .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .btn-group-lg > .facetwp-reset + .dropdown-toggle-split, .menu-btn.btn-group-lg > .nav-link + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .et_pb_button + .dropdown-toggle-split, .btn-group-lg > .eb-course-action-btn-start + .dropdown-toggle-split, .woocommerce table.my_account_orders .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > .wc-block-components-button:not(.is-link) + .dropdown-toggle-split, .btn-group-lg > .facetwp-reset + .dropdown-toggle-split, .menu-btn.btn-group-lg > .nav-link + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -11047,16 +11089,17 @@ textarea.is-invalid.facetwp-search {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .button, .btn-group-vertical > .wc-block-components-button:not(.is-link), .btn-group-vertical > .facetwp-reset, .menu-btn.btn-group-vertical > .nav-link, .woocommerce-info .btn-group-vertical > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button,
+.btn-group-vertical > .btn, .btn-group-vertical > .et_pb_button, .btn-group-vertical > .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .button, .btn-group-vertical > .wc-block-components-button:not(.is-link), .btn-group-vertical > .facetwp-reset, .menu-btn.btn-group-vertical > .nav-link, .woocommerce-info .btn-group-vertical > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .eb-course-action-btn-start:not(:first-child), .woocommerce table.my_account_orders .btn-group-vertical > .button:not(:first-child), .btn-group-vertical > .wc-block-components-button:not(:first-child):not(.is-link), .btn-group-vertical > .facetwp-reset:not(:first-child), .menu-btn.btn-group-vertical > .nav-link:not(:first-child), .woocommerce-info .btn-group-vertical > a.button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .et_pb_button:not(:first-child), .btn-group-vertical > .eb-course-action-btn-start:not(:first-child), .woocommerce table.my_account_orders .btn-group-vertical > .button:not(:first-child), .btn-group-vertical > .wc-block-components-button:not(:first-child):not(.is-link), .btn-group-vertical > .facetwp-reset:not(:first-child), .menu-btn.btn-group-vertical > .nav-link:not(:first-child), .woocommerce-info .btn-group-vertical > a.button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .eb-course-action-btn-start:not(:last-child):not(.dropdown-toggle), .woocommerce table.my_account_orders .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .btn-group-vertical > .facetwp-reset:not(:last-child):not(.dropdown-toggle), .menu-btn.btn-group-vertical > .nav-link:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .et_pb_button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .eb-course-action-btn-start:not(:last-child):not(.dropdown-toggle), .woocommerce table.my_account_orders .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .wc-block-components-button:not(:last-child):not(.dropdown-toggle):not(.is-link), .btn-group-vertical > .facetwp-reset:not(:last-child):not(.dropdown-toggle), .menu-btn.btn-group-vertical > .nav-link:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .et_pb_button,
 .btn-group-vertical > .btn-group:not(:last-child) > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-vertical > .btn-group:not(:last-child) > .button,
 .btn-group-vertical > .btn-group:not(:last-child) > .wc-block-components-button:not(.is-link),
@@ -11067,8 +11110,9 @@ textarea.is-invalid.facetwp-search {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .eb-course-action-btn-start ~ .btn, .btn-group-vertical > .btn ~ .eb-course-action-btn-start, .btn-group-vertical > .eb-course-action-btn-start ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .btn, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .btn ~ .button, .woocommerce table.my_account_orders .btn-group-vertical > .eb-course-action-btn-start ~ .button, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .button, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .btn, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .button, .btn-group-vertical > .btn ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .eb-course-action-btn-start ~ .wc-block-components-button:not(.is-link), .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .facetwp-reset ~ .btn, .btn-group-vertical > .facetwp-reset ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .facetwp-reset ~ .button, .btn-group-vertical > .facetwp-reset ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .btn ~ .facetwp-reset, .btn-group-vertical > .eb-course-action-btn-start ~ .facetwp-reset, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .facetwp-reset, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .facetwp-reset, .btn-group-vertical > .facetwp-reset ~ .facetwp-reset, .menu-btn.btn-group-vertical > .nav-link ~ .btn, .menu-btn.btn-group-vertical > .nav-link ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .menu-btn.btn-group-vertical > .nav-link ~ .button, .menu-btn.btn-group-vertical > .nav-link ~ .wc-block-components-button:not(.is-link), .menu-btn.btn-group-vertical > .nav-link ~ .facetwp-reset, .menu-btn.btn-group-vertical > .btn ~ .nav-link, .menu-btn.btn-group-vertical > .eb-course-action-btn-start ~ .nav-link, .woocommerce table.my_account_orders .menu-btn.btn-group-vertical > .button ~ .nav-link, .menu-btn.btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .nav-link, .menu-btn.btn-group-vertical > .facetwp-reset ~ .nav-link, .menu-btn.btn-group-vertical > .nav-link ~ .nav-link, .woocommerce-info .btn-group-vertical > a.button ~ .btn, .woocommerce-info .btn-group-vertical > a.button ~ .eb-course-action-btn-start, .woocommerce-info .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-vertical > a.button ~ .facetwp-reset, .woocommerce-info .menu-btn.btn-group-vertical > a.button ~ .nav-link, .woocommerce-info .btn-group-vertical > .btn ~ a.button, .woocommerce-info .btn-group-vertical > .eb-course-action-btn-start ~ a.button, .woocommerce-info .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-info .btn-group-vertical > .facetwp-reset ~ a.button, .woocommerce-info .menu-btn.btn-group-vertical > .nav-link ~ a.button, .woocommerce-info .btn-group-vertical > a.button ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .eb-course-action-btn-start, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .facetwp-reset, .woocommerce-notices-wrapper .woocommerce-message .menu-btn.btn-group-vertical > a.button ~ .nav-link, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .eb-course-action-btn-start ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .facetwp-reset ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .menu-btn.btn-group-vertical > .nav-link ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ a.button,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .et_pb_button ~ .btn, .btn-group-vertical > .btn ~ .et_pb_button, .btn-group-vertical > .et_pb_button ~ .et_pb_button, .btn-group-vertical > .eb-course-action-btn-start ~ .btn, .btn-group-vertical > .eb-course-action-btn-start ~ .et_pb_button, .btn-group-vertical > .btn ~ .eb-course-action-btn-start, .btn-group-vertical > .et_pb_button ~ .eb-course-action-btn-start, .btn-group-vertical > .eb-course-action-btn-start ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .btn, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .et_pb_button, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .btn ~ .button, .woocommerce table.my_account_orders .btn-group-vertical > .et_pb_button ~ .button, .woocommerce table.my_account_orders .btn-group-vertical > .eb-course-action-btn-start ~ .button, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .button, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .btn, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .et_pb_button, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .button, .btn-group-vertical > .btn ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .et_pb_button ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .eb-course-action-btn-start ~ .wc-block-components-button:not(.is-link), .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .facetwp-reset ~ .btn, .btn-group-vertical > .facetwp-reset ~ .et_pb_button, .btn-group-vertical > .facetwp-reset ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .btn-group-vertical > .facetwp-reset ~ .button, .btn-group-vertical > .facetwp-reset ~ .wc-block-components-button:not(.is-link), .btn-group-vertical > .btn ~ .facetwp-reset, .btn-group-vertical > .et_pb_button ~ .facetwp-reset, .btn-group-vertical > .eb-course-action-btn-start ~ .facetwp-reset, .woocommerce table.my_account_orders .btn-group-vertical > .button ~ .facetwp-reset, .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .facetwp-reset, .btn-group-vertical > .facetwp-reset ~ .facetwp-reset, .menu-btn.btn-group-vertical > .nav-link ~ .btn, .menu-btn.btn-group-vertical > .nav-link ~ .et_pb_button, .menu-btn.btn-group-vertical > .nav-link ~ .eb-course-action-btn-start, .woocommerce table.my_account_orders .menu-btn.btn-group-vertical > .nav-link ~ .button, .menu-btn.btn-group-vertical > .nav-link ~ .wc-block-components-button:not(.is-link), .menu-btn.btn-group-vertical > .nav-link ~ .facetwp-reset, .menu-btn.btn-group-vertical > .btn ~ .nav-link, .menu-btn.btn-group-vertical > .et_pb_button ~ .nav-link, .menu-btn.btn-group-vertical > .eb-course-action-btn-start ~ .nav-link, .woocommerce table.my_account_orders .menu-btn.btn-group-vertical > .button ~ .nav-link, .menu-btn.btn-group-vertical > .wc-block-components-button:not(.is-link) ~ .nav-link, .menu-btn.btn-group-vertical > .facetwp-reset ~ .nav-link, .menu-btn.btn-group-vertical > .nav-link ~ .nav-link, .woocommerce-info .btn-group-vertical > a.button ~ .btn, .woocommerce-info .btn-group-vertical > a.button ~ .et_pb_button, .woocommerce-info .btn-group-vertical > a.button ~ .eb-course-action-btn-start, .woocommerce-info .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-info .btn-group-vertical > a.button ~ .facetwp-reset, .woocommerce-info .menu-btn.btn-group-vertical > a.button ~ .nav-link, .woocommerce-info .btn-group-vertical > .btn ~ a.button, .woocommerce-info .btn-group-vertical > .et_pb_button ~ a.button, .woocommerce-info .btn-group-vertical > .eb-course-action-btn-start ~ a.button, .woocommerce-info .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-info .btn-group-vertical > .facetwp-reset ~ a.button, .woocommerce-info .menu-btn.btn-group-vertical > .nav-link ~ a.button, .woocommerce-info .btn-group-vertical > a.button ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .et_pb_button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .eb-course-action-btn-start, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .wc-block-components-button:not(.is-link), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ .facetwp-reset, .woocommerce-notices-wrapper .woocommerce-message .menu-btn.btn-group-vertical > a.button ~ .nav-link, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .btn ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .et_pb_button ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .eb-course-action-btn-start ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .wc-block-components-button:not(.is-link) ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > .facetwp-reset ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .menu-btn.btn-group-vertical > .nav-link ~ a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button ~ a.button,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .et_pb_button,
 .btn-group-vertical > .btn-group:not(:first-child) > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-vertical > .btn-group:not(:first-child) > .button,
 .btn-group-vertical > .btn-group:not(:first-child) > .wc-block-components-button:not(.is-link),
@@ -11142,7 +11186,7 @@ textarea.is-invalid.facetwp-search {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active, .nav-tabs .eb-user-account-navigation .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .nav-tabs .nav-link.eb-user-account-navigation-link.eb-active-profile-nav,
 .nav-tabs .nav-item.show .nav-link {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
@@ -11169,7 +11213,7 @@ textarea.is-invalid.facetwp-search {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-pills .nav-link.active,
+.nav-pills .nav-link.active, .nav-pills .eb-user-account-navigation .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .nav-pills .nav-link.eb-user-account-navigation-link.eb-active-profile-nav,
 .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
@@ -11196,7 +11240,7 @@ textarea.is-invalid.facetwp-search {
 .tab-content > .tab-pane {
   display: none;
 }
-.tab-content > .active {
+.tab-content > .active, .eb-user-account-navigation .tab-content > .eb-user-account-navigation-link.eb-active-profile-nav {
   display: block;
 }
 
@@ -11266,7 +11310,9 @@ textarea.is-invalid.facetwp-search {
   list-style: none;
 }
 .navbar-nav .show > .nav-link,
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active,
+.navbar-nav .eb-user-account-navigation .nav-link.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .navbar-nav .nav-link.eb-user-account-navigation-link.eb-active-profile-nav {
   color: var(--bs-navbar-active-color);
 }
 .navbar-nav .dropdown-menu {
@@ -11659,39 +11705,55 @@ textarea.is-invalid.facetwp-search {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group, .wdm-course-grid > .list-group, .woocommerce ul.products li.product:not(.product-category) > .list-group,
+.card > .list-group, .card > .eb-user-account-navigation, .wdm-course-grid > .list-group, .wdm-course-grid > .eb-user-account-navigation, .woocommerce ul.products li.product:not(.product-category) > .list-group, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation,
 .woocommerce-page ul.products li.product:not(.product-category) > .list-group,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group, .widget > .list-group {
+.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation, .widget > .list-group, .widget > .eb-user-account-navigation {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child, .wdm-course-grid > .list-group:first-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:first-child,
+.card > .list-group:first-child, .card > .eb-user-account-navigation:first-child, .wdm-course-grid > .list-group:first-child, .wdm-course-grid > .eb-user-account-navigation:first-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:first-child, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation:first-child,
 .woocommerce-page ul.products li.product:not(.product-category) > .list-group:first-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:first-child, .widget > .list-group:first-child {
+.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation:first-child,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:first-child,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation:first-child, .widget > .list-group:first-child, .widget > .eb-user-account-navigation:first-child {
   border-top-width: 0;
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
 }
-.card > .list-group:last-child, .wdm-course-grid > .list-group:last-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:last-child,
+.card > .list-group:last-child, .card > .eb-user-account-navigation:last-child, .wdm-course-grid > .list-group:last-child, .wdm-course-grid > .eb-user-account-navigation:last-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:last-child, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation:last-child,
 .woocommerce-page ul.products li.product:not(.product-category) > .list-group:last-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:last-child, .widget > .list-group:last-child {
+.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation:last-child,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:last-child,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation:last-child, .widget > .list-group:last-child, .widget > .eb-user-account-navigation:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
-.card > .card-header + .list-group, .wdm-course-grid > .card-header + .list-group, .woocommerce ul.products li.product:not(.product-category) > .card-header + .list-group,
+.card > .card-header + .list-group, .card > .card-header + .eb-user-account-navigation, .wdm-course-grid > .card-header + .list-group, .wdm-course-grid > .card-header + .eb-user-account-navigation, .woocommerce ul.products li.product:not(.product-category) > .card-header + .list-group, .woocommerce ul.products li.product:not(.product-category) > .card-header + .eb-user-account-navigation,
 .woocommerce-page ul.products li.product:not(.product-category) > .card-header + .list-group,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .card-header + .list-group, .widget > .card-header + .list-group,
+.woocommerce-page ul.products li.product:not(.product-category) > .card-header + .eb-user-account-navigation,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .card-header + .list-group,
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .card-header + .eb-user-account-navigation, .widget > .card-header + .list-group, .widget > .card-header + .eb-user-account-navigation,
 .card > .list-group + .card-footer,
+.card > .eb-user-account-navigation + .card-footer,
 .wdm-course-grid > .list-group + .card-footer,
+.wdm-course-grid > .eb-user-account-navigation + .card-footer,
 .woocommerce ul.products li.product:not(.product-category) > .list-group + .card-footer,
+.woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
 .woocommerce-page ul.products li.product:not(.product-category) > .list-group + .card-footer,
+.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
 .wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group + .card-footer,
-.widget > .list-group + .card-footer {
+.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
+.widget > .list-group + .card-footer,
+.widget > .eb-user-account-navigation + .card-footer {
   border-top: 0;
 }
 
-.card-body, .wdm-course-grid .wdm-caption, .widget {
+.card-body, .wdm-course-grid .wdm-caption, .woocommerce ul.products li.product:not(.product-category),
+.woocommerce-page ul.products li.product:not(.product-category),
+.wp-block-woocommerce-product-template li.product:not(.product-category), .widget {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
@@ -11741,7 +11803,7 @@ textarea.is-invalid.facetwp-search {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
   border-bottom: 0;
 }
-.card-header-tabs .nav-link.active {
+.card-header-tabs .nav-link.active, .card-header-tabs .eb-user-account-navigation .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .card-header-tabs .nav-link.eb-user-account-navigation-link.eb-active-profile-nav {
   background-color: var(--bs-card-bg);
   border-bottom-color: var(--bs-card-bg);
 }
@@ -12035,7 +12097,7 @@ textarea.is-invalid.facetwp-search {
   color: var(--bs-breadcrumb-divider-color);
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
-.breadcrumb-item.active {
+.breadcrumb-item.active, .eb-user-account-navigation .breadcrumb-item.eb-user-account-navigation-link.eb-active-profile-nav {
   color: var(--bs-breadcrumb-item-active-color);
 }
 
@@ -12093,7 +12155,7 @@ textarea.is-invalid.facetwp-search {
   outline: 0;
   box-shadow: var(--bs-pagination-focus-box-shadow);
 }
-.page-link.active, .facetwp-pager .active.facetwp-page, .active > .page-link, .facetwp-pager .active > .facetwp-page {
+.page-link.active, .eb-user-account-navigation .page-link.eb-user-account-navigation-link.eb-active-profile-nav, .facetwp-pager .active.facetwp-page, .facetwp-pager .eb-user-account-navigation .facetwp-page.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .facetwp-pager .facetwp-page.eb-user-account-navigation-link.eb-active-profile-nav, .active > .page-link, .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav > .page-link, .facetwp-pager .active > .facetwp-page, .facetwp-pager .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav > .facetwp-page, .eb-user-account-navigation .facetwp-pager .eb-user-account-navigation-link.eb-active-profile-nav > .facetwp-page {
   z-index: 3;
   color: var(--bs-pagination-active-color);
   background-color: var(--bs-pagination-active-bg);
@@ -12154,7 +12216,7 @@ textarea.is-invalid.facetwp-search {
   display: none;
 }
 
-.btn .badge, .eb-course-action-btn-start .badge, .woocommerce table.my_account_orders .button .badge, .wc-block-components-button:not(.is-link) .badge, .facetwp-reset .badge, .menu-btn > .nav-link .badge, .woocommerce-info a.button .badge, .woocommerce-notices-wrapper .woocommerce-message a.button .badge {
+.btn .badge, .et_pb_button .badge, .eb-course-action-btn-start .badge, .woocommerce table.my_account_orders .button .badge, .wc-block-components-button:not(.is-link) .badge, .facetwp-reset .badge, .menu-btn > .nav-link .badge, .woocommerce-info a.button .badge, .woocommerce-notices-wrapper .woocommerce-message a.button .badge {
   position: relative;
   top: -1px;
 }
@@ -12537,7 +12599,7 @@ textarea.is-invalid.facetwp-search {
   }
 }
 
-.list-group {
+.list-group, .eb-user-account-navigation {
   --bs-list-group-color: #212529;
   --bs-list-group-bg: #fff;
   --bs-list-group-border-color: rgba(26, 26, 26, 0.125);
@@ -12566,7 +12628,7 @@ textarea.is-invalid.facetwp-search {
   list-style-type: none;
   counter-reset: section;
 }
-.list-group-numbered > .list-group-item::before {
+.list-group-numbered > .list-group-item::before, .eb-user-account-navigation .list-group-numbered > .eb-user-account-navigation-link::before {
   content: counters(section, ".") ". ";
   counter-increment: section;
 }
@@ -12587,7 +12649,7 @@ textarea.is-invalid.facetwp-search {
   background-color: var(--bs-list-group-action-active-bg);
 }
 
-.list-group-item {
+.list-group-item, .eb-user-account-navigation .eb-user-account-navigation-link {
   position: relative;
   display: block;
   padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
@@ -12595,29 +12657,29 @@ textarea.is-invalid.facetwp-search {
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
-.list-group-item:first-child {
+.list-group-item:first-child, .eb-user-account-navigation .eb-user-account-navigation-link:first-child {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
-.list-group-item:last-child {
+.list-group-item:last-child, .eb-user-account-navigation .eb-user-account-navigation-link:last-child {
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
 }
-.list-group-item.disabled, .list-group-item:disabled {
+.list-group-item.disabled, .eb-user-account-navigation .disabled.eb-user-account-navigation-link, .list-group-item:disabled, .eb-user-account-navigation .eb-user-account-navigation-link:disabled {
   color: var(--bs-list-group-disabled-color);
   pointer-events: none;
   background-color: var(--bs-list-group-disabled-bg);
 }
-.list-group-item.active {
+.list-group-item.active, .eb-user-account-navigation .active.eb-user-account-navigation-link, .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav {
   z-index: 2;
   color: var(--bs-list-group-active-color);
   background-color: var(--bs-list-group-active-bg);
   border-color: var(--bs-list-group-active-border-color);
 }
-.list-group-item + .list-group-item {
+.list-group-item + .list-group-item, .eb-user-account-navigation .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .eb-user-account-navigation-link + .eb-user-account-navigation-link {
   border-top-width: 0;
 }
-.list-group-item + .list-group-item.active {
+.list-group-item + .list-group-item.active, .eb-user-account-navigation .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
   margin-top: calc(-1 * var(--bs-list-group-border-width));
   border-top-width: var(--bs-list-group-border-width);
 }
@@ -12625,22 +12687,22 @@ textarea.is-invalid.facetwp-search {
 .list-group-horizontal {
   flex-direction: row;
 }
-.list-group-horizontal > .list-group-item:first-child:not(:last-child) {
+.list-group-horizontal > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link:first-child:not(:last-child) {
   border-bottom-left-radius: var(--bs-list-group-border-radius);
   border-top-right-radius: 0;
 }
-.list-group-horizontal > .list-group-item:last-child:not(:first-child) {
+.list-group-horizontal > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link:last-child:not(:first-child) {
   border-top-right-radius: var(--bs-list-group-border-radius);
   border-bottom-left-radius: 0;
 }
-.list-group-horizontal > .list-group-item.active {
+.list-group-horizontal > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link.eb-active-profile-nav {
   margin-top: 0;
 }
-.list-group-horizontal > .list-group-item + .list-group-item {
+.list-group-horizontal > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
   border-top-width: var(--bs-list-group-border-width);
   border-left-width: 0;
 }
-.list-group-horizontal > .list-group-item + .list-group-item.active {
+.list-group-horizontal > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
   margin-left: calc(-1 * var(--bs-list-group-border-width));
   border-left-width: var(--bs-list-group-border-width);
 }
@@ -12649,22 +12711,22 @@ textarea.is-invalid.facetwp-search {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
-  .list-group-horizontal-sm > .list-group-item:first-child:not(:last-child) {
+  .list-group-horizontal-sm > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-sm > .list-group-item:last-child:not(:first-child) {
+  .list-group-horizontal-sm > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-sm > .list-group-item.active {
+  .list-group-horizontal-sm > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-sm > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-top: 0;
   }
-  .list-group-horizontal-sm > .list-group-item + .list-group-item {
+  .list-group-horizontal-sm > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal-sm > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-sm > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-sm > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-sm > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -12673,22 +12735,22 @@ textarea.is-invalid.facetwp-search {
   .list-group-horizontal-md {
     flex-direction: row;
   }
-  .list-group-horizontal-md > .list-group-item:first-child:not(:last-child) {
+  .list-group-horizontal-md > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-md > .list-group-item:last-child:not(:first-child) {
+  .list-group-horizontal-md > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-md > .list-group-item.active {
+  .list-group-horizontal-md > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-md > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-top: 0;
   }
-  .list-group-horizontal-md > .list-group-item + .list-group-item {
+  .list-group-horizontal-md > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal-md > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-md > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-md > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-md > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-md > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-md > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -12697,22 +12759,22 @@ textarea.is-invalid.facetwp-search {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
-  .list-group-horizontal-lg > .list-group-item:first-child:not(:last-child) {
+  .list-group-horizontal-lg > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-lg > .list-group-item:last-child:not(:first-child) {
+  .list-group-horizontal-lg > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-lg > .list-group-item.active {
+  .list-group-horizontal-lg > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-lg > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-top: 0;
   }
-  .list-group-horizontal-lg > .list-group-item + .list-group-item {
+  .list-group-horizontal-lg > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal-lg > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-lg > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-lg > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-lg > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -12721,22 +12783,22 @@ textarea.is-invalid.facetwp-search {
   .list-group-horizontal-xl {
     flex-direction: row;
   }
-  .list-group-horizontal-xl > .list-group-item:first-child:not(:last-child) {
+  .list-group-horizontal-xl > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-xl > .list-group-item:last-child:not(:first-child) {
+  .list-group-horizontal-xl > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-xl > .list-group-item.active {
+  .list-group-horizontal-xl > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xl > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-top: 0;
   }
-  .list-group-horizontal-xl > .list-group-item + .list-group-item {
+  .list-group-horizontal-xl > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal-xl > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xl > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xl > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xl > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -12745,22 +12807,22 @@ textarea.is-invalid.facetwp-search {
   .list-group-horizontal-xxl {
     flex-direction: row;
   }
-  .list-group-horizontal-xxl > .list-group-item:first-child:not(:last-child) {
+  .list-group-horizontal-xxl > .list-group-item:first-child:not(:last-child), .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item:last-child:not(:first-child) {
+  .list-group-horizontal-xxl > .list-group-item:last-child:not(:first-child), .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item.active {
+  .list-group-horizontal-xxl > .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xxl > .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-top: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item + .list-group-item {
+  .list-group-horizontal-xxl > .list-group-item + .list-group-item, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link + .list-group-item, .eb-user-account-navigation .list-group-horizontal-xxl > .list-group-item + .eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link + .eb-user-account-navigation-link {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link + .list-group-item.active, .eb-user-account-navigation .list-group-horizontal-xxl > .list-group-item + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xxl > .list-group-item + .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link + .active.eb-user-account-navigation-link, .eb-user-account-navigation .list-group-horizontal-xxl > .eb-user-account-navigation-link + .eb-user-account-navigation-link.eb-active-profile-nav {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -12768,10 +12830,10 @@ textarea.is-invalid.facetwp-search {
 .list-group-flush {
   border-radius: 0;
 }
-.list-group-flush > .list-group-item {
+.list-group-flush > .list-group-item, .eb-user-account-navigation .list-group-flush > .eb-user-account-navigation-link {
   border-width: 0 0 var(--bs-list-group-border-width);
 }
-.list-group-flush > .list-group-item:last-child {
+.list-group-flush > .list-group-item:last-child, .eb-user-account-navigation .list-group-flush > .eb-user-account-navigation-link:last-child {
   border-bottom-width: 0;
 }
 
@@ -12783,7 +12845,7 @@ textarea.is-invalid.facetwp-search {
   color: #5f0d23;
   background-color: #d4bbc2;
 }
-.list-group-item-primary.list-group-item-action.active {
+.list-group-item-primary.list-group-item-action.active, .eb-user-account-navigation .list-group-item-primary.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #5f0d23;
   border-color: #5f0d23;
@@ -12797,7 +12859,7 @@ textarea.is-invalid.facetwp-search {
   color: #735a12;
   background-color: #e5d9b9;
 }
-.list-group-item-secondary.list-group-item-action.active {
+.list-group-item-secondary.list-group-item-action.active, .eb-user-account-navigation .list-group-item-secondary.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #735a12;
   border-color: #735a12;
@@ -12811,7 +12873,7 @@ textarea.is-invalid.facetwp-search {
   color: #46714d;
   background-color: #ccdacf;
 }
-.list-group-item-success.list-group-item-action.active {
+.list-group-item-success.list-group-item-action.active, .eb-user-account-navigation .list-group-item-success.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #46714d;
   border-color: #46714d;
@@ -12825,7 +12887,7 @@ textarea.is-invalid.facetwp-search {
   color: #30466e;
   background-color: #c6ccd9;
 }
-.list-group-item-info.list-group-item-action.active {
+.list-group-item-info.list-group-item-action.active, .eb-user-account-navigation .list-group-item-info.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #30466e;
   border-color: #30466e;
@@ -12839,7 +12901,7 @@ textarea.is-invalid.facetwp-search {
   color: #735a12;
   background-color: #e5d9b9;
 }
-.list-group-item-warning.list-group-item-action.active {
+.list-group-item-warning.list-group-item-action.active, .eb-user-account-navigation .list-group-item-warning.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #735a12;
   border-color: #735a12;
@@ -12853,7 +12915,7 @@ textarea.is-invalid.facetwp-search {
   color: #5f0d23;
   background-color: #d4bbc2;
 }
-.list-group-item-danger.list-group-item-action.active {
+.list-group-item-danger.list-group-item-action.active, .eb-user-account-navigation .list-group-item-danger.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #5f0d23;
   border-color: #5f0d23;
@@ -12867,7 +12929,7 @@ textarea.is-invalid.facetwp-search {
   color: #737374;
   background-color: #e5e5e5;
 }
-.list-group-item-light.list-group-item-action.active {
+.list-group-item-light.list-group-item-action.active, .eb-user-account-navigation .list-group-item-light.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #737374;
   border-color: #737374;
@@ -12881,7 +12943,7 @@ textarea.is-invalid.facetwp-search {
   color: #101010;
   background-color: #bcbcbc;
 }
-.list-group-item-dark.list-group-item-action.active {
+.list-group-item-dark.list-group-item-action.active, .eb-user-account-navigation .list-group-item-dark.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #101010;
   border-color: #101010;
@@ -12895,7 +12957,7 @@ textarea.is-invalid.facetwp-search {
   color: #101010;
   background-color: #bcbcbc;
 }
-.list-group-item-black.list-group-item-action.active {
+.list-group-item-black.list-group-item-action.active, .eb-user-account-navigation .list-group-item-black.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #101010;
   border-color: #101010;
@@ -12909,7 +12971,7 @@ textarea.is-invalid.facetwp-search {
   color: #767676;
   background-color: #e6e6e6;
 }
-.list-group-item-white.list-group-item-action.active {
+.list-group-item-white.list-group-item-action.active, .eb-user-account-navigation .list-group-item-white.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #767676;
   border-color: #767676;
@@ -12923,7 +12985,7 @@ textarea.is-invalid.facetwp-search {
   color: #091c2b;
   background-color: #bac0c4;
 }
-.list-group-item-dark-blue.list-group-item-action.active {
+.list-group-item-dark-blue.list-group-item-action.active, .eb-user-account-navigation .list-group-item-dark-blue.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #091c2b;
   border-color: #091c2b;
@@ -12937,7 +12999,7 @@ textarea.is-invalid.facetwp-search {
   color: #084298;
   background-color: #bacbe6;
 }
-.list-group-item-blue.list-group-item-action.active {
+.list-group-item-blue.list-group-item-action.active, .eb-user-account-navigation .list-group-item-blue.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #084298;
   border-color: #084298;
@@ -12951,7 +13013,7 @@ textarea.is-invalid.facetwp-search {
   color: #3d0a91;
   background-color: #cabae3;
 }
-.list-group-item-indigo.list-group-item-action.active {
+.list-group-item-indigo.list-group-item-action.active, .eb-user-account-navigation .list-group-item-indigo.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #3d0a91;
   border-color: #3d0a91;
@@ -12965,7 +13027,7 @@ textarea.is-invalid.facetwp-search {
   color: #30466e;
   background-color: #c6ccd9;
 }
-.list-group-item-purple.list-group-item-action.active {
+.list-group-item-purple.list-group-item-action.active, .eb-user-account-navigation .list-group-item-purple.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #30466e;
   border-color: #30466e;
@@ -12979,7 +13041,7 @@ textarea.is-invalid.facetwp-search {
   color: #6c554e;
   background-color: #e1d7d4;
 }
-.list-group-item-pink.list-group-item-action.active {
+.list-group-item-pink.list-group-item-action.active, .eb-user-account-navigation .list-group-item-pink.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #6c554e;
   border-color: #6c554e;
@@ -12993,7 +13055,7 @@ textarea.is-invalid.facetwp-search {
   color: #706768;
   background-color: #e3dfdf;
 }
-.list-group-item-pale-pink.list-group-item-action.active {
+.list-group-item-pale-pink.list-group-item-action.active, .eb-user-account-navigation .list-group-item-pale-pink.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #706768;
   border-color: #706768;
@@ -13007,7 +13069,7 @@ textarea.is-invalid.facetwp-search {
   color: #8c3435;
   background-color: #e2c7c8;
 }
-.list-group-item-red.list-group-item-action.active {
+.list-group-item-red.list-group-item-action.active, .eb-user-account-navigation .list-group-item-red.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #8c3435;
   border-color: #8c3435;
@@ -13021,7 +13083,7 @@ textarea.is-invalid.facetwp-search {
   color: #821d2e;
   background-color: #dec1c5;
 }
-.list-group-item-fucsia.list-group-item-action.active {
+.list-group-item-fucsia.list-group-item-action.active, .eb-user-account-navigation .list-group-item-fucsia.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #821d2e;
   border-color: #821d2e;
@@ -13035,7 +13097,7 @@ textarea.is-invalid.facetwp-search {
   color: #984c0c;
   background-color: #e6cebb;
 }
-.list-group-item-orange.list-group-item-action.active {
+.list-group-item-orange.list-group-item-action.active, .eb-user-account-navigation .list-group-item-orange.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #984c0c;
   border-color: #984c0c;
@@ -13049,7 +13111,7 @@ textarea.is-invalid.facetwp-search {
   color: #7f6100;
   background-color: #ddd4b8;
 }
-.list-group-item-camel.list-group-item-action.active {
+.list-group-item-camel.list-group-item-action.active, .eb-user-account-navigation .list-group-item-camel.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #7f6100;
   border-color: #7f6100;
@@ -13063,7 +13125,7 @@ textarea.is-invalid.facetwp-search {
   color: #735a12;
   background-color: #e5d9b9;
 }
-.list-group-item-yellow.list-group-item-action.active {
+.list-group-item-yellow.list-group-item-action.active, .eb-user-account-navigation .list-group-item-yellow.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #735a12;
   border-color: #735a12;
@@ -13077,7 +13139,7 @@ textarea.is-invalid.facetwp-search {
   color: #46714d;
   background-color: #ccdacf;
 }
-.list-group-item-green.list-group-item-action.active {
+.list-group-item-green.list-group-item-action.active, .eb-user-account-navigation .list-group-item-green.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #46714d;
   border-color: #46714d;
@@ -13091,7 +13153,7 @@ textarea.is-invalid.facetwp-search {
   color: #416463;
   background-color: #cbd5d5;
 }
-.list-group-item-sea-green.list-group-item-action.active {
+.list-group-item-sea-green.list-group-item-action.active, .eb-user-account-navigation .list-group-item-sea-green.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #416463;
   border-color: #416463;
@@ -13105,7 +13167,7 @@ textarea.is-invalid.facetwp-search {
   color: #6f6433;
   background-color: #e3ddc8;
 }
-.list-group-item-amber.list-group-item-action.active {
+.list-group-item-amber.list-group-item-action.active, .eb-user-account-navigation .list-group-item-amber.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #6f6433;
   border-color: #6f6433;
@@ -13119,7 +13181,7 @@ textarea.is-invalid.facetwp-search {
   color: #13795b;
   background-color: #bddcd3;
 }
-.list-group-item-teal.list-group-item-action.active {
+.list-group-item-teal.list-group-item-action.active, .eb-user-account-navigation .list-group-item-teal.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #13795b;
   border-color: #13795b;
@@ -13133,7 +13195,7 @@ textarea.is-invalid.facetwp-search {
   color: #4c5e65;
   background-color: #d3dbde;
 }
-.list-group-item-cyan.list-group-item-action.active {
+.list-group-item-cyan.list-group-item-action.active, .eb-user-account-navigation .list-group-item-cyan.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #4c5e65;
   border-color: #4c5e65;
@@ -13147,7 +13209,7 @@ textarea.is-invalid.facetwp-search {
   color: #5e4712;
   background-color: #d4cdbd;
 }
-.list-group-item-brown.list-group-item-action.active {
+.list-group-item-brown.list-group-item-action.active, .eb-user-account-navigation .list-group-item-brown.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #5e4712;
   border-color: #5e4712;
@@ -13161,7 +13223,7 @@ textarea.is-invalid.facetwp-search {
   color: #821d2e;
   background-color: #dec1c5;
 }
-.list-group-item-dark-coral.list-group-item-action.active {
+.list-group-item-dark-coral.list-group-item-action.active, .eb-user-account-navigation .list-group-item-dark-coral.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #821d2e;
   border-color: #821d2e;
@@ -13175,7 +13237,7 @@ textarea.is-invalid.facetwp-search {
   color: #5f0d23;
   background-color: #d4bbc2;
 }
-.list-group-item-dark-red.list-group-item-action.active {
+.list-group-item-dark-red.list-group-item-action.active, .eb-user-account-navigation .list-group-item-dark-red.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #5f0d23;
   border-color: #5f0d23;
@@ -13189,7 +13251,7 @@ textarea.is-invalid.facetwp-search {
   color: #41464b;
   background-color: #cbccce;
 }
-.list-group-item-gray.list-group-item-action.active {
+.list-group-item-gray.list-group-item-action.active, .eb-user-account-navigation .list-group-item-gray.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #41464b;
   border-color: #41464b;
@@ -13203,7 +13265,7 @@ textarea.is-invalid.facetwp-search {
   color: #1f2326;
   background-color: #c1c2c3;
 }
-.list-group-item-gray-dark.list-group-item-action.active {
+.list-group-item-gray-dark.list-group-item-action.active, .eb-user-account-navigation .list-group-item-gray-dark.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #1f2326;
   border-color: #1f2326;
@@ -13217,7 +13279,7 @@ textarea.is-invalid.facetwp-search {
   color: #686a6c;
   background-color: #dfe0e1;
 }
-.list-group-item-gray-light.list-group-item-action.active {
+.list-group-item-gray-light.list-group-item-action.active, .eb-user-account-navigation .list-group-item-gray-light.list-group-item-action.eb-user-account-navigation-link.eb-active-profile-nav {
   color: #fff;
   background-color: #686a6c;
   border-color: #686a6c;
@@ -13910,19 +13972,21 @@ textarea.is-invalid.facetwp-search {
   }
 }
 
-.carousel-item.active,
+.carousel-item.active, .eb-user-account-navigation .carousel-item.eb-user-account-navigation-link.eb-active-profile-nav,
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
 }
 
 .carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
+.active.carousel-item-end,
+.eb-user-account-navigation .carousel-item-end.eb-user-account-navigation-link.eb-active-profile-nav {
   transform: translateX(100%);
 }
 
 .carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
+.active.carousel-item-start,
+.eb-user-account-navigation .carousel-item-start.eb-user-account-navigation-link.eb-active-profile-nav {
   transform: translateX(-100%);
 }
 
@@ -13931,21 +13995,25 @@ textarea.is-invalid.facetwp-search {
   transition-property: opacity;
   transform: none;
 }
-.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item.active, .carousel-fade .eb-user-account-navigation .carousel-item.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .carousel-fade .carousel-item.eb-user-account-navigation-link.eb-active-profile-nav,
 .carousel-fade .carousel-item-next.carousel-item-start,
 .carousel-fade .carousel-item-prev.carousel-item-end {
   z-index: 1;
   opacity: 1;
 }
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
+.carousel-fade .active.carousel-item-start, .carousel-fade .eb-user-account-navigation .carousel-item-start.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .carousel-fade .carousel-item-start.eb-user-account-navigation-link.eb-active-profile-nav,
+.carousel-fade .active.carousel-item-end,
+.carousel-fade .eb-user-account-navigation .carousel-item-end.eb-user-account-navigation-link.eb-active-profile-nav,
+.eb-user-account-navigation .carousel-fade .carousel-item-end.eb-user-account-navigation-link.eb-active-profile-nav {
   z-index: 0;
   opacity: 0;
   transition: opacity 0s 0.6s;
 }
 @media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
+  .carousel-fade .active.carousel-item-start, .carousel-fade .eb-user-account-navigation .carousel-item-start.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .carousel-fade .carousel-item-start.eb-user-account-navigation-link.eb-active-profile-nav,
+  .carousel-fade .active.carousel-item-end,
+  .carousel-fade .eb-user-account-navigation .carousel-item-end.eb-user-account-navigation-link.eb-active-profile-nav,
+  .eb-user-account-navigation .carousel-fade .carousel-item-end.eb-user-account-navigation-link.eb-active-profile-nav {
     transition: none;
   }
 }
@@ -14054,7 +14122,7 @@ textarea.is-invalid.facetwp-search {
     transition: none;
   }
 }
-.carousel-indicators .active {
+.carousel-indicators .active, .carousel-indicators .eb-user-account-navigation .eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .carousel-indicators .eb-user-account-navigation-link.eb-active-profile-nav {
   opacity: 1;
 }
 
@@ -14700,7 +14768,7 @@ textarea.is-invalid.facetwp-search {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .placeholder.eb-course-action-btn-start::before, .woocommerce table.my_account_orders .placeholder.button::before, .placeholder.wc-block-components-button:not(.is-link)::before, .placeholder.facetwp-reset::before, .menu-btn > .placeholder.nav-link::before, .woocommerce-info a.placeholder.button::before, .woocommerce-notices-wrapper .woocommerce-message a.placeholder.button::before {
+.placeholder.btn::before, .placeholder.et_pb_button::before, .placeholder.eb-course-action-btn-start::before, .woocommerce table.my_account_orders .placeholder.button::before, .placeholder.wc-block-components-button:not(.is-link)::before, .placeholder.facetwp-reset::before, .menu-btn > .placeholder.nav-link::before, .woocommerce-info a.placeholder.button::before, .woocommerce-notices-wrapper .woocommerce-message a.placeholder.button::before {
   display: inline-block;
   content: "";
 }
@@ -19674,7 +19742,7 @@ a.skip-link:not(:focus):not(:focus-within) {
   text-decoration: none;
   background-color: #e9ecef;
 }
-.navbar-dark .navbar-nav .dropdown-menu .nav-link.active, .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
+.navbar-dark .navbar-nav .dropdown-menu .nav-link.active, .navbar-dark .navbar-nav .dropdown-menu .eb-user-account-navigation .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .navbar-dark .navbar-nav .dropdown-menu .nav-link.eb-user-account-navigation-link.eb-active-profile-nav, .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
   color: #fff !important;
   text-decoration: none;
   background-color: #9F163B;
@@ -23005,8 +23073,16 @@ body.page:not(.woocommerce-page) #wrapper-navbar + .wrapper {
   padding: 0;
   margin-top: -150px;
 }
+body.page:not(.woocommerce-page) #main > article > .entry-content > .wp-block-group,
+body.page:not(.woocommerce-page) #main > article > .entry-content > .wp-block-cover {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+body.page:not(.woocommerce-page) #main > article > .entry-content > .wp-block-columns {
+  margin-bottom: 1rem;
+}
 body.page:not(.woocommerce-page) #main > article > .entry-content > *:first-child {
-  padding-top: 8rem;
+  padding-top: 8rem !important;
 }
 
 #wrapper-navbar + .wrapper {
@@ -23046,9 +23122,14 @@ body.privacy-policy #content, body.cmplz-document #content {
 .stretched-link {
   color: #1a1a1a;
 }
+.stretched-link:after {
+  transition: all 0.2s ease-in-out;
+}
 .stretched-link:hover {
   text-decoration: none;
-  color: #1a1a1a;
+}
+.stretched-link:hover:after {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .link-circulo,
@@ -23056,7 +23137,7 @@ body.privacy-policy #content, body.cmplz-document #content {
   position: relative;
   width: 190px;
   height: 190px;
-  border-radius: 190px;
+  border-radius: 50rem !important;
   display: block;
   margin: 1rem auto;
   text-align: center;
@@ -23066,9 +23147,6 @@ body.privacy-policy #content, body.cmplz-document #content {
   font-size: 1.25rem;
   line-height: 1.2;
   padding-bottom: 30px !important;
-  background-image: url("../img/flecha-derecha-w.svg");
-  background-position: center bottom 30px;
-  background-repeat: no-repeat;
 }
 .link-circulo:after,
 .is-style-link-circulo:after {
@@ -23881,20 +23959,78 @@ a:hover .flecha {
   fill: #7b112e;
 }
 
-.flecha-sobre-imagen {
+.flecha-sobre-imagen,
+.globo-sobre-imagen {
   position: absolute;
   bottom: 33%;
   right: 10%;
-  width: 80px !important;
+  width: 120px !important;
   height: auto !important;
   max-height: 150px;
   -o-object-fit: contain;
   object-fit: contain;
-  filter: brightness(100);
   transition: all 0.3s ease;
   border-radius: 0 !important;
 }
 
+.globo-sobre-imagen {
+  right: unset;
+  bottom: unset;
+  width: 40% !important;
+  left: -32px;
+  top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.single-team .entry-content {
+  position: relative;
+  padding-bottom: 80px;
+}
+.single-team .entry-content > .globo-sobre-imagen {
+  z-index: -1;
+  top: unset;
+  bottom: 0;
+  max-height: unset;
+}
+.single-team .entry-content .single-team-content {
+  position: relative;
+}
+.single-team .entry-content .single-team-content .entry-header {
+  padding-right: 100px;
+}
+.single-team .entry-content .single-team-content > .globo-sobre-imagen {
+  transform: scaleX(-1) rotate(20deg);
+  width: 150px !important;
+  left: unset;
+  right: -32px;
+  top: -32px;
+}
+
+article.hfeed-post:hover .globo-sobre-imagen {
+  animation: bounce-rotate 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+}
+
+@keyframes bounce-rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  40% {
+    transform: rotate(8deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(12deg) scale(0.96);
+  }
+  80% {
+    transform: rotate(10deg) scale(1.04);
+  }
+  100% {
+    transform: rotate(10deg) scale(1);
+  }
+}
+.wp-block-image .flecha-sobre-imagen,
+.wp-block-media-text__media .flecha-sobre-imagen {
+  color: #fff;
+}
 .wp-block-image.lined-2:after, .wp-block-image.lined-4:after,
 .wp-block-media-text__media.lined-2:after,
 .wp-block-media-text__media.lined-4:after {
@@ -23913,6 +24049,111 @@ a:hover .flecha {
 
 .wp-block-cover img[src*=flecha-] {
   filter: brightness(100);
+}
+
+.is-style-bocadillo {
+  position: absolute;
+  top: 30%;
+  left: -100px;
+  animation: bocadillo-rotate 1s ease-in-out infinite alternate;
+}
+@keyframes bocadillo-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+img.rounded-circle {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.product-category a:hover img {
+  opacity: 1;
+}
+.product-category a:hover .wp-block-image {
+  transform: rotate(0deg);
+}
+.product-category .category-image-wrapper {
+  position: relative;
+  padding-top: 12%;
+}
+.product-category .category-image-wrapper .wp-block-image {
+  transition: all 0.2s ease-in-out;
+  width: 85%;
+  margin-left: 4%;
+}
+.product-category .category-image-wrapper .wp-block-image:after {
+  border-width: 3px;
+}
+.product-category .category-image-wrapper .wp-block-image img {
+  background-color: #fff;
+}
+.product-category .category-image-wrapper .category-circle {
+  background-color: #f8ba07;
+  width: 70%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 1000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-category .category-image-wrapper .category-circle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  border: 3px solid #1a1a1a;
+  transform: translate(4%, -4%);
+}
+.product-category .category-image-wrapper .category-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1000px;
+  border: 3px solid #1a1a1a;
+  padding: 0.5rem;
+  background-color: #f8ba07;
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  background-image: url("../img/icono-elebe-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+}
+.product-category:nth-child(3n+1) .wp-block-image {
+  transform: rotate(-5deg);
+}
+.product-category:nth-child(3n+2) .category-image-wrapper {
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+.product-category:nth-child(3n+2) .wp-block-image {
+  transform: rotate(4deg);
+}
+.product-category:nth-child(3n+2) .category-circle {
+  top: unset;
+  bottom: 0;
+}
+.product-category:nth-child(3n+2) .category-icon {
+  bottom: unset;
+  top: 15%;
+}
+.product-category:nth-child(3n+3) .wp-block-image {
+  transform: rotate(7deg);
+}
+.product-category:nth-child(3n+3) .category-icon {
+  right: unset;
+  left: -3%;
 }
 
 body.understrap-no-sidebar .alignwide {
@@ -23994,8 +24235,13 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 
 .wp-block-cover,
 .wp-block-group.has-background {
+  padding: 1em;
   border-radius: var(--bs-border-radius-xl);
   overflow: hidden;
+}
+
+p.has-background {
+  border-radius: var(--bs-border-radius);
 }
 
 /* Botones */
@@ -24021,6 +24267,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 
 .wp-block-button__link,
 .btn,
+.et_pb_button,
 .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .button,
 .wc-block-components-button:not(.is-link),
@@ -24029,11 +24276,12 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .woocommerce-notices-wrapper .woocommerce-message a.button,
 .woocommerce-info a.button {
   position: relative;
-  padding-left: 2.7rem !important;
+  padding-left: 3.5rem !important;
   margin-left: 0.5rem;
 }
 .wp-block-button__link.btn-lg,
 .btn.btn-lg,
+.btn-lg.et_pb_button,
 .btn-lg.eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-lg.button,
 .btn-lg.wc-block-components-button:not(.is-link),
@@ -24042,6 +24290,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .woocommerce-notices-wrapper .woocommerce-message a.btn-lg.button,
 .woocommerce-info a.btn-lg.button,
 .btn-group-lg > .btn,
+.btn-group-lg > .et_pb_button,
 .btn-group-lg > .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .btn-group-lg > .button,
 .btn-group-lg > .wc-block-components-button:not(.is-link),
@@ -24053,6 +24302,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-button__link.btn-sm,
 .btn.btn-sm,
+.btn-sm.et_pb_button,
 .eb-course-action-btn-start,
 .woocommerce table.my_account_orders .button,
 .btn-sm.wc-block-components-button:not(.is-link),
@@ -24068,6 +24318,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .woocommerce-info a.button.facetwp-reset,
 .woocommerce-info .menu-btn > a.button.nav-link,
 .btn-group-sm > .btn,
+.btn-group-sm > .et_pb_button,
 .btn-group-sm > .eb-course-action-btn-start,
 .btn-group-sm > .wc-block-components-button:not(.is-link),
 .btn-group-sm > .facetwp-reset,
@@ -24077,6 +24328,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-button__link:before,
 .btn:before,
+.et_pb_button:before,
 .eb-course-action-btn-start:before,
 .woocommerce table.my_account_orders .button:before,
 .wc-block-components-button:not(.is-link):before,
@@ -24087,7 +24339,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
   content: "";
   top: -1px;
   bottom: -1px;
-  left: -0.35rem;
+  left: -0.6rem;
   aspect-ratio: 1/1;
   border-radius: 50rem;
   position: absolute;
@@ -24100,6 +24352,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-button__link:hover:before,
 .btn:hover:before,
+.et_pb_button:hover:before,
 .eb-course-action-btn-start:hover:before,
 .woocommerce table.my_account_orders .button:hover:before,
 .wc-block-components-button:hover:not(.is-link):before,
@@ -24107,17 +24360,41 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .menu-btn > .nav-link:hover:before,
 .woocommerce-notices-wrapper .woocommerce-message a.button:hover:before,
 .woocommerce-info a.button:hover:before {
-  left: -2px;
+  left: -0.25rem;
   background-color: #f8ba07;
+}
+.wp-block-button__link.has-white-background-color, .wp-block-button__link.btn-outline-primary,
+.btn.has-white-background-color,
+.has-white-background-color.et_pb_button,
+.has-white-background-color.eb-course-action-btn-start,
+.has-white-background-color.wc-block-components-button:not(.is-link),
+.menu-btn > .has-white-background-color.nav-link,
+.woocommerce-notices-wrapper .woocommerce-message a.has-white-background-color.button,
+.woocommerce-info a.has-white-background-color.button,
+.btn.btn-outline-primary,
+.btn-outline-primary.et_pb_button,
+.btn-outline-primary.eb-course-action-btn-start,
+.woocommerce table.my_account_orders .button,
+.btn-outline-primary.wc-block-components-button:not(.is-link),
+.facetwp-reset,
+.menu-btn > .btn-outline-primary.nav-link,
+.menu-btn > .nav-link.facetwp-reset,
+.woocommerce-notices-wrapper .woocommerce-message a.btn-outline-primary.button,
+.woocommerce-notices-wrapper .woocommerce-message a.button.facetwp-reset,
+.woocommerce-info a.btn-outline-primary.button,
+.woocommerce-info a.button.facetwp-reset {
+  border: 0;
 }
 .wp-block-button__link.has-white-background-color:before, .wp-block-button__link.btn-outline-primary:before,
 .btn.has-white-background-color:before,
+.has-white-background-color.et_pb_button:before,
 .has-white-background-color.eb-course-action-btn-start:before,
 .has-white-background-color.wc-block-components-button:not(.is-link):before,
 .menu-btn > .has-white-background-color.nav-link:before,
 .woocommerce-notices-wrapper .woocommerce-message a.has-white-background-color.button:before,
 .woocommerce-info a.has-white-background-color.button:before,
 .btn.btn-outline-primary:before,
+.btn-outline-primary.et_pb_button:before,
 .btn-outline-primary.eb-course-action-btn-start:before,
 .woocommerce table.my_account_orders .button:before,
 .btn-outline-primary.wc-block-components-button:not(.is-link):before,
@@ -24132,12 +24409,14 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-button__link.has-white-background-color:hover:before, .wp-block-button__link.btn-outline-primary:hover:before,
 .btn.has-white-background-color:hover:before,
+.has-white-background-color.et_pb_button:hover:before,
 .has-white-background-color.eb-course-action-btn-start:hover:before,
 .has-white-background-color.wc-block-components-button:hover:not(.is-link):before,
 .menu-btn > .has-white-background-color.nav-link:hover:before,
 .woocommerce-notices-wrapper .woocommerce-message a.has-white-background-color.button:hover:before,
 .woocommerce-info a.has-white-background-color.button:hover:before,
 .btn.btn-outline-primary:hover:before,
+.btn-outline-primary.et_pb_button:hover:before,
 .btn-outline-primary.eb-course-action-btn-start:hover:before,
 .woocommerce table.my_account_orders .button:hover:before,
 .btn-outline-primary.wc-block-components-button:hover:not(.is-link):before,
@@ -24149,6 +24428,9 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
   background-color: #9F163B;
 }
 
+.btn-sm:before, .eb-course-action-btn-start:before, .woocommerce table.my_account_orders .button:before, .facetwp-reset:before, .menu-btn > .nav-link:before, .btn-group-sm > .btn:before, .btn-group-sm > .et_pb_button:before, .btn-group-sm > .eb-course-action-btn-start:before, .btn-group-sm > .wc-block-components-button:not(.is-link):before, .btn-group-sm > .facetwp-reset:before, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button:before, .woocommerce-info .btn-group-sm > a.button:before {
+  left: -0.5rem;
+}
 @media (max-width: 991.98px) {
   .menu-btn > .nav-link {
     margin-top: 0.5rem;
@@ -24158,6 +24440,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background),
 .btn-primary,
+.button-primary,
 .eb-course-action-btn-start,
 .wc-block-components-button:not(.is-link),
 .menu-btn > .nav-link {
@@ -24257,12 +24540,57 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 
 /* Cards */
+.card .card-body, .wdm-course-grid .card-body, .wdm-course-grid .wdm-caption, .card .woocommerce ul.products li.product:not(.product-category), .wdm-course-grid .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products .card li.product:not(.product-category), .woocommerce ul.products .wdm-course-grid li.product:not(.product-category),
+.card .woocommerce-page ul.products li.product:not(.product-category),
+.wdm-course-grid .woocommerce-page ul.products li.product:not(.product-category),
+.woocommerce-page ul.products .card li.product:not(.product-category),
+.woocommerce-page ul.products .wdm-course-grid li.product:not(.product-category),
+.card .wp-block-woocommerce-product-template li.product:not(.product-category),
+.wdm-course-grid .wp-block-woocommerce-product-template li.product:not(.product-category),
+.wp-block-woocommerce-product-template .card li.product:not(.product-category),
+.wp-block-woocommerce-product-template .wdm-course-grid li.product:not(.product-category), .woocommerce ul.products li.product:not(.product-category) .card-body, .woocommerce ul.products li.product:not(.product-category) .wdm-course-grid .wdm-caption, .wdm-course-grid .woocommerce ul.products li.product:not(.product-category) .wdm-caption, .woocommerce ul.products li.product:not(.product-category) li.product:not(.product-category),
+.woocommerce-page ul.products li.product:not(.product-category) .card-body,
+.woocommerce-page ul.products li.product:not(.product-category) .wdm-course-grid .wdm-caption,
+.wdm-course-grid .woocommerce-page ul.products li.product:not(.product-category) .wdm-caption,
+.woocommerce-page ul.products li.product:not(.product-category) li.product:not(.product-category),
+.wp-block-woocommerce-product-template li.product:not(.product-category) .card-body,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wdm-course-grid .wdm-caption,
+.wdm-course-grid .wp-block-woocommerce-product-template li.product:not(.product-category) .wdm-caption,
+.wp-block-woocommerce-product-template li.product:not(.product-category) li.product:not(.product-category), .card .widget, .wdm-course-grid .widget, .woocommerce ul.products li.product:not(.product-category) .widget,
+.woocommerce-page ul.products li.product:not(.product-category) .widget,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .widget, .widget .card-body, .widget .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products .widget li.product:not(.product-category),
+.widget .woocommerce-page ul.products li.product:not(.product-category),
+.woocommerce-page ul.products .widget li.product:not(.product-category),
+.widget .wp-block-woocommerce-product-template li.product:not(.product-category),
+.wp-block-woocommerce-product-template .widget li.product:not(.product-category), .widget .widget {
+  background-image: url("../img/fondo-card-body.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: var(--bs-card-border-radius);
+  border-bottom-right-radius: var(--bs-card-border-radius);
+}
 .card .card-subtitle, .wdm-course-grid .card-subtitle, .woocommerce ul.products li.product:not(.product-category) .card-subtitle,
 .woocommerce-page ul.products li.product:not(.product-category) .card-subtitle,
 .wp-block-woocommerce-product-template li.product:not(.product-category) .card-subtitle, .widget .card-subtitle {
   font-weight: 400;
   margin-bottom: 1rem;
   color: #6c757d;
+}
+
+article:nth-child(3n+2) .card-body, article:nth-child(3n+2) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+2) .wdm-caption, article:nth-child(3n+2) .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products article:nth-child(3n+2) li.product:not(.product-category),
+article:nth-child(3n+2) .woocommerce-page ul.products li.product:not(.product-category),
+.woocommerce-page ul.products article:nth-child(3n+2) li.product:not(.product-category),
+article:nth-child(3n+2) .wp-block-woocommerce-product-template li.product:not(.product-category),
+.wp-block-woocommerce-product-template article:nth-child(3n+2) li.product:not(.product-category), article:nth-child(3n+2) .widget {
+  background-position: left top;
+}
+article:nth-child(3n+3) .card-body, article:nth-child(3n+3) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+3) .wdm-caption, article:nth-child(3n+3) .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products article:nth-child(3n+3) li.product:not(.product-category),
+article:nth-child(3n+3) .woocommerce-page ul.products li.product:not(.product-category),
+.woocommerce-page ul.products article:nth-child(3n+3) li.product:not(.product-category),
+article:nth-child(3n+3) .wp-block-woocommerce-product-template li.product:not(.product-category),
+.wp-block-woocommerce-product-template article:nth-child(3n+3) li.product:not(.product-category), article:nth-child(3n+3) .widget {
+  background-position: right bottom;
 }
 
 .borde-color {
@@ -24291,6 +24619,10 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 
 /***/
+.wp-block-media-text {
+  position: relative;
+}
+
 .wp-block-media-text__media,
 .wp-block-image.is-style-lined,
 .woocommerce-product-gallery__image {
@@ -24432,13 +24764,13 @@ table th {
   display: flex;
   margin-left: -1px;
 }
-.input-group-append .btn, .input-group-append .eb-course-action-btn-start, .input-group-append .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders .input-group-append .button, .input-group-append .wc-block-components-button:not(.is-link), .input-group-append .facetwp-reset, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button, .input-group-append .woocommerce-info a.button, .woocommerce-info .input-group-append a.button, .input-group-append .menu-btn > .nav-link {
+.input-group-append .btn, .input-group-append .et_pb_button, .input-group-append .eb-course-action-btn-start, .input-group-append .woocommerce table.my_account_orders .button, .woocommerce table.my_account_orders .input-group-append .button, .input-group-append .wc-block-components-button:not(.is-link), .input-group-append .facetwp-reset, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button, .input-group-append .woocommerce-info a.button, .woocommerce-info .input-group-append a.button, .input-group-append .menu-btn > .nav-link {
   position: relative;
   z-index: 2;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-group-append .btn:focus, .input-group-append .eb-course-action-btn-start:focus, .input-group-append .woocommerce table.my_account_orders .button:focus, .woocommerce table.my_account_orders .input-group-append .button:focus, .input-group-append .wc-block-components-button:focus:not(.is-link), .input-group-append .facetwp-reset:focus, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button:focus, .input-group-append .woocommerce-info a.button:focus, .woocommerce-info .input-group-append a.button:focus, .input-group-append .menu-btn > .nav-link:focus {
+.input-group-append .btn:focus, .input-group-append .et_pb_button:focus, .input-group-append .eb-course-action-btn-start:focus, .input-group-append .woocommerce table.my_account_orders .button:focus, .woocommerce table.my_account_orders .input-group-append .button:focus, .input-group-append .wc-block-components-button:focus:not(.is-link), .input-group-append .facetwp-reset:focus, .input-group-append .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group-append a.button:focus, .input-group-append .woocommerce-info a.button:focus, .woocommerce-info .input-group-append a.button:focus, .input-group-append .menu-btn > .nav-link:focus {
   z-index: 3;
 }
 
@@ -24476,7 +24808,7 @@ select.facetwp-dropdown {
 .facetwp-pager .facetwp-page {
   margin-right: 0;
 }
-.facetwp-pager .facetwp-page.active {
+.facetwp-pager .facetwp-page.active, .facetwp-pager .eb-user-account-navigation .facetwp-page.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .facetwp-pager .facetwp-page.eb-user-account-navigation-link.eb-active-profile-nav {
   background-color: #9F163B;
   color: #fff;
 }
@@ -24624,8 +24956,8 @@ select.facetwp-dropdown {
   margin-bottom: 0;
 }
 
-.hfeed article .wp-post-image,
-.hfeed-post .wp-post-image {
+.hfeed article .wp-post-image:not(.card-img-top),
+.hfeed-post .wp-post-image:not(.card-img-top) {
   margin-bottom: 1rem;
 }
 
@@ -24664,10 +24996,15 @@ select.facetwp-dropdown {
   fill: #fff;
 }
 #seccion-noticias .ultima-noticia .noticia-inner {
-  position: relative;
   max-width: 400px;
   margin: 0 auto;
   z-index: 1;
+}
+#seccion-noticias .ultima-noticia img.rounded-circle {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 #seccion-noticias .noticia-anterior {
   position: relative;
@@ -24689,7 +25026,8 @@ select.facetwp-dropdown {
   background-color: #efd459;
 }
 #seccion-noticias .accede-actualidad {
-  background-color: #fff;
+  position: relative;
+  background-color: #f8f9fa;
 }
 
 .entry-meta {
@@ -24697,6 +25035,12 @@ select.facetwp-dropdown {
   padding-bottom: 0.3rem;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #f8ba07;
+}
+.entry-meta > * {
+  background-color: #fff;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.375rem;
 }
 
 .single-post {
@@ -24789,6 +25133,57 @@ select.facetwp-dropdown {
 }
 
 /***/
+/* Equipo */
+.hfeed-post.type-team {
+  transition: all 0.2s ease-in-out;
+}
+.hfeed-post.type-team:hover {
+  opacity: 1;
+}
+.hfeed-post.type-team .card-img-top {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
+}
+.hfeed-post.type-team .flecha-sobre-imagen {
+  width: 100px !important;
+  height: 100px !important;
+  bottom: 22%;
+  right: -1rem;
+  color: #f8ba07;
+}
+.hfeed-post.type-team .flecha-sobre-imagen svg {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: right center;
+  object-position: right center;
+}
+.hfeed-post.type-team:nth-child(3n+1) {
+  transform: rotate(-2deg);
+}
+.hfeed-post.type-team:nth-child(3n+2) {
+  transform: rotate(1deg) translateY(-4px);
+}
+.hfeed-post.type-team:nth-child(3n+3) {
+  transform: rotate(3deg) translateY(3px);
+}
+.hfeed-post.type-team:hover {
+  transform: scale(0.95);
+}
+
+.single-team .wp-block-image.is-style-lined img,
+.single-team .wp-block-image.is-style-lined:after {
+  border-radius: var(--bs-border-radius-lg);
+}
+.single-team .wp-block-image.is-style-lined:after {
+  border-color: #f8ba07;
+}
+.single-team .entry-content > div {
+  box-shadow: 0.5rem 0.75rem 0 #9f163b;
+}
+
 :root {
   --woocommerce: #9F163B;
   --wc-green: #75bd80;
@@ -24842,6 +25237,17 @@ select.facetwp-dropdown {
   top: 50%;
 }
 
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  border-radius: var(--bs-border-radius-xl);
+  background-color: #f1dade;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0.5rem 0.75rem 0 #9f163b;
+}
+
 .woocommerce-column {
   margin-bottom: 3rem;
 }
@@ -24884,7 +25290,140 @@ div.product div.summary + * {
 .woocommerce ul.products li.product:not(.product-category),
 .woocommerce-page ul.products li.product:not(.product-category),
 .wp-block-woocommerce-product-template li.product:not(.product-category) {
-  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #0f2f47;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.woocommerce ul.products li.product:not(.product-category) a,
+.woocommerce ul.products li.product:not(.product-category) h2,
+.woocommerce ul.products li.product:not(.product-category) .is-style-h2,
+.woocommerce ul.products li.product:not(.product-category) .h2,
+.woocommerce-page ul.products li.product:not(.product-category) a,
+.woocommerce-page ul.products li.product:not(.product-category) h2,
+.woocommerce-page ul.products li.product:not(.product-category) .is-style-h2,
+.woocommerce-page ul.products li.product:not(.product-category) .h2,
+.wp-block-woocommerce-product-template li.product:not(.product-category) a,
+.wp-block-woocommerce-product-template li.product:not(.product-category) h2,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .is-style-h2,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .h2 {
+  color: #fff;
+}
+.woocommerce ul.products li.product:not(.product-category) .price,
+.woocommerce ul.products li.product:not(.product-category) .wc-block-components-product-price,
+.woocommerce-page ul.products li.product:not(.product-category) .price,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-product-price,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .price,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-product-price {
+  font-size: 1.75em;
+  color: #f8ba07;
+}
+.woocommerce ul.products li.product:not(.product-category) .price .woocommerce-Price-currencySymbol,
+.woocommerce ul.products li.product:not(.product-category) .wc-block-components-product-price .woocommerce-Price-currencySymbol,
+.woocommerce-page ul.products li.product:not(.product-category) .price .woocommerce-Price-currencySymbol,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-product-price .woocommerce-Price-currencySymbol,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .price .woocommerce-Price-currencySymbol,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-product-price .woocommerce-Price-currencySymbol {
+  font-size: 0.75em;
+  font-weight: 400 !important;
+}
+.woocommerce ul.products li.product:not(.product-category) .btn-primary, .woocommerce ul.products li.product:not(.product-category) .button-primary, .woocommerce ul.products li.product:not(.product-category) .eb-course-action-btn-start, .woocommerce ul.products li.product:not(.product-category) .wc-block-components-button:not(.is-link), .woocommerce ul.products li.product:not(.product-category) .menu-btn > .nav-link,
+.woocommerce ul.products li.product:not(.product-category) .add_to_cart_button,
+.woocommerce-page ul.products li.product:not(.product-category) .btn-primary,
+.woocommerce-page ul.products li.product:not(.product-category) .button-primary,
+.woocommerce-page ul.products li.product:not(.product-category) .eb-course-action-btn-start,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-button:not(.is-link),
+.woocommerce-page ul.products li.product:not(.product-category) .menu-btn > .nav-link,
+.woocommerce-page ul.products li.product:not(.product-category) .add_to_cart_button,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .btn-primary,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .button-primary,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .eb-course-action-btn-start,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-button:not(.is-link),
+.wp-block-woocommerce-product-template li.product:not(.product-category) .menu-btn > .nav-link,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .add_to_cart_button {
+  background-color: #fff;
+  color: #9F163B;
+  margin-right: 1rem;
+  overflow: visible;
+}
+.woocommerce ul.products li.product:not(.product-category) .btn-primary:before, .woocommerce ul.products li.product:not(.product-category) .button-primary:before, .woocommerce ul.products li.product:not(.product-category) .eb-course-action-btn-start:before, .woocommerce ul.products li.product:not(.product-category) .wc-block-components-button:not(.is-link):before, .woocommerce ul.products li.product:not(.product-category) .menu-btn > .nav-link:before,
+.woocommerce ul.products li.product:not(.product-category) .add_to_cart_button:before,
+.woocommerce-page ul.products li.product:not(.product-category) .btn-primary:before,
+.woocommerce-page ul.products li.product:not(.product-category) .button-primary:before,
+.woocommerce-page ul.products li.product:not(.product-category) .eb-course-action-btn-start:before,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-button:not(.is-link):before,
+.woocommerce-page ul.products li.product:not(.product-category) .menu-btn > .nav-link:before,
+.woocommerce-page ul.products li.product:not(.product-category) .add_to_cart_button:before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .btn-primary:before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .button-primary:before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .eb-course-action-btn-start:before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-button:not(.is-link):before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .menu-btn > .nav-link:before,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .add_to_cart_button:before {
+  background-color: #9F163B;
+}
+.woocommerce ul.products li.product:not(.product-category) .attachment-woocommerce_thumbnail,
+.woocommerce-page ul.products li.product:not(.product-category) .attachment-woocommerce_thumbnail,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .attachment-woocommerce_thumbnail {
+  border-radius: 1rem;
+}
+.woocommerce ul.products li.product:not(.product-category) .product-image-wrapper,
+.woocommerce ul.products li.product:not(.product-category) .wc-block-components-product-image,
+.woocommerce-page ul.products li.product:not(.product-category) .product-image-wrapper,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-product-image,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .product-image-wrapper,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-product-image {
+  position: relative;
+  margin: 1rem 1rem 2rem;
+  margin-bottom: 2rem;
+}
+.woocommerce ul.products li.product:not(.product-category) .product-image-wrapper:after,
+.woocommerce ul.products li.product:not(.product-category) .wc-block-components-product-image:after,
+.woocommerce-page ul.products li.product:not(.product-category) .product-image-wrapper:after,
+.woocommerce-page ul.products li.product:not(.product-category) .wc-block-components-product-image:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .product-image-wrapper:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-product-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  border-radius: 1rem;
+  transform: rotate(-3deg);
+}
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+2) .product-image-wrapper:after,
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+2) .wc-block-components-product-image:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+2) .product-image-wrapper:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+2) .wc-block-components-product-image:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+2) .product-image-wrapper:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+2) .wc-block-components-product-image:after {
+  transform: rotate(1deg) translateY(4px) translateX(3px);
+}
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+3) .product-image-wrapper:after,
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+3) .wc-block-components-product-image:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+3) .product-image-wrapper:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+3) .wc-block-components-product-image:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+3) .product-image-wrapper:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+3) .wc-block-components-product-image:after {
+  transform: rotate(3deg);
+}
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+4) .product-image-wrapper:after,
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+4) .wc-block-components-product-image:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+4) .product-image-wrapper:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+4) .wc-block-components-product-image:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+4) .product-image-wrapper:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+4) .wc-block-components-product-image:after {
+  transform: rotate(-1deg) translateY(-4px);
+}
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+5) .product-image-wrapper:after,
+.woocommerce ul.products li.product:not(.product-category):nth-child(3n+5) .wc-block-components-product-image:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+5) .product-image-wrapper:after,
+.woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+5) .wc-block-components-product-image:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+5) .product-image-wrapper:after,
+.wp-block-woocommerce-product-template li.product:not(.product-category):nth-child(3n+5) .wc-block-components-product-image:after {
+  transform: rotate(4deg) translateY(4px);
 }
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product,
@@ -24893,7 +25432,6 @@ div.product div.summary + * {
   margin: 0 3rem 2rem 0;
   width: calc( 100% / 4 - 2.25rem );
   text-align: center;
-  box-shadow: 0.75rem 0.75rem 0 #f1dade;
   transition: all 0.2s ease-in-out;
 }
 .woocommerce ul.products li.product.last,
@@ -24901,26 +25439,21 @@ div.product div.summary + * {
 .wp-block-woocommerce-product-template li.product.last {
   margin-right: 0 !important;
 }
-.woocommerce ul.products li.product:hover,
-.woocommerce-page ul.products li.product:hover,
-.wp-block-woocommerce-product-template li.product:hover {
+.woocommerce ul.products li.product:not(.product-category):hover,
+.woocommerce-page ul.products li.product:not(.product-category):hover,
+.wp-block-woocommerce-product-template li.product:not(.product-category):hover {
   transform: rotate(-2deg);
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
 .woocommerce ul.products li.product .price,
-.woocommerce ul.products li.product .add-to-cart-container .add-to-cart-container,
+.woocommerce ul.products li.product .add-to-cart-container,
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product .price,
-.woocommerce-page ul.products li.product .add-to-cart-container .add-to-cart-container,
+.woocommerce-page ul.products li.product .add-to-cart-container,
 .wp-block-woocommerce-product-template li.product .woocommerce-loop-product__title,
 .wp-block-woocommerce-product-template li.product .price,
-.wp-block-woocommerce-product-template li.product .add-to-cart-container .add-to-cart-container {
-  padding: 0 1rem;
-}
-.woocommerce ul.products li.product .add-to-cart-container,
-.woocommerce-page ul.products li.product .add-to-cart-container,
 .wp-block-woocommerce-product-template li.product .add-to-cart-container {
-  margin-top: 1rem;
+  padding: 0 1rem;
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title,
@@ -25147,16 +25680,12 @@ a.xoo-wsc-ft-btn-checkout .amount {
 }
 
 .woocommerce ul.products li.product .price,
-.woocommerce div.product p.price, .woocommerce div.product span.price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
 .wc-block-components-product-price {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 1.25em;
-  color: #1a1a1a;
-}
-
-.woocommerce ul.products li.product .price {
-  font-size: 1rem;
-  padding: 0.25rem 1rem;
+  font-size: 1.5em;
 }
 
 .form-check-wrapper.form-check-wrapper-checkbox .woocommerce-input-wrapper input {
@@ -25181,6 +25710,10 @@ p.stars a:after {
   letter-spacing: 1px;
 }
 
+.woocommerce-loop-category__title {
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
 .woocommerce-loop-category__title .count {
   background-color: #f8ba07;
   font-weight: 400;
@@ -25195,14 +25728,25 @@ p.stars a:after {
   text-align: center;
 }
 .product-category img {
-  max-height: 260px;
-  width: auto;
   margin: 0 auto;
   display: block;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
-.btn.disabled, .disabled.eb-course-action-btn-start, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, .woocommerce-info a.disabled.button, .menu-btn > .disabled.nav-link, .disabled.facetwp-reset, .disabled.wc-block-components-button:not(.is-link), .woocommerce table.my_account_orders .disabled.button, .btn:disabled, .eb-course-action-btn-start:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .woocommerce-info a.button:disabled, .menu-btn > .nav-link:disabled, .facetwp-reset:disabled, .wc-block-components-button:disabled:not(.is-link), .woocommerce table.my_account_orders .button:disabled, .wpcf7 input.disabled[type=submit], .wpcf7 input:disabled[type=submit] {
+.btn.disabled, .disabled.et_pb_button, .disabled.eb-course-action-btn-start, .woocommerce-notices-wrapper .woocommerce-message a.disabled.button, .woocommerce-info a.disabled.button, .menu-btn > .disabled.nav-link, .disabled.facetwp-reset, .disabled.wc-block-components-button:not(.is-link), .woocommerce table.my_account_orders .disabled.button, .btn:disabled, .et_pb_button:disabled, .eb-course-action-btn-start:disabled, .woocommerce-notices-wrapper .woocommerce-message a.button:disabled, .woocommerce-info a.button:disabled, .menu-btn > .nav-link:disabled, .facetwp-reset:disabled, .wc-block-components-button:disabled:not(.is-link), .woocommerce table.my_account_orders .button:disabled, .wpcf7 input.disabled[type=submit], .wpcf7 input:disabled[type=submit] {
   opacity: 0.25;
+}
+
+.single_variation_wrap {
+  text-align: center;
+}
+.single_variation_wrap .woocommerce-variation.single_variation {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
 }
 
 .woocommerce-variation-price {
@@ -25213,7 +25757,11 @@ p.stars a:after {
 .products.related .card-title {
   font-size: 1.4rem;
 }
-.products.related .card-body p, .products.related .wdm-course-grid .wdm-caption p, .wdm-course-grid .products.related .wdm-caption p, .products.related .widget p, .products.related .fields {
+.products.related .card-body p, .products.related .wdm-course-grid .wdm-caption p, .wdm-course-grid .products.related .wdm-caption p, .products.related .widget p, .products.related .woocommerce ul.products li.product:not(.product-category) p, .woocommerce ul.products .products.related li.product:not(.product-category) p,
+.products.related .woocommerce-page ul.products li.product:not(.product-category) p,
+.woocommerce-page ul.products .products.related li.product:not(.product-category) p,
+.products.related .wp-block-woocommerce-product-template li.product:not(.product-category) p,
+.wp-block-woocommerce-product-template .products.related li.product:not(.product-category) p, .products.related .fields {
   display: none;
 }
 
@@ -25261,15 +25809,15 @@ input.alg_open_price ~ button[name=add-to-cart] {
 }
 
 div.product .entry-header .price,
-.woocommerce ul.products li.product .price,
-.woocommerce-variation-price .price,
-.wc-block-components-product-price {
+.woocommerce-variation-price .price {
   border-radius: 50rem;
   display: inline-block !important;
   padding: 0.5rem 1rem;
   background-color: #f8ba07;
   margin-bottom: 1rem;
   box-shadow: 0.3rem 0.3rem 0 0 #f1dade;
+  color: #1a1a1a !important;
+  transform: rotate(4deg);
 }
 
 /* WC tabs */
@@ -25288,7 +25836,7 @@ div.product .entry-header .price,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
   padding: 1rem;
 }
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product .woocommerce-tabs ul.tabs .eb-user-account-navigation li.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .woocommerce div.product .woocommerce-tabs ul.tabs li.eb-user-account-navigation-link.eb-active-profile-nav {
   background: #9F163B;
   color: #fff;
 }
@@ -25305,6 +25853,11 @@ div.product .entry-header .price,
 }
 .widget-area .widget p:empty {
   margin: 0;
+}
+
+.widget .has-global-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-widget {
@@ -25486,7 +26039,7 @@ div.product .entry-header .price,
 .carousel-indicators li:hover {
   opacity: 1;
 }
-.carousel-indicators li.active {
+.carousel-indicators li.active, .carousel-indicators .eb-user-account-navigation li.eb-user-account-navigation-link.eb-active-profile-nav, .eb-user-account-navigation .carousel-indicators li.eb-user-account-navigation-link.eb-active-profile-nav {
   background-color: transparent;
   display: inline-block;
 }
@@ -25611,11 +26164,17 @@ article.single-course .eb-course-img-wrapper img {
 }
 
 /* Edwiser cursos */
-.eb-my-course {
+.eb-my-courses-wrapper .eb-my-course {
   display: flex;
   flex-wrap: wrap;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+}
+
+.eb-my-courses-wrapper .eb-my-course .hentry.wdm-col-3-2-1 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .eb-my-courses-wrapper h2, .eb-my-courses-wrapper .is-style-h2, .eb-my-courses-wrapper .h2 {
@@ -25656,6 +26215,18 @@ article.single-course .eb-course-img-wrapper img {
 }
 
 /***/
+.eb-user-account-navigation .eb-user-account-navigation-link a {
+  padding: 0;
+}
+.eb-user-account-navigation .eb-user-account-navigation-link a:hover {
+  background-color: transparent;
+}
+
+.eb-user-account-content {
+  padding: 0;
+  border: 0;
+}
+
 .tribe-common div, .tribe-common span, .tribe-common p, .tribe-common h1, .tribe-common .is-style-h1, .tribe-common .h1, .tribe-common h2, .tribe-common .is-style-h2, .tribe-common .h2, .tribe-common h3, .tribe-common .is-style-h3, .tribe-common .h3, .tribe-common h4, .tribe-common .is-style-h4, .tribe-common .h4, .tribe-common h5, .tribe-common .is-style-h5, .tribe-common .h5, .tribe-common h6, .tribe-common .is-style-h6, .tribe-common .h6, .tribe-common a, .tribe-common button, .tribe-common input {
   font-family: "Ubuntu", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }

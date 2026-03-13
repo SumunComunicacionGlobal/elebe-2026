@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-define( 'COL_CLASSES', 'col-sm-6 col-lg-4 mb-4' );
+define( 'COL_CLASSES', 'col-sm-6 col-lg-4 mb-3' );
 define('CONTACTO_ID', 24);
 define('TARJETA_REGALO_ID', 545);
 
@@ -19,6 +19,7 @@ $understrap_inc_dir = 'inc';
 // Array of files to include.
 $understrap_includes = array(
     // '/smn-dummy-content.php',
+	'/smn-admin.php',
     '/smn-security.php',
     '/smn-seo.php',
     '/smn-widgets.php',

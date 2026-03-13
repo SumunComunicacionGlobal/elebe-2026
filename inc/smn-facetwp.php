@@ -16,7 +16,7 @@ add_action( 'woocommerce_no_products_found', 'fwp_wrapper_close', 15 );
 add_shortcode( 'facetwp_flyout_open', 'get_facetwp_flyout_open' );
 function get_facetwp_flyout_open() {
   if ( !function_exists( 'facetwp_display' ) ) return '';
-  return '<button class="btn btn-sm btn-primary facetwp-flyout-open">'. facetwp_i18n( __( 'Filter anzeigen', 'fwp-front' ) ) . '</button>';
+  return '<button class="btn btn-sm btn-primary facetwp-flyout-open d-md-none">'. facetwp_i18n( __( 'Filter anzeigen', 'fwp-front' ) ) . '</button>';
 }
 
 function fwp_add_facet_labels() {

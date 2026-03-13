@@ -63,8 +63,13 @@ body.understrap-no-sidebar {
 
 .wp-block-cover,
 .wp-block-group.has-background {
+    padding: 1em;
     border-radius: var(--#{$prefix}border-radius-xl);
     overflow: hidden;
+}
+
+p.has-background {
+    border-radius: var(--#{$prefix}border-radius);
 }
 
 
@@ -139,7 +144,7 @@ body.understrap-no-sidebar {
 .wp-block-button__link,
 .btn {
     position: relative;
-    padding-left: 2.7rem !important;
+    padding-left: 3.5rem !important;
     margin-left: .5rem;
 
     &.btn-lg {
@@ -154,7 +159,7 @@ body.understrap-no-sidebar {
         content: "";
         top: -$input-btn-border-width;
         bottom: -$input-btn-border-width;
-        left: -.35rem;
+        left: -.6rem;
         aspect-ratio: 1 / 1;
         border-radius: $border-radius-pill;
         position: absolute;
@@ -167,12 +172,13 @@ body.understrap-no-sidebar {
     }
 
     &:hover:before {
-        left: -$input-btn-border-width*2;
+        left: -.25rem;
         background-color: $secondary;
     }
 
     &.has-white-background-color,
     &.btn-outline-primary {
+        border: 0;
 
         &:before {
             background-color: $secondary;
@@ -183,6 +189,17 @@ body.understrap-no-sidebar {
         }
     }
 
+}
+
+.btn-sm {
+
+    &:before {
+        left: -.5rem;
+    }
+
+    &:hover:before {
+
+    }
 }
 
 .menu-btn > .nav-link {
@@ -321,11 +338,30 @@ body.understrap-no-sidebar {
 /* Cards */
 .card {
 
+    .card-body {
+        background-image: url('../img/fondo-card-body.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: var(--#{$prefix}card-border-radius);
+        border-bottom-right-radius: var(--#{$prefix}card-border-radius);
+    }
+
 	.card-subtitle {
 		font-weight: $font-weight-normal;
 		margin-bottom: $spacer;
 		color: $gray-600;
 	}
+}
+
+article{
+    
+    &:nth-child(3n + 2) .card-body {
+        background-position: left top;
+    }
+    &:nth-child(3n + 3) .card-body {
+        background-position: right bottom;
+    }
 }
 
 .borde-color {
@@ -348,7 +384,9 @@ body.understrap-no-sidebar {
 }
 
 /***/
-
+.wp-block-media-text {
+    position: relative;
+}
 .wp-block-media-text__media,
 .wp-block-image.is-style-lined,
 .woocommerce-product-gallery__image {

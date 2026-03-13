@@ -32,21 +32,85 @@ a:hover .flecha {
 	fill: darken($primary, 8%);
 }
 
-.flecha-sobre-imagen {
+.flecha-sobre-imagen,
+.globo-sobre-imagen {
 	position: absolute;
 	bottom: 33%;
 	right: 10%;
-	width: 80px !important;
+	width: 120px !important;
 	height: auto !important;
 	max-height: 150px;
 	object-fit: contain;
-	filter: brightness(100);
 	transition: all .3s ease;
 	border-radius: 0 !important;
 }
 
+.globo-sobre-imagen {
+	right: unset;
+	bottom: unset;
+	width: 40% !important;
+	left: -32px;
+	top: $spacer;
+	transition: $transition-base;
+}
+
+.single-team .entry-content {
+	position: relative;
+	padding-bottom: 80px;
+
+	> .globo-sobre-imagen {
+		z-index: -1;
+		top: unset;
+		bottom: 0;
+		max-height: unset;
+	}
+
+	.single-team-content {
+		position: relative;
+
+		.entry-header {
+			padding-right: 100px;
+		}
+
+		> .globo-sobre-imagen {
+			transform: scaleX(-1) rotate(20deg);
+			width: 150px !important;
+			left: unset;
+			right: -32px;
+			top: -32px;
+		}
+	}
+
+}
+
+article.hfeed-post:hover .globo-sobre-imagen {
+	animation: bounce-rotate 0.6s cubic-bezier(.68,-0.55,.27,1.55) both;
+}
+
+@keyframes bounce-rotate {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	40% {
+		transform: rotate(8deg) scale(1.08);
+	}
+	60% {
+		transform: rotate(12deg) scale(0.96);
+	}
+	80% {
+		transform: rotate(10deg) scale(1.04);
+	}
+	100% {
+		transform: rotate(10deg) scale(1);
+	}
+}
+
 .wp-block-image,
 .wp-block-media-text__media {
+
+	.flecha-sobre-imagen {
+		color: $white;
+	}
 
 	&.lined-2,
 	&.lined-4 {
@@ -77,4 +141,140 @@ a:hover .flecha {
 	img[src*="flecha-"] {
 		filter: brightness(100);
 	}
+}
+
+.is-style-bocadillo {
+	position: absolute;
+	top: 30%;
+	left: -100px;
+	animation: bocadillo-rotate 1s ease-in-out infinite alternate;
+
+	@keyframes bocadillo-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(30deg);
+		}
+	}
+}
+
+img.rounded-circle {
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+.product-category {
+
+	a:hover {
+		
+		img {
+			opacity: 1;
+		}
+
+		.wp-block-image {
+			transform: rotate(0deg);
+		}
+	}
+		
+	.category-image-wrapper {
+		position: relative;
+		padding-top: 12%;
+
+		.wp-block-image {
+			transition: $transition-base;
+			width: 85%;
+			margin-left: 4%;
+
+			&:after {
+				border-width: 3px;
+			}
+
+			img {
+				background-color: $white;
+			}
+		}
+
+		.category-circle {
+			background-color: $secondary;
+			width: 70%;
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			border-radius: 1000px;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 1000px;
+				border: 3px solid $dark;
+				transform: translate(4%, -4%);
+			}
+		}
+
+		.category-icon {
+			width: 4rem;
+			height: 4rem;
+			border-radius: 1000px;
+			border: 3px solid $dark;
+			padding: .5rem;
+			background-color: $secondary;
+			position: absolute;
+			bottom: 12%;
+			right: 0;
+			background-image: url('../img/icono-elebe-white.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 40% auto;
+		}
+	}
+
+	&:nth-child(3n + 1) {
+		
+		.wp-block-image {
+			transform: rotate(-5deg);
+		}
+	}
+
+	&:nth-child(3n + 2) {
+		
+		.category-image-wrapper {
+			padding-top: 2%;
+			padding-bottom: 10%;
+		}
+
+		.wp-block-image {
+			transform: rotate(4deg);
+		}
+
+		.category-circle {
+			top: unset;
+			bottom: 0;
+		}
+
+		.category-icon {
+			bottom: unset;
+			top: 15%;
+		}
+	}
+
+	&:nth-child(3n + 3) {
+		
+		.wp-block-image {
+			transform: rotate(7deg);
+		}
+
+		.category-icon {
+			right: unset;
+			left: -3%;
+		}
+	
+	}
+
 }

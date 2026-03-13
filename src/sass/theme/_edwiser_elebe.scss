@@ -10,11 +10,16 @@ article.single-course {
 }
 
 /* Edwiser cursos */
-.eb-my-course {
+.eb-my-courses-wrapper .eb-my-course {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: - $grid-gutter-width / 2;
 	margin-right: - $grid-gutter-width / 2;
+}
+.eb-my-courses-wrapper .eb-my-course .hentry.wdm-col-3-2-1 {
+	padding-left: $grid-gutter-width / 2;
+	padding-right: $grid-gutter-width / 2;
+	margin-bottom: $grid-gutter-width;
 }
 .eb-my-courses-wrapper h2 {
 	border-bottom: 0;
@@ -59,3 +64,34 @@ article.single-course {
 }
 /***/
 
+.eb-user-account-navigation {
+	@extend .list-group;
+
+	.eb-user-account-navigation-link {
+		@extend .list-group-item;
+
+		&.eb-active-profile-nav {
+			@extend .active;
+		}
+
+		a {
+			padding: 0;
+
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.eb-user-account-content {
+	padding: 0;
+	border: 0;
+}
+
+.et_pb_button {
+	@extend .btn;
+}
+.button-primary {
+	@extend .btn-primary;
+}

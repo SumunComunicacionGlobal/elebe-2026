@@ -20,7 +20,9 @@ $q = new WP_Query($args);
 
 						<div class="noticia-inner">
 
-							<h3 class="h2"><a class="text-white" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title( '', '' ); ?></a></h3>
+							<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'rounded-circle mb-3' ) ); ?>
+
+							<h3 class="h2"><a class="stretched-link" class="text-white" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title( '', '' ); ?></a></h3>
 							<?php the_excerpt(); ?>
 
 						</div>
@@ -36,7 +38,7 @@ $q = new WP_Query($args);
 
 						<div class="noticia-inner">
 
-							<h3 class="h5"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title( '', '' ); ?></a></h3>
+							<h3 class="h5"><a class="stretched-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title( '', '' ); ?></a></h3>
 
 						</div>
 
@@ -52,7 +54,7 @@ $q = new WP_Query($args);
 								<div class="noticia-inner">
 
 									<div class="h2">
-										<a href="<?php echo get_the_permalink( $noticias_id ); ?>" title="<?php _e( 'Más contenido de interés', 'elebe' ); ?>"><?php _e( 'Más contenido de interés', 'elebe' ); ?>
+										<a class="stretched-link" href="<?php echo get_the_permalink( $noticias_id ); ?>" title="<?php _e( 'Más contenido de interés', 'elebe' ); ?>"><?php _e( 'Más contenido de interés', 'elebe' ); ?>
 											
 											<p class="mt-3">
 												<?php echo get_flecha_svg(); ?>

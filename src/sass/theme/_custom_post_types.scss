@@ -32,3 +32,64 @@
 	}
 }
 /***/
+
+/* Equipo */
+.hfeed-post.type-team {
+	transition: $transition-base;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	.card-img-top {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		object-position: center top;
+	}
+
+	.flecha-sobre-imagen {
+		width: 100px !important;
+		height: 100px !important;
+		bottom: 22%;
+		right: -$spacer;
+		color: $secondary;
+
+		svg {
+			// width: 100px;
+			// height: 100px;
+			object-fit: contain;
+			object-position: right center;
+		}
+	}
+
+	&:nth-child(3n + 1) {
+		transform: rotate(-2deg);
+	}
+
+	&:nth-child(3n + 2) {
+		transform: rotate(1deg) translateY(-4px);
+	}
+
+	&:nth-child(3n + 3) {
+		transform: rotate(3deg) translateY(3px);
+	}
+
+	&:hover {
+		transform: scale(.95);
+	}
+}
+.single-team {
+
+	.wp-block-image.is-style-lined img,
+	.wp-block-image.is-style-lined:after {
+		border-radius: var(--#{$prefix}border-radius-lg);
+	}
+
+	.wp-block-image.is-style-lined:after {
+		border-color: $secondary;
+	}
+
+	.entry-content > div {
+    	box-shadow: 0.5rem 0.75rem 0 rgba($primary, 1);
+	}
+}

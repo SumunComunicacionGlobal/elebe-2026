@@ -44,8 +44,8 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $('.custom-select-div select, #pwgc-purchase-container select').addClass('custom-select');
   $('#pwgc-purchase-container input[type="text"], #pwgc-purchase-container textarea, input.alg_open_price, #commentform textarea, #commentform input[type="text"], #commentform input[type="email"], #pwgc-redeem-gift-card-number').addClass('form-control');
-  $('#pwgc-redeem-button').addClass('btn btn-secondary');
-  $('.wp-block-button__link, #place_order').addClass('btn btn-primary');
+  // $('#pwgc-redeem-button').addClass('btn btn-secondary');
+  // $('.wp-block-button__link, #place_order').addClass('btn btn-primary');
 });
 
 jQuery('.sticky-sidebar').stickySidebar({

@@ -334,3 +334,38 @@ add_filter('acf/load_field/name=color', 'acf_load_color_field_choices');
 //     $colores = get_colores();
 //     add_theme_support( 'editor-color-palette', $colores );
 // }
+
+function smn_get_random_arrow() {
+
+    $theme_dir = get_stylesheet_directory() . '/img/flechas';
+    $theme_uri = get_stylesheet_directory_uri() . '/img/flechas';
+
+    if ( is_dir( $theme_dir ) ) {
+        $images = glob( $theme_dir . '/*.{jpg,jpeg,png,gif,svg,webp}', GLOB_BRACE );
+        if ( $images && count( $images ) > 0 ) {
+            $random_image = $images[ array_rand( $images ) ];
+            // $image_url = $theme_uri . '/' . basename( $random_image );
+            // $img_tag = '<img class="flecha-sobre-imagen" src="' . esc_url( $image_url ) . '" alt="'.__( 'Winker', 'elebe' ).'" class="random-arrow-image" />';
+            $img_code = file_get_contents( $random_image );
+            return '<span class="flecha-sobre-imagen">' . $img_code . '</span>';
+        }
+    }
+
+    return false;
+}
+
+function smn_get_random_bubble() {
+    $theme_dir = get_stylesheet_directory() . '/img/globos';
+    $theme_uri = get_stylesheet_directory_uri() . '/img/globos';
+
+    if ( is_dir( $theme_dir ) ) {
+        $images = glob( $theme_dir . '/*.{jpg,jpeg,png,gif,svg,webp}', GLOB_BRACE );
+        if ( $images && count( $images ) > 0 ) {
+            $random_image = $images[ array_rand( $images ) ];
+            $img_tag = '<img src="' . esc_url( $theme_uri . '/' . basename( $random_image ) ) . '" alt="'.__( 'Sprechblase', 'elebe' ).'" class="random-bubble-image" />';
+            // $img_code = file_get_contents( $random_image );
+            return '<span class="globo-sobre-imagen">' . $img_tag . '</span>';
+        }
+
+    }
+}

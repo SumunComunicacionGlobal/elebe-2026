@@ -11,42 +11,60 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header col-md-4">
+	<div class="col-sm-6 col-md-4 mb-3">
 
 		<div class="sticky-sidebar">
 
 			<div class="sidebar__inner">
 
-				<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class' => 'mb-4 mt-3 rounded-circle') ); ?>
+				<div class="wp-block-image is-style-lined mb-0">
 
-				<?php the_title( '<h1 class="entry-title mb-0">', '</h1>' ); ?>
+					<?php echo get_the_post_thumbnail( $post->ID, 'medium_large', array('class' => 'mb-0 w-100') ); ?>
 
-				<?php echo '<div class="text-muted">' . wpautop( $post->post_excerpt ) . '</div>'; ?>
+				</div>
 
 			</div>
 
 		</div>
 
-	</header><!-- .entry-header -->
+	</div><!-- .col -->
 
-	<div class="entry-content col-md-8">
+	<div class="entry-content col-md-8 align-self-center">
 
-		<?php the_content(); ?>
+		<div class="bg-light p-2 p-md-3 rounded-3 single-team-content">
 
-		<footer class="entry-footer">
+			<header class="entry-header">
 
-			<?php understrap_entry_footer(); ?>
+				<?php smn_breadcrumb(); ?>
 
-		</footer><!-- .entry-footer -->
+				<?php the_title( '<h1 class="entry-title mb-0">', '</h1>' ); ?>
 
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+				<?php echo '<div class="text-muted small">' . wpautop( $post->post_excerpt ) . '</div>'; ?>
+
+			</header>
+
+			<?php the_content(); ?>
+
+			<footer class="entry-footer">
+
+				<?php understrap_entry_footer(); ?>
+
+			</footer><!-- .entry-footer -->
+
+			<?php
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
+
+			<?php echo smn_get_random_bubble(); ?>
+
+		</div><!-- .bg-pale-pink -->
+
+		<?php echo smn_get_random_bubble(); ?>
 
 	</div><!-- .entry-content -->
 

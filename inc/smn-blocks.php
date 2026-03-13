@@ -43,6 +43,15 @@ if ( function_exists( 'register_block_style' ) ) {
     );
 
     register_block_style(
+        'core/image',
+        array(
+            'name'         => 'bocadillo',
+            'label'        => __( 'Bocadillo', 'smn-admin' ),
+            'is_default'   => false,
+        )
+    );
+
+    register_block_style(
         'core/cover',
         array(
             'name'         => 'bg-contain',
@@ -184,22 +193,16 @@ function list_block_wrapper( $block_content, $block ) {
 add_filter( 'render_block', 'insert_random_arrow_image_in_media_text', 10, 2 );
 function insert_random_arrow_image_in_media_text( $block_content, $block ) {
     if ( isset( $block['blockName'] ) && $block['blockName'] === 'core/media-text' ) {
-        $theme_dir = get_stylesheet_directory() . '/img/flechas';
-        $theme_uri = get_stylesheet_directory_uri() . '/img/flechas';
 
-        if ( is_dir( $theme_dir ) ) {
-            $images = glob( $theme_dir . '/*.{jpg,jpeg,png,gif,svg,webp}', GLOB_BRACE );
-            if ( $images && count( $images ) > 0 ) {
-                $random_image = $images[ array_rand( $images ) ];
-                $image_url = $theme_uri . '/' . basename( $random_image );
-                $img_tag = '<img class="flecha-sobre-imagen" src="' . esc_url( $image_url ) . '" alt="" class="random-arrow-image" />';
-                $block_content = preg_replace(
-                    '/(<figure[^>]*class="[^"]*wp-block-media-text__media[^"]*"[^>]*>)/',
-                    '$1' . $img_tag,
-                    $block_content,
-                    1
-                );
-            }
+        $img_tag = smn_get_random_arrow();
+
+        if ( $img_tag ) {
+            $block_content = preg_replace(
+                '/(<figure[^>]*class="[^"]*wp-block-media-text__media[^"]*"[^>]*>)/',
+                '$1' . $img_tag,
+                $block_content,
+                1
+            );
         }
     }
     return $block_content;

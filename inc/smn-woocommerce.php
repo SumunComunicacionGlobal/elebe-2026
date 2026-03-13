@@ -8,6 +8,13 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', function() {
     return '782px'; 
 });
 
+// Desactivar marcas
+add_action( 'init', function() {
+    update_option( 'wc_feature_woocommerce_brands_enabled', 'no' );
+} );
+
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+
 remove_filter( 'woocommerce_loop_add_to_cart_link', 'understrap_loop_add_to_cart_link' );
  
 // replace woocommerce breadcrumbs with smn_breadcrumb
@@ -157,7 +164,7 @@ add_filter('gettext', 'translate_woocommerce', 10, 3);
 
 add_filter( 'woocommerce_product_related_products_heading', 'elebe_titulo_cursos_relacionados' );
 function elebe_titulo_cursos_relacionados( $title ) {
-  return __( 'Cursos relacionados', 'elebe' );
+  return __( 'Sie könnten auch interessiert sein an', 'elebe' );
 }
 
 
@@ -185,7 +192,7 @@ function enable_virtual_option(){
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text', 10, 2 );
 function woocommerce_custom_single_add_to_cart_text( $var, $instance ) {
   if ($instance->is_type( PWGC_PRODUCT_TYPE_SLUG )) {
-    return __( 'Regálaselo', 'elebe' );
+    return __( 'Gutschein kaufen', 'elebe' );
   } elseif('yes' == get_post_meta( get_the_ID(), '_alg_wc_product_open_pricing_enabled', true )) {
     return __( 'Pagar', 'elebe' ); 
   }
@@ -301,7 +308,7 @@ function custom_wc_product_tag_label() {
 
 }
 
-add_action( 'woocommerce_after_add_to_cart_button', 'mostrar_boton_moodle_en_productos' );
+// add_action( 'woocommerce_after_add_to_cart_button', 'mostrar_boton_moodle_en_productos' );
 function mostrar_boton_moodle_en_productos() {
   // global $post;
   // $product_options = get_post_meta( $post->ID, 'product_options', true );
@@ -317,7 +324,7 @@ function mostrar_boton_moodle_en_productos() {
     if ('search' != $product_visibility && 'hidden' != $product_visibility ) {
       $url = get_permalink( get_option('woocommerce_myaccount_page_id') );
       $url = wc_get_account_endpoint_url( 'my-account-courses' );
-      echo '<a href="' . $url . '" class="btn btn-outline-primary btn-lg ms-2">'.__( 'Mis cursos', 'elebe' ).'</a>';
+      echo '<a href="' . $url . '" class="btn btn-primary btn-lg ms-2">'.__( 'Mis cursos', 'elebe' ).'</a>';
     }
   }
 
@@ -645,3 +652,29 @@ remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_
 remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
 add_action( 'woocommerce_after_shop_loop', 'woocommerce_taxonomy_archive_description', 5 );
 add_action( 'woocommerce_after_shop_loop', 'woocommerce_product_archive_description', 5 );
+
+add_action( 'woocommerce_before_subcategory_title', function( $category ) {
+
+$color_slug = get_field( 'color', 'product_cat_' . $category->term_id );
+
+echo '<div class="category-image-wrapper">';
+    echo '<div class="category-circle bg-' . esc_attr( $color_slug ) . '"></div>';
+    echo '<div class="wp-block-image is-style-lined">';
+}, 9 );
+
+add_action( 'woocommerce_before_subcategory_title', function( $category ) {
+    
+    $color_slug = get_field( 'color', 'product_cat_' . $category->term_id );
+
+    echo '</div>';
+    echo '<div class="category-icon bg-' . esc_attr( $color_slug ) . '"></div>';
+  echo '</div>';
+}, 11 );
+
+// Add an image wrapper around the product thumbnail in the product loop
+add_action( 'woocommerce_before_shop_loop_item_title', function() {
+    echo '<div class="product-image-wrapper">';
+}, 9 );
+add_action( 'woocommerce_before_shop_loop_item_title', function() {
+    echo '</div>';
+}, 11 );

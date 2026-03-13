@@ -11,10 +11,15 @@
 		}
 
 		.noticia-inner {
-			position: relative;
 			max-width: 400px;
 			margin: 0 auto;
 			z-index: 1;
+		}
+
+		img.rounded-circle {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
 		}
 	}
 
@@ -41,7 +46,8 @@
 		}
 	}
 	.accede-actualidad {
-		background-color: $white;
+		position: relative;
+		background-color: $light;
 	}
 }
 
@@ -59,6 +65,13 @@
 	padding-bottom: .3rem;
 	margin-bottom: .5rem;
 	border-bottom: 1px solid $secondary;
+
+	> * {
+		background-color: $white;
+		padding: .1rem .5rem; 
+		margin-right: .5rem; 
+		border-radius: $border-radius-sm;
+	}
 }
 
 .single-post {

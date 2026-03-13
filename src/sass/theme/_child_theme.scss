@@ -44,8 +44,22 @@ body.page:not(.woocommerce-page) {
 
 	}
 
-	#main > article > .entry-content > *:first-child {
-		padding-top: 8rem;
+	#main > article > .entry-content {
+
+		> .wp-block-group,
+		> .wp-block-cover {
+			padding-top: $grid-gutter-width;
+			padding-bottom: $grid-gutter-width;
+		}
+
+		> .wp-block-columns {
+			margin-bottom: $spacer;
+		}
+		
+		> *:first-child {
+			padding-top: 8rem !important;
+		}
+
 	}
 
 }
@@ -114,9 +128,16 @@ body {
 .stretched-link {
     color: $body-color;
 
+	&:after {
+		transition: $transition-base;
+	}
+
     &:hover {
         text-decoration: none;
-        color: $body-color;
+
+		&:after {
+			background-color: rgba($white, .1);
+		}
     }
 }
 
@@ -125,7 +146,7 @@ body {
 	position: relative;
 	width: 190px;
 	height: 190px;
-	border-radius: 190px;
+	border-radius: $border-radius-pill !important;
 	display: block;
 	margin: 1rem auto;
 	text-align: center;
@@ -135,9 +156,9 @@ body {
 	font-size: $font-size-base * 1.25;
 	line-height: 1.2;
 	padding-bottom: 30px !important;
-	background-image: url('../img/flecha-derecha-w.svg');
-	background-position: center bottom 30px;
-	background-repeat: no-repeat;
+	// background-image: url('../img/flecha-derecha-w.svg');
+	// background-position: center bottom 30px;
+	// background-repeat: no-repeat;
 
 	&:after {
 		content: "";
