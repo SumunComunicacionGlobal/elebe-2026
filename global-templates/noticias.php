@@ -20,7 +20,11 @@ $q = new WP_Query($args);
 
 						<div class="noticia-inner">
 
-							<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'rounded-circle mb-3' ) ); ?>
+							<div class="wp-block-image d-inline-block is-style-lined mb-3">
+
+								<?php the_post_thumbnail( 'thumbnail', array( 'style' => 'width:180px;aspect-ratio:1;object-fit:cover;' ) ); ?>
+
+							</div>
 
 							<h3 class="h2"><a class="stretched-link" class="text-white" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title( '', '' ); ?></a></h3>
 							<?php the_excerpt(); ?>
