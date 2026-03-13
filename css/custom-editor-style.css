@@ -25375,7 +25375,6 @@ div.product div.summary + * {
 .wp-block-woocommerce-product-template li.product:not(.product-category) .wc-block-components-product-image {
   position: relative;
   margin: 1rem 1rem 2rem;
-  margin-bottom: 2rem;
 }
 .woocommerce ul.products li.product:not(.product-category) .product-image-wrapper:after,
 .woocommerce ul.products li.product:not(.product-category) .wc-block-components-product-image:after,

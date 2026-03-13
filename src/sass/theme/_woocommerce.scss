@@ -159,7 +159,6 @@ div.product div.summary + * {
         .wc-block-components-product-image {
             position: relative;
             margin: $spacer $spacer $spacer*2;
-            margin-bottom: $spacer * 2;
             
             &:after {
                 content: "";
