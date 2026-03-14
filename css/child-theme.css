@@ -17557,6 +17557,11 @@ blockquote,
   display: inline-block;
   margin-right: 6px;
 }
+.fields .item, .entry-footer .item {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
 
 .page-title {
   padding-left: 0;
@@ -17686,9 +17691,26 @@ article.hfeed-post:hover .globo-sobre-imagen {
 
 .is-style-bocadillo {
   position: absolute;
-  top: 30%;
-  left: -100px;
+  z-index: 1;
+  top: -15%;
+  left: -40px;
   animation: bocadillo-rotate 1s ease-in-out infinite alternate;
+}
+@media (min-width: 599px) {
+  .is-style-bocadillo {
+    top: 5%;
+  }
+}
+@media (min-width: 599px) {
+  .is-style-bocadillo {
+    top: 15%;
+  }
+}
+@media (min-width: 1400px) {
+  .is-style-bocadillo {
+    top: 20%;
+    left: -100px;
+  }
 }
 @keyframes bocadillo-rotate {
   0% {
@@ -17697,6 +17719,19 @@ article.hfeed-post:hover .globo-sobre-imagen {
   100% {
     transform: rotate(30deg);
   }
+}
+.is-style-bocadillo:after {
+  content: "";
+  font-family: var(--wp--preset--font-family--font-quote);
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  width: 70%;
 }
 
 img.rounded-circle {
@@ -17870,6 +17905,9 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .wp-block-group.has-background {
   padding: 1em;
   border-radius: var(--bs-border-radius-xl);
+}
+
+.wp-block-cover {
   overflow: hidden;
 }
 
@@ -19432,6 +19470,21 @@ input.alg_open_price ~ button[name=add-to-cart] {
   margin-left: auto;
 }
 
+div.product .entry-header {
+  position: relative;
+}
+div.product .entry-header:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 256px;
+  height: 256px;
+  border-radius: 50rem;
+  background-color: #f8ba07;
+  opacity: 0.4;
+}
+
 div.product .entry-header .price,
 .woocommerce-variation-price .price {
   border-radius: 50rem;
@@ -19832,6 +19885,18 @@ article.single-course .eb-course-img-wrapper img {
 
 .eb-course-card-title.eb-course-title, .eb-course-card-title {
   color: #9F163B;
+}
+
+.wdm-course-grid {
+  background-color: #0f2f47;
+  color: #fff;
+  overflow: hidden;
+}
+.wdm-course-grid * {
+  color: #fff !important;
+}
+.wdm-course-grid .wdm-caption {
+  background-image: none;
 }
 
 .eb-course-action-btn-start {

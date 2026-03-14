@@ -65,6 +65,9 @@ body.understrap-no-sidebar {
 .wp-block-group.has-background {
     padding: 1em;
     border-radius: var(--#{$prefix}border-radius-xl);
+}
+
+.wp-block-cover {
     overflow: hidden;
 }
 

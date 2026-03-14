@@ -145,9 +145,23 @@ article.hfeed-post:hover .globo-sobre-imagen {
 
 .is-style-bocadillo {
 	position: absolute;
-	top: 30%;
-	left: -100px;
+	z-index: 1;
+	top: -15%;
+	left: -40px;
 	animation: bocadillo-rotate 1s ease-in-out infinite alternate;
+
+	@include media-breakpoint-up(sm) {
+		top: 5%;
+	}
+
+	@include media-breakpoint-up(sm) {
+		top: 15%;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		top: 20%;
+		left: -100px;
+	}
 
 	@keyframes bocadillo-rotate {
 		0% {
@@ -156,6 +170,20 @@ article.hfeed-post:hover .globo-sobre-imagen {
 		100% {
 			transform: rotate(30deg);
 		}
+	}
+
+	&:after {
+		content: "";
+		font-family: var(--wp--preset--font-family--font-quote);
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+		font-size: 1.25rem;
+		line-height: 1.2;
+		color: $white;
+		text-align: center;
+		width: 70%;
 	}
 }
 

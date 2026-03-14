@@ -50,11 +50,21 @@ article.single-course {
 }
 .wdm-course-grid {
 	@extend .card;
+	background-color: $darkblue;
+	color: $white;
+	overflow: hidden;
+
+	* {
+		color: $white !important;
+	}
 
 	.wdm-caption {
 		@extend .card-body;
+		background-image: none;
 	}
+
 }
+
 .eb-course-action-btn-start {
 	@extend .btn;
 	@extend .btn-sm;

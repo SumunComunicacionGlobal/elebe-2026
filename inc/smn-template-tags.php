@@ -81,7 +81,7 @@ function understrap_entry_footer() {
             }
         }
         if ('' != $tax_footer) {
-            echo '<div class="row mt-5">'.$tax_footer.'</div>';
+            echo '<div class="row">'.$tax_footer.'</div>';
         }
 
 	}

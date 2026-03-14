@@ -218,6 +218,12 @@ blockquote,
 			}
 		}
 	}
+
+	.item {
+		border: $border-width solid $border-color;
+		border-radius: $border-radius;
+		padding: .5rem;
+	}
 }
 
 .page-title {
