@@ -175,7 +175,7 @@ article.hfeed-post:hover .globo-sobre-imagen {
 	}
 
 	&:after {
-		content: "Mehr als Spanisch";
+		content: "Spanisch lernen leicht gemacht";
 		font-family: var(--wp--preset--font-family--font-quote);
 		position: absolute;
 		top: 50%;
@@ -186,6 +186,16 @@ article.hfeed-post:hover .globo-sobre-imagen {
 		color: $white;
 		text-align: center;
 		width: 70%;
+	}
+}
+
+html[lang="es-ES"] .is-style-bocadillo:after {
+	content: "Aprender español nunca fue tan fácil";
+}
+html[lang="en-EN"],
+html[lang="en-US"] {
+	.is-style-bocadillo:after {
+		content: "Learn Spanish the easy way";
 	}
 }
 

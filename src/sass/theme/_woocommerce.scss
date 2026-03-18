@@ -682,19 +682,60 @@ input.alg_open_price {
 	margin-left: auto;
 }
 
-div.product .entry-header {
-    position: relative;
+div.product {
+    
+    .entry-header {
+        position: relative;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 40px;
-        right: 0;
-        width: 256px;
-        height: 256px;
-        border-radius: $border-radius-pill;
-        background-color: $secondary;
-        opacity: .4;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 65%;
+            height: 300px;
+            opacity: .1;
+            z-index: 0;
+            background-image: url('../img/globos/globo-4.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .summary {
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 2em;
+        }
+
+        h2, h3 {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -1rem;
+                left: -1.5rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 999px;
+                background-color: $secondary;
+                z-index: -1;
+                
+            }
+        }
+
+        h3 {
+            color: $blue;
+            &:before {
+                width: 3rem;
+                height: 3rem;
+                top: -0.75rem;
+                left: -1rem;
+                opacity: .3;
+            }
+
+        }
     }
 }
 

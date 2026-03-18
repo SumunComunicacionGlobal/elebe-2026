@@ -24021,7 +24021,7 @@ article.hfeed-post:hover .globo-sobre-imagen {
   }
 }
 .is-style-bocadillo:after {
-  content: "Mehr als Spanisch";
+  content: "Spanisch lernen leicht gemacht";
   font-family: var(--wp--preset--font-family--font-quote);
   position: absolute;
   top: 50%;
@@ -24032,6 +24032,15 @@ article.hfeed-post:hover .globo-sobre-imagen {
   color: #fff;
   text-align: center;
   width: 70%;
+}
+
+html[lang=es-ES] .is-style-bocadillo:after {
+  content: "Aprender español nunca fue tan fácil";
+}
+
+html[lang=en-EN] .is-style-bocadillo:after,
+html[lang=en-US] .is-style-bocadillo:after {
+  content: "Learn Spanish the easy way";
 }
 
 img.rounded-circle {
@@ -25784,13 +25793,42 @@ div.product .entry-header {
 div.product .entry-header:before {
   content: "";
   position: absolute;
-  top: 40px;
-  right: 0;
-  width: 256px;
-  height: 256px;
-  border-radius: 50rem;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 300px;
+  opacity: 0.1;
+  z-index: 0;
+  background-image: url("../img/globos/globo-4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+div.product .summary h1, div.product .summary .is-style-h1, div.product .summary .h1, div.product .summary h2, div.product .summary .is-style-h2, div.product .summary .h2, div.product .summary h3, div.product .summary .is-style-h3, div.product .summary .h3, div.product .summary h4, div.product .summary .is-style-h4, div.product .summary .h4, div.product .summary h5, div.product .summary .is-style-h5, div.product .summary .h5, div.product .summary h6, div.product .summary .is-style-h6, div.product .summary .h6 {
+  margin-top: 2em;
+}
+div.product .summary h2, div.product .summary .is-style-h2, div.product .summary .h2, div.product .summary h3, div.product .summary .is-style-h3, div.product .summary .h3 {
+  position: relative;
+}
+div.product .summary h2:before, div.product .summary .is-style-h2:before, div.product .summary .h2:before, div.product .summary h3:before, div.product .summary .is-style-h3:before, div.product .summary .h3:before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
   background-color: #f8ba07;
-  opacity: 0.4;
+  z-index: -1;
+}
+div.product .summary h3, div.product .summary .is-style-h3, div.product .summary .h3 {
+  color: #0d6efd;
+}
+div.product .summary h3:before, div.product .summary .is-style-h3:before, div.product .summary .h3:before {
+  width: 3rem;
+  height: 3rem;
+  top: -0.75rem;
+  left: -1rem;
+  opacity: 0.3;
 }
 
 div.product .entry-header .price,
