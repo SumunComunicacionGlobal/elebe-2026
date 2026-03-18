@@ -11668,9 +11668,7 @@ textarea.is-invalid.facetwp-search {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.card, .wdm-course-grid, .woocommerce ul.products li.product:not(.product-category),
-.woocommerce-page ul.products li.product:not(.product-category),
-.wp-block-woocommerce-product-template li.product:not(.product-category), .widget {
+.card, .wdm-course-grid, .widget {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
@@ -11699,61 +11697,35 @@ textarea.is-invalid.facetwp-search {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
-.card > hr, .wdm-course-grid > hr, .woocommerce ul.products li.product:not(.product-category) > hr,
-.woocommerce-page ul.products li.product:not(.product-category) > hr,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > hr, .widget > hr {
+.card > hr, .wdm-course-grid > hr, .widget > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group, .card > .eb-user-account-navigation, .wdm-course-grid > .list-group, .wdm-course-grid > .eb-user-account-navigation, .woocommerce ul.products li.product:not(.product-category) > .list-group, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation,
-.woocommerce-page ul.products li.product:not(.product-category) > .list-group,
-.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation, .widget > .list-group, .widget > .eb-user-account-navigation {
+.card > .list-group, .card > .eb-user-account-navigation, .wdm-course-grid > .list-group, .wdm-course-grid > .eb-user-account-navigation, .widget > .list-group, .widget > .eb-user-account-navigation {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child, .card > .eb-user-account-navigation:first-child, .wdm-course-grid > .list-group:first-child, .wdm-course-grid > .eb-user-account-navigation:first-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:first-child, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation:first-child,
-.woocommerce-page ul.products li.product:not(.product-category) > .list-group:first-child,
-.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation:first-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:first-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation:first-child, .widget > .list-group:first-child, .widget > .eb-user-account-navigation:first-child {
+.card > .list-group:first-child, .card > .eb-user-account-navigation:first-child, .wdm-course-grid > .list-group:first-child, .wdm-course-grid > .eb-user-account-navigation:first-child, .widget > .list-group:first-child, .widget > .eb-user-account-navigation:first-child {
   border-top-width: 0;
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
 }
-.card > .list-group:last-child, .card > .eb-user-account-navigation:last-child, .wdm-course-grid > .list-group:last-child, .wdm-course-grid > .eb-user-account-navigation:last-child, .woocommerce ul.products li.product:not(.product-category) > .list-group:last-child, .woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation:last-child,
-.woocommerce-page ul.products li.product:not(.product-category) > .list-group:last-child,
-.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation:last-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group:last-child,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation:last-child, .widget > .list-group:last-child, .widget > .eb-user-account-navigation:last-child {
+.card > .list-group:last-child, .card > .eb-user-account-navigation:last-child, .wdm-course-grid > .list-group:last-child, .wdm-course-grid > .eb-user-account-navigation:last-child, .widget > .list-group:last-child, .widget > .eb-user-account-navigation:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
-.card > .card-header + .list-group, .card > .card-header + .eb-user-account-navigation, .wdm-course-grid > .card-header + .list-group, .wdm-course-grid > .card-header + .eb-user-account-navigation, .woocommerce ul.products li.product:not(.product-category) > .card-header + .list-group, .woocommerce ul.products li.product:not(.product-category) > .card-header + .eb-user-account-navigation,
-.woocommerce-page ul.products li.product:not(.product-category) > .card-header + .list-group,
-.woocommerce-page ul.products li.product:not(.product-category) > .card-header + .eb-user-account-navigation,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .card-header + .list-group,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .card-header + .eb-user-account-navigation, .widget > .card-header + .list-group, .widget > .card-header + .eb-user-account-navigation,
+.card > .card-header + .list-group, .card > .card-header + .eb-user-account-navigation, .wdm-course-grid > .card-header + .list-group, .wdm-course-grid > .card-header + .eb-user-account-navigation, .widget > .card-header + .list-group, .widget > .card-header + .eb-user-account-navigation,
 .card > .list-group + .card-footer,
 .card > .eb-user-account-navigation + .card-footer,
 .wdm-course-grid > .list-group + .card-footer,
 .wdm-course-grid > .eb-user-account-navigation + .card-footer,
-.woocommerce ul.products li.product:not(.product-category) > .list-group + .card-footer,
-.woocommerce ul.products li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
-.woocommerce-page ul.products li.product:not(.product-category) > .list-group + .card-footer,
-.woocommerce-page ul.products li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .list-group + .card-footer,
-.wp-block-woocommerce-product-template li.product:not(.product-category) > .eb-user-account-navigation + .card-footer,
 .widget > .list-group + .card-footer,
 .widget > .eb-user-account-navigation + .card-footer {
   border-top: 0;
 }
 
-.card-body, .wdm-course-grid .wdm-caption, .woocommerce ul.products li.product:not(.product-category),
-.woocommerce-page ul.products li.product:not(.product-category),
-.wp-block-woocommerce-product-template li.product:not(.product-category), .widget {
+.card-body, .wdm-course-grid .wdm-caption, .widget {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
@@ -11841,9 +11813,7 @@ textarea.is-invalid.facetwp-search {
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
 
-.card-group > .card, .card-group > .wdm-course-grid, .woocommerce ul.products .card-group > li.product:not(.product-category),
-.woocommerce-page ul.products .card-group > li.product:not(.product-category),
-.wp-block-woocommerce-product-template .card-group > li.product:not(.product-category), .card-group > .widget {
+.card-group > .card, .card-group > .wdm-course-grid, .card-group > .widget {
   margin-bottom: var(--bs-card-group-margin);
 }
 @media (min-width: 599px) {
@@ -11851,83 +11821,43 @@ textarea.is-invalid.facetwp-search {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card, .card-group > .wdm-course-grid, .woocommerce ul.products .card-group > li.product:not(.product-category),
-  .woocommerce-page ul.products .card-group > li.product:not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > li.product:not(.product-category), .card-group > .widget {
+  .card-group > .card, .card-group > .wdm-course-grid, .card-group > .widget {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card, .card-group > .wdm-course-grid + .card, .card-group > .card + .wdm-course-grid, .card-group > .wdm-course-grid + .wdm-course-grid, .woocommerce ul.products .card-group > li.product:not(.product-category) + .card, .woocommerce ul.products .card-group > li.product:not(.product-category) + .wdm-course-grid,
-  .woocommerce-page ul.products .card-group > li.product:not(.product-category) + .card,
-  .woocommerce-page ul.products .card-group > li.product:not(.product-category) + .wdm-course-grid,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(.product-category) + .card,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(.product-category) + .wdm-course-grid, .woocommerce ul.products .card-group > .card + li.product:not(.product-category), .woocommerce ul.products .card-group > .wdm-course-grid + li.product:not(.product-category), .woocommerce ul.products .card-group > li.product:not(.product-category) + li.product:not(.product-category),
-  .woocommerce-page ul.products .card-group > .card + li.product:not(.product-category),
-  .woocommerce-page ul.products .card-group > .wdm-course-grid + li.product:not(.product-category),
-  .woocommerce-page ul.products .card-group > li.product:not(.product-category) + li.product:not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > .card + li.product:not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > .wdm-course-grid + li.product:not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > li.product:not(.product-category) + li.product:not(.product-category), .card-group > .widget + .card, .card-group > .widget + .wdm-course-grid, .woocommerce ul.products .card-group > .widget + li.product:not(.product-category),
-  .woocommerce-page ul.products .card-group > .widget + li.product:not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > .widget + li.product:not(.product-category), .card-group > .card + .widget, .card-group > .wdm-course-grid + .widget, .woocommerce ul.products .card-group > li.product:not(.product-category) + .widget,
-  .woocommerce-page ul.products .card-group > li.product:not(.product-category) + .widget,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(.product-category) + .widget, .card-group > .widget + .widget {
+  .card-group > .card + .card, .card-group > .wdm-course-grid + .card, .card-group > .card + .wdm-course-grid, .card-group > .wdm-course-grid + .wdm-course-grid, .card-group > .widget + .card, .card-group > .widget + .wdm-course-grid, .card-group > .card + .widget, .card-group > .wdm-course-grid + .widget, .card-group > .widget + .widget {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child), .card-group > .wdm-course-grid:not(:last-child), .woocommerce ul.products .card-group > li.product:not(:last-child):not(.product-category),
-  .woocommerce-page ul.products .card-group > li.product:not(:last-child):not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:last-child):not(.product-category), .card-group > .widget:not(:last-child) {
+  .card-group > .card:not(:last-child), .card-group > .wdm-course-grid:not(:last-child), .card-group > .widget:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top, .card-group > .wdm-course-grid:not(:last-child) .card-img-top, .woocommerce ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-img-top,
-  .woocommerce-page ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-img-top,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:last-child):not(.product-category) .card-img-top, .card-group > .widget:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-img-top, .card-group > .wdm-course-grid:not(:last-child) .card-img-top, .card-group > .widget:not(:last-child) .card-img-top,
   .card-group > .card:not(:last-child) .card-header,
   .card-group > .wdm-course-grid:not(:last-child) .card-header,
-  .woocommerce ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-header,
-  .woocommerce-page ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-header,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:last-child):not(.product-category) .card-header,
   .card-group > .widget:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .wdm-course-grid:not(:last-child) .card-img-bottom, .woocommerce ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-img-bottom,
-  .woocommerce-page ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-img-bottom,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:last-child):not(.product-category) .card-img-bottom, .card-group > .widget:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .wdm-course-grid:not(:last-child) .card-img-bottom, .card-group > .widget:not(:last-child) .card-img-bottom,
   .card-group > .card:not(:last-child) .card-footer,
   .card-group > .wdm-course-grid:not(:last-child) .card-footer,
-  .woocommerce ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-footer,
-  .woocommerce-page ul.products .card-group > li.product:not(:last-child):not(.product-category) .card-footer,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:last-child):not(.product-category) .card-footer,
   .card-group > .widget:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child), .card-group > .wdm-course-grid:not(:first-child), .woocommerce ul.products .card-group > li.product:not(:first-child):not(.product-category),
-  .woocommerce-page ul.products .card-group > li.product:not(:first-child):not(.product-category),
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:first-child):not(.product-category), .card-group > .widget:not(:first-child) {
+  .card-group > .card:not(:first-child), .card-group > .wdm-course-grid:not(:first-child), .card-group > .widget:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top, .card-group > .wdm-course-grid:not(:first-child) .card-img-top, .woocommerce ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-img-top,
-  .woocommerce-page ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-img-top,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:first-child):not(.product-category) .card-img-top, .card-group > .widget:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-img-top, .card-group > .wdm-course-grid:not(:first-child) .card-img-top, .card-group > .widget:not(:first-child) .card-img-top,
   .card-group > .card:not(:first-child) .card-header,
   .card-group > .wdm-course-grid:not(:first-child) .card-header,
-  .woocommerce ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-header,
-  .woocommerce-page ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-header,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:first-child):not(.product-category) .card-header,
   .card-group > .widget:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .wdm-course-grid:not(:first-child) .card-img-bottom, .woocommerce ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-img-bottom,
-  .woocommerce-page ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-img-bottom,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:first-child):not(.product-category) .card-img-bottom, .card-group > .widget:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .wdm-course-grid:not(:first-child) .card-img-bottom, .card-group > .widget:not(:first-child) .card-img-bottom,
   .card-group > .card:not(:first-child) .card-footer,
   .card-group > .wdm-course-grid:not(:first-child) .card-footer,
-  .woocommerce ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-footer,
-  .woocommerce-page ul.products .card-group > li.product:not(:first-child):not(.product-category) .card-footer,
-  .wp-block-woocommerce-product-template .card-group > li.product:not(:first-child):not(.product-category) .card-footer,
   .card-group > .widget:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
@@ -24052,7 +23982,10 @@ article.hfeed-post:hover .globo-sobre-imagen {
   transform: translate(4%, -4%);
 }
 
-.wp-block-cover img[src*=flecha-] {
+.wp-block-cover:not(.is-light) img[src*=flecha-],
+.wp-block-cover:not(.is-light) .read-more-arrow,
+.text-white img[src*=flecha-],
+.text-white .read-more-arrow {
   filter: brightness(100);
 }
 
@@ -24088,7 +24021,7 @@ article.hfeed-post:hover .globo-sobre-imagen {
   }
 }
 .is-style-bocadillo:after {
-  content: "";
+  content: "Mehr als Spanisch";
   font-family: var(--wp--preset--font-family--font-quote);
   position: absolute;
   top: 50%;
@@ -24258,7 +24191,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-group.is-style-bg-contain,
 .wp-block-cover.is-style-bg-contain {
-  background-image: contain !important;
+  background-size: contain !important;
 }
 .wp-block-group.is-style-bg-contain > .wp-block-cover__image-background,
 .wp-block-group.is-style-bg-contain > .wp-block-group__background,
@@ -24267,6 +24200,17 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
   -o-object-fit: contain;
   object-fit: contain;
 }
+.wp-block-group.is-style-bg-fill,
+.wp-block-cover.is-style-bg-fill {
+  background-size: 100% 100% !important;
+}
+.wp-block-group.is-style-bg-fill > .wp-block-cover__image-background,
+.wp-block-group.is-style-bg-fill > .wp-block-group__background,
+.wp-block-cover.is-style-bg-fill > .wp-block-cover__image-background,
+.wp-block-cover.is-style-bg-fill > .wp-block-group__background {
+  -o-object-fit: fill;
+  object-fit: fill;
+}
 
 .wp-block-cover,
 .wp-block-group.has-background {
@@ -24274,7 +24218,8 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
   border-radius: var(--bs-border-radius-xl);
 }
 
-.wp-block-cover {
+.wp-block-cover,
+.overflow-hidden {
   overflow: hidden;
 }
 
@@ -24578,29 +24523,7 @@ p.has-background {
 }
 
 /* Cards */
-.card .card-body, .wdm-course-grid .card-body, .wdm-course-grid .wdm-caption, .card .woocommerce ul.products li.product:not(.product-category), .wdm-course-grid .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products .card li.product:not(.product-category), .woocommerce ul.products .wdm-course-grid li.product:not(.product-category),
-.card .woocommerce-page ul.products li.product:not(.product-category),
-.wdm-course-grid .woocommerce-page ul.products li.product:not(.product-category),
-.woocommerce-page ul.products .card li.product:not(.product-category),
-.woocommerce-page ul.products .wdm-course-grid li.product:not(.product-category),
-.card .wp-block-woocommerce-product-template li.product:not(.product-category),
-.wdm-course-grid .wp-block-woocommerce-product-template li.product:not(.product-category),
-.wp-block-woocommerce-product-template .card li.product:not(.product-category),
-.wp-block-woocommerce-product-template .wdm-course-grid li.product:not(.product-category), .woocommerce ul.products li.product:not(.product-category) .card-body, .woocommerce ul.products li.product:not(.product-category) .wdm-course-grid .wdm-caption, .wdm-course-grid .woocommerce ul.products li.product:not(.product-category) .wdm-caption, .woocommerce ul.products li.product:not(.product-category) li.product:not(.product-category),
-.woocommerce-page ul.products li.product:not(.product-category) .card-body,
-.woocommerce-page ul.products li.product:not(.product-category) .wdm-course-grid .wdm-caption,
-.wdm-course-grid .woocommerce-page ul.products li.product:not(.product-category) .wdm-caption,
-.woocommerce-page ul.products li.product:not(.product-category) li.product:not(.product-category),
-.wp-block-woocommerce-product-template li.product:not(.product-category) .card-body,
-.wp-block-woocommerce-product-template li.product:not(.product-category) .wdm-course-grid .wdm-caption,
-.wdm-course-grid .wp-block-woocommerce-product-template li.product:not(.product-category) .wdm-caption,
-.wp-block-woocommerce-product-template li.product:not(.product-category) li.product:not(.product-category), .card .widget, .wdm-course-grid .widget, .woocommerce ul.products li.product:not(.product-category) .widget,
-.woocommerce-page ul.products li.product:not(.product-category) .widget,
-.wp-block-woocommerce-product-template li.product:not(.product-category) .widget, .widget .card-body, .widget .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products .widget li.product:not(.product-category),
-.widget .woocommerce-page ul.products li.product:not(.product-category),
-.woocommerce-page ul.products .widget li.product:not(.product-category),
-.widget .wp-block-woocommerce-product-template li.product:not(.product-category),
-.wp-block-woocommerce-product-template .widget li.product:not(.product-category), .widget .widget {
+.card .card-body, .wdm-course-grid .card-body, .wdm-course-grid .wdm-caption, .card .widget, .wdm-course-grid .widget, .widget .card-body, .widget .widget {
   background-image: url("../img/fondo-card-body.jpg");
   background-size: cover;
   background-position: center;
@@ -24608,26 +24531,16 @@ p.has-background {
   border-bottom-left-radius: var(--bs-card-border-radius);
   border-bottom-right-radius: var(--bs-card-border-radius);
 }
-.card .card-subtitle, .wdm-course-grid .card-subtitle, .woocommerce ul.products li.product:not(.product-category) .card-subtitle,
-.woocommerce-page ul.products li.product:not(.product-category) .card-subtitle,
-.wp-block-woocommerce-product-template li.product:not(.product-category) .card-subtitle, .widget .card-subtitle {
+.card .card-subtitle, .wdm-course-grid .card-subtitle, .widget .card-subtitle {
   font-weight: 400;
   margin-bottom: 1rem;
   color: #6c757d;
 }
 
-article:nth-child(3n+2) .card-body, article:nth-child(3n+2) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+2) .wdm-caption, article:nth-child(3n+2) .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products article:nth-child(3n+2) li.product:not(.product-category),
-article:nth-child(3n+2) .woocommerce-page ul.products li.product:not(.product-category),
-.woocommerce-page ul.products article:nth-child(3n+2) li.product:not(.product-category),
-article:nth-child(3n+2) .wp-block-woocommerce-product-template li.product:not(.product-category),
-.wp-block-woocommerce-product-template article:nth-child(3n+2) li.product:not(.product-category), article:nth-child(3n+2) .widget {
+article:nth-child(3n+2) .card-body, article:nth-child(3n+2) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+2) .wdm-caption, article:nth-child(3n+2) .widget {
   background-position: left top;
 }
-article:nth-child(3n+3) .card-body, article:nth-child(3n+3) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+3) .wdm-caption, article:nth-child(3n+3) .woocommerce ul.products li.product:not(.product-category), .woocommerce ul.products article:nth-child(3n+3) li.product:not(.product-category),
-article:nth-child(3n+3) .woocommerce-page ul.products li.product:not(.product-category),
-.woocommerce-page ul.products article:nth-child(3n+3) li.product:not(.product-category),
-article:nth-child(3n+3) .wp-block-woocommerce-product-template li.product:not(.product-category),
-.wp-block-woocommerce-product-template article:nth-child(3n+3) li.product:not(.product-category), article:nth-child(3n+3) .widget {
+article:nth-child(3n+3) .card-body, article:nth-child(3n+3) .wdm-course-grid .wdm-caption, .wdm-course-grid article:nth-child(3n+3) .wdm-caption, article:nth-child(3n+3) .widget {
   background-position: right bottom;
 }
 
@@ -24636,9 +24549,7 @@ article:nth-child(3n+3) .wp-block-woocommerce-product-template li.product:not(.p
   height: 12px;
 }
 
-.curso-destacado > .card, .curso-destacado > .wdm-course-grid, .woocommerce ul.products .curso-destacado > li.product:not(.product-category),
-.woocommerce-page ul.products .curso-destacado > li.product:not(.product-category),
-.wp-block-woocommerce-product-template .curso-destacado > li.product:not(.product-category), .curso-destacado > .widget {
+.curso-destacado > .card, .curso-destacado > .wdm-course-grid, .curso-destacado > .widget {
   height: 100%;
 }
 
@@ -24753,30 +24664,31 @@ table th {
 .wpcf7 form .wpcf7-acceptance .wpcf7-list-item {
   margin-left: 0;
 }
-.wpcf7 form input[type=submit] {
-  padding: 0.75rem 50px;
-}
-.wpcf7 form input[type=submit]:disabled {
-  background-color: #1a1a1a;
-  color: #fff;
-  opacity: 0.2;
-}
-.wpcf7 form input[type=submit]:hover {
-  background-color: #1a1a1a;
-  opacity: 0.8;
-  color: #fff;
-}
-.wpcf7 form input[type=submit] + .wpcf7-spinner {
-  margin-right: 0;
-  margin-left: -30px;
-  top: 6px;
-}
 .wpcf7 form .wpcf7-not-valid-tip {
   color: theme-color("danger");
 }
 .wpcf7 form .wpcf7-validation-errors {
   color: theme-color("danger");
   border: 1px solid #e9ecef;
+}
+
+input[type=submit] {
+  padding: 0.75rem 50px;
+}
+input[type=submit]:disabled {
+  background-color: #1a1a1a;
+  color: #fff;
+  opacity: 0.2;
+}
+input[type=submit]:hover {
+  background-color: #1a1a1a;
+  opacity: 0.8;
+  color: #fff;
+}
+input[type=submit] + .wpcf7-spinner {
+  margin-right: 0;
+  margin-left: -30px;
+  top: 6px;
 }
 
 .input-group {
@@ -25068,6 +24980,10 @@ select.facetwp-dropdown {
   background-color: #f8f9fa;
 }
 
+.hfeed-post.type-post .entry-content {
+  font-size: 0.875rem;
+}
+
 .entry-meta {
   color: #6c757d;
   padding-bottom: 0.3rem;
@@ -25328,10 +25244,13 @@ div.product div.summary + * {
 .woocommerce ul.products li.product:not(.product-category),
 .woocommerce-page ul.products li.product:not(.product-category),
 .wp-block-woocommerce-product-template li.product:not(.product-category) {
+  position: relative;
   border-radius: 1rem;
   background-color: #0f2f47;
   color: #fff;
-  padding-bottom: 2rem;
+  padding: 2rem 0.5rem 2rem;
+  margin-top: 2rem;
+  min-height: 270px;
 }
 .woocommerce ul.products li.product:not(.product-category) a,
 .woocommerce ul.products li.product:not(.product-category) h2,
@@ -25430,6 +25349,19 @@ div.product div.summary + * {
   border-radius: 1rem;
   transform: rotate(-3deg);
 }
+.woocommerce ul.products li.product:not(.product-category):before,
+.woocommerce-page ul.products li.product:not(.product-category):before,
+.wp-block-woocommerce-product-template li.product:not(.product-category):before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img/favicon.svg");
+}
 .woocommerce ul.products li.product:not(.product-category):nth-child(3n+2) .product-image-wrapper:after,
 .woocommerce ul.products li.product:not(.product-category):nth-child(3n+2) .wc-block-components-product-image:after,
 .woocommerce-page ul.products li.product:not(.product-category):nth-child(3n+2) .product-image-wrapper:after,
@@ -25495,7 +25427,8 @@ div.product div.summary + * {
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title,
 .wp-block-woocommerce-product-template li.product .woocommerce-loop-product__title {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 .woocommerce ul.products.columns-3 li.product,
@@ -25776,14 +25709,18 @@ p.stars a:after {
   opacity: 0.25;
 }
 
+.variations_form {
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
 .single_variation_wrap {
   text-align: center;
 }
 .single_variation_wrap .woocommerce-variation.single_variation {
   margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: #fff;
 }
 
 .woocommerce-variation-price {
@@ -25794,11 +25731,7 @@ p.stars a:after {
 .products.related .card-title {
   font-size: 1.4rem;
 }
-.products.related .card-body p, .products.related .wdm-course-grid .wdm-caption p, .wdm-course-grid .products.related .wdm-caption p, .products.related .widget p, .products.related .woocommerce ul.products li.product:not(.product-category) p, .woocommerce ul.products .products.related li.product:not(.product-category) p,
-.products.related .woocommerce-page ul.products li.product:not(.product-category) p,
-.woocommerce-page ul.products .products.related li.product:not(.product-category) p,
-.products.related .wp-block-woocommerce-product-template li.product:not(.product-category) p,
-.wp-block-woocommerce-product-template .products.related li.product:not(.product-category) p, .products.related .fields {
+.products.related .card-body p, .products.related .wdm-course-grid .wdm-caption p, .wdm-course-grid .products.related .wdm-caption p, .products.related .widget p, .products.related .fields {
   display: none;
 }
 

@@ -44,6 +44,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="entry-content">
 
+							<?php echo '<h1>' . esc_html( get_the_title( $page_for_posts ) ) . '</h1>'; ?>
+
 							<?php echo apply_filters( 'the_content', $page_for_posts->post_content ); ?>
 
 						</div>

@@ -89,7 +89,7 @@ function understrap_widgets_init() {
             'name'          => __( 'Footer Full', 'understrap' ),
             'id'            => 'footerfull',
             'description'   => __( 'Full sized footer widget 4 columns', 'understrap' ),
-            'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-md-4">',
+            'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-md-6 col-lg-3">',
             'after_widget'  => '</div><!-- .footer-widget -->',
             'before_title'  => '<p class="widget-title">',
             'after_title'   => '</p>',

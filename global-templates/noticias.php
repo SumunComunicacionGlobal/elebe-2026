@@ -16,7 +16,7 @@ $q = new WP_Query($args);
 
 				<?php if ($q->current_post == 0) { ?>
 				
-					<div class="col-lg-6 bg-primary p-2 py-4 ultima-noticia text-white">
+					<div class="col-lg-6 bg-primary text-white p-2 py-4 ultima-noticia">
 
 						<div class="noticia-inner">
 

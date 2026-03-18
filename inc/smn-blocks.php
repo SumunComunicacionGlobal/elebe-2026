@@ -60,6 +60,15 @@ if ( function_exists( 'register_block_style' ) ) {
         )
     );
        
+    register_block_style(
+        'core/cover',
+        array(
+            'name'         => 'bg-fill',
+            'label'        => __( 'Fondo rellenado deformado', 'smn-admin' ),
+            'is_default'   => false,
+        )
+    );
+       
     $display_text_block_types = array(
         'core/paragraph',
         'core/heading',

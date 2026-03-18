@@ -136,9 +136,11 @@ article.hfeed-post:hover .globo-sobre-imagen {
 	}
 }
 
-.wp-block-cover {
+.wp-block-cover:not(.is-light),
+.text-white {
 
-	img[src*="flecha-"] {
+	img[src*="flecha-"],
+	.read-more-arrow {
 		filter: brightness(100);
 	}
 }
@@ -173,7 +175,7 @@ article.hfeed-post:hover .globo-sobre-imagen {
 	}
 
 	&:after {
-		content: "";
+		content: "Mehr als Spanisch";
 		font-family: var(--wp--preset--font-family--font-quote);
 		position: absolute;
 		top: 50%;

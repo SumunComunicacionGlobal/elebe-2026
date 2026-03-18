@@ -34,8 +34,6 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php echo smn_get_random_arrow(); ?>
 
-		<?php echo smn_get_random_bubble(); ?>
-
 	</div>
 
 

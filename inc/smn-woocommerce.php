@@ -671,10 +671,15 @@ add_action( 'woocommerce_before_subcategory_title', function( $category ) {
   echo '</div>';
 }, 11 );
 
+// Quita la imagen de product en el loop y en el single
+add_filter( 'woocommerce_single_product_image_thumbnail_html', '__return_empty_string' );
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+
 // Add an image wrapper around the product thumbnail in the product loop
-add_action( 'woocommerce_before_shop_loop_item_title', function() {
-    echo '<div class="product-image-wrapper">';
-}, 9 );
-add_action( 'woocommerce_before_shop_loop_item_title', function() {
-    echo '</div>';
-}, 11 );
+// add_action( 'woocommerce_before_shop_loop_item_title', function() {
+//     echo '<div class="product-image-wrapper">';
+// }, 9 );
+// add_action( 'woocommerce_before_shop_loop_item_title', function() {
+//     echo '</div>';
+// }, 11 );
