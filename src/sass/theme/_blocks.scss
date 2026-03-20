@@ -68,6 +68,28 @@ body.understrap-no-sidebar {
             object-fit: fill;
         }
     }
+
+    &.is-style-align-bottom {
+        align-items: flex-end;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: linear-gradient(to top, rgba($dark, .5), rgba($dark, 0));
+        }
+
+        > .wp-block-cover__inner-container,
+        > .wp-block-group__inner-container {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+
 }
 
 .wp-block-cover,
@@ -79,6 +101,10 @@ body.understrap-no-sidebar {
 .wp-block-cover,
 .overflow-hidden {
     overflow: hidden;
+}
+
+.wp-block-columns .wp-block-cover .has-global-padding {
+    padding: 0;
 }
 
 p.has-background {

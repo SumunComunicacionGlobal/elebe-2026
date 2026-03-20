@@ -329,7 +329,16 @@ div.product div.summary + * {
         font-style: normal;
     }
 
-    &.variations {
+}
+
+.woocommerce div.product form.cart {
+
+    .variations {
+        @include media-breakpoint-down(md) {
+            margin-left: -$spacer;
+            margin-right: -$spacer;
+            width: calc(100% + #{$spacer*2});
+        }
 
         tr {
             border: 0;
@@ -340,6 +349,13 @@ div.product div.summary + * {
             padding-top: .25rem;
             padding-bottom: .25rem;
             border: 0;
+            line-height: $headings-line-height;
+            vertical-align: middle;
+        }
+
+        label {
+            line-height: $headings-line-height;
+            font-size: $font-size-sm;
         }
 
         select {
@@ -615,11 +631,13 @@ p.stars a:after {
     opacity: .25;
 }
 
-.variations_form {
-    padding: $spacer;
-    border: $border-width solid $input-border-color;
-    border-radius: $border-radius-lg;
-    background-color: $white;
+@include media-breakpoint-up(md) {
+    .variations_form {
+        padding: $spacer;
+        border: $border-width solid $input-border-color;
+        border-radius: $border-radius-lg;
+        background-color: $white;
+    }
 }
 .single_variation_wrap {
     text-align: center;

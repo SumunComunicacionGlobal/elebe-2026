@@ -402,3 +402,16 @@ function elebe_loop_end( $query ){
         echo '</div>';
     }
 }
+
+add_action('wp_head', function() {
+    if (is_front_page()) {
+        $texto_bocadillo = get_field('texto_bocadillo_home', 'option');
+        if (!empty($texto_bocadillo)) {
+            echo '<style>
+                .bocadillo-home {
+                    content: "' . esc_attr( $texto_bocadillo ) . '";
+                }
+            </style>';
+        }
+    }
+});

@@ -69,6 +69,15 @@ if ( function_exists( 'register_block_style' ) ) {
         )
     );
        
+    register_block_style(
+        'core/cover',
+        array(
+            'name'         => 'align-bottom',
+            'label'        => __( 'Texto abajo', 'smn-admin' ),
+            'is_default'   => false,
+        )
+    );
+       
     $display_text_block_types = array(
         'core/paragraph',
         'core/heading',
