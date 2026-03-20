@@ -8911,7 +8911,8 @@ textarea.is-invalid.facetwp-search {
   border: 0 !important;
 }
 
-.stretched-link::after {
+.stretched-link::after, .wp-block-group.is-style-align-bottom a::after,
+.wp-block-cover.is-style-align-bottom a::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -16684,19 +16685,18 @@ body.privacy-policy #content, body.cmplz-document #content {
   right: 0;
 }
 
-.stretched-link {
+.stretched-link, .wp-block-group.is-style-align-bottom a,
+.wp-block-cover.is-style-align-bottom a {
   color: #1a1a1a;
 }
-.stretched-link:after {
+.stretched-link:after, .wp-block-group.is-style-align-bottom a:after,
+.wp-block-cover.is-style-align-bottom a:after {
   transition: all 0.2s ease-in-out;
 }
-.stretched-link:hover {
+.stretched-link:hover, .wp-block-group.is-style-align-bottom a:hover,
+.wp-block-cover.is-style-align-bottom a:hover {
   text-decoration: none;
 }
-.stretched-link:hover:after {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .link-circulo,
 .is-style-link-circulo {
   position: relative;
@@ -17855,7 +17855,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 }
 .wp-block-group.is-style-align-bottom,
 .wp-block-cover.is-style-align-bottom {
-  align-items: flex-end;
+  align-items: stretch;
 }
 .wp-block-group.is-style-align-bottom:after,
 .wp-block-cover.is-style-align-bottom:after {
@@ -17873,8 +17873,10 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
 .wp-block-cover.is-style-align-bottom > .wp-block-group__inner-container {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
 .wp-block-cover,
 .wp-block-group.has-background {
   padding: 1em;
