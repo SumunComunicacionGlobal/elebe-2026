@@ -17877,6 +17877,11 @@ body.understrap-no-sidebar .wp-block-cover.alignfull {
   flex-direction: column;
   justify-content: flex-end;
 }
+.wp-block-group.is-style-align-bottom a,
+.wp-block-cover.is-style-align-bottom a {
+  color: #fff;
+}
+
 .wp-block-cover,
 .wp-block-group.has-background {
   padding: 1em;
